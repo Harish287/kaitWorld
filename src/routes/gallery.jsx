@@ -33,9 +33,9 @@ import Image4 from "../assets/blog-detaills-1.jpg"
   <p className='text-center justify-center items-center text-white  text-5xl font-black'>Gallery</p>
 </div>
       <main className="container mx-auto py-8">
-        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
           {galleryItems.map((item, index) => (
-            <div key={index} className=" rounded-lg overflow-hidden  max-w-sm mx-auto h-auto shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-600">
+            <div key={index} className=" rounded-lg overflow-hidden max-w-sm mx-auto h-auto shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-600">
               {item.type === 'image' && (
                 <Zoom>
                   <img src={item.src} alt={item.alt} className="  object-cover center w-[300px] h-[300px]" />

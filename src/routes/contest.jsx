@@ -17,6 +17,9 @@ import anime6 from "../assets/Anime/anime6.png"
 import Imagesvg from "../assets/Anime/stick-man.936d1e5d.svg"
 
 
+
+
+
 const Services = () => {
   var settings = {
     // dots: true,

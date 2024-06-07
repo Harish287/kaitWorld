@@ -37,15 +37,31 @@ header {
   text-decoration: none;
   font-size: 25px;
   color: inherit;
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 /* menu on desktop */
 .desktop-nav .menus {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   list-style: none;
+}
+
+.test-silver {
+  background-image: url("../src/assets/WhatsApp Image 2024-06-07 at 12.05.35 PM.jpeg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 250px;
+  width: 300px;
+}
+
+.goldclubvback {
+  background-image: url("../src/assets/2.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 250px;
+  width: 300px;
 }
 
 .desktop-nav .menu-items {
@@ -76,10 +92,10 @@ header {
   margin-left: 3px;
 }
 
-.desktop-nav .menu-items > a,
+.desktop-nav .menu-items>a,
 .desktop-nav .menu-items button {
   text-align: left;
-  padding: 0.7rem 1rem;
+  padding: 0.2rem 1rem;
 }
 
 .desktop-nav .menu-items a:hover,
@@ -141,6 +157,7 @@ header {
   .mobile-nav {
     display: block;
   }
+
   .mobile-nav .mobile-nav__menu-button {
     color: inherit;
     font-size: inherit;
@@ -149,6 +166,7 @@ header {
     cursor: pointer;
     position: relative;
   }
+
   .mobile-nav .menus {
     list-style: none;
     position: absolute;
@@ -181,7 +199,7 @@ header {
     width: 100%;
   }
 
-  .mobile-nav .menu-items > a,
+  .mobile-nav .menu-items>a,
   .mobile-nav .menu-items button {
     text-align: left;
     padding: 0.7rem 1rem;
@@ -201,6 +219,7 @@ header {
     border-right: 0.32em solid transparent;
     border-left: 0.32em solid transparent;
   }
+
   .mobile-nav .arrow-close::after {
     content: "";
     display: inline-block;
@@ -223,4 +242,3 @@ header {
     display: block;
   }
 }
-

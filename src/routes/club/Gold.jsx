@@ -13,17 +13,20 @@ import axios from "axios";
 // import "./global.css"
 
 
- const Bronze = () => {
 
 
-  const bronzeClubRef = useRef(null);
-  
-  // const [tab, setTab] = useState("bronze");
+const Gold = () => {
 
-  // const updateTab = (e) => {
-  //   setTab(e);
+
+
+  const goldClubRef = useRef(null);
+
+  const [tab, setTab] = useState("gold");
+
+  const updateTab = (e) => {
+    setTab(e);
     // console.log(e);
-  // };
+  };
 
   const [filterlist, setFilterlist] = useState([]);
 
@@ -33,7 +36,7 @@ import axios from "axios";
 
   useEffect(() => {
 
-    setTimeout(() => bronzeClubRef.current.scrollIntoView({ behavior: 'smooth' }), 1000);
+    setTimeout(() => goldClubRef.current.scrollIntoView({ behavior: 'smooth' }), 1000);
 
     const fetchData = async () => {
       try {
@@ -56,40 +59,40 @@ import axios from "axios";
   const [silvercurrentPage, setsilverCurrentPage] = useState(1);
   const silverpaginate = pageNumber => setsilverCurrentPage(pageNumber);
 
-    // Go to previous page
-    const goTosilverPrevPage = () => {
-      if (silvercurrentPage > 1) {
-        setsilverCurrentPage(silvercurrentPage - 1);
-      }
-    };
-  
-    // Go to next page
-    const goTosilverNextPage = () => {
-      // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
-        setsilverCurrentPage(silvercurrentPage + 1);
-      // }
-    };
+  // Go to previous page
+  const goTosilverPrevPage = () => {
+    if (silvercurrentPage > 1) {
+      setsilverCurrentPage(silvercurrentPage - 1);
+    }
+  };
+
+  // Go to next page
+  const goTosilverNextPage = () => {
+    // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+    setsilverCurrentPage(silvercurrentPage + 1);
+    // }
+  };
 
 
 
-    
+
   const [goldcurrentPage, setgoldCurrentPage] = useState(1);
   const goldpaginate = pageNumber => setgoldCurrentPage(pageNumber);
 
-    // Go to previous page
-    const goTogoldPrevPage = () => {
-      if (goldcurrentPage > 1) {
-        setgoldCurrentPage(goldcurrentPage - 1);
-      }
-    };
-  
-    // Go to next page
-    const goTogoldNextPage = () => {
-      // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
-        setgoldCurrentPage(goldcurrentPage + 1);
-      // }
-    };
-  
+  // Go to previous page
+  const goTogoldPrevPage = () => {
+    if (goldcurrentPage > 1) {
+      setgoldCurrentPage(goldcurrentPage - 1);
+    }
+  };
+
+  // Go to next page
+  const goTogoldNextPage = () => {
+    // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+    setgoldCurrentPage(goldcurrentPage + 1);
+    // }
+  };
+
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(50); // Number of items to display per page
 
@@ -110,10 +113,10 @@ import axios from "axios";
 
   // Go to next page
   const goToNextPage = () => {
-      // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
-        setCurrentPage(currentPage + 1);
-      // }
-    };
+    // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+    setCurrentPage(currentPage + 1);
+    // }
+  };
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -122,16 +125,16 @@ import axios from "axios";
     return <div>Error: {error.message}</div>;
   }
 
- 
+
   const handleFilter = (e) => {
     const value = (e.target.value || "").toLowerCase();
-    
+
     console.log(value);
     const filteredMembers = data.data.map((link) => {
       const filtered = link.members.filter((member) =>
         // (member.user_name ||member.user_id||""===value)
         (member.user_id).toLowerCase().includes(value)
-      
+
       );
       console.log(filtered);
       setCurrentPage(1);
@@ -143,27 +146,27 @@ import axios from "axios";
   return (
     <div>
       <img className="w-[100%]" src={Banner} alt="" />
-      <h1 className="flex justify-center text-xl font-bold mt-9 mb-9" ref={bronzeClubRef}>Club</h1>
+      <h1 className="flex justify-center text-xl font-bold mt-9 mb-9" ref={goldClubRef}>Club</h1>
       <div className=" md:flex">
-      
+        {" "}
         <div className="md:flex px-0 md:px-28 gap-6 justify-center text-center">
           {data.data.map((link, index) => (
             <>
               <div>
                 {/* <div
                   key={link.id}
-                  onClick={() => updateTab(link.bronze)}
+                  onClick={() => updateTab(link.club)}
                   className={`md:my-0 my-7 flex flex-col  hover:text-blue-500  ${
                     tab === link.club ? " text-blue-500" : " text-black"
                   } font-semibold hover:cursor-pointer  active:text-gray-400`}
-                > */}
-                  {/* {link.club} */}
-                  {/* <div
+                >
+                  {link.club}
+                  <div
                     className={`h-1 w-28 mx-auto bg-black hover:bg-blue-500 ${
-                      tab === link.club === "bronze" ? " bg-blue-500" : " bg-black"
+                      tab === link.club ? " bg-blue-500" : " bg-black"
                     }`}
                   ></div> */}
-                </div>
+              </div>
               {/* </div> */}
             </>
           ))}
@@ -171,7 +174,7 @@ import axios from "axios";
         <form class="max-w-md mx-auto">
           <label
             for="default-search"
-            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white "
+            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
           >
             Search
           </label>
@@ -209,19 +212,19 @@ import axios from "axios";
       <div className="  w-[100%]">
         {(filterlist.length > 0 ? filterlist : data.data).map((link, index) => (
           <div className="" key={link.id}>
-            {"bronze" && link.club === "bronze" && (
+            {/* {tab === "bronze" && link.club === "bronze" && (
               <Clubbronze e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
             )}
 
-            {/* {tab === "silver" && link.club === "silver" && (
+            {tab === "silver" && link.club === "silver" && (
               <Clubsilver e={link} goTosilverNextPage={goTosilverNextPage} silvercurrentPage={silvercurrentPage} setsilverCurrentPage={setsilverCurrentPage} goTosilverPrevPage={goTosilverPrevPage}/>
-            )}
+            )} */}
 
             {tab === "gold" && link.club === "gold" && (
-            <Clubgold e={link}  goTogoldNextPage={goTogoldNextPage} goldcurrentPage={goldcurrentPage} setgoldCurrentPage={setgoldCurrentPage} goTogoldPrevPage={goTogoldPrevPage} />
+              <Clubgold e={link} goTogoldNextPage={goTogoldNextPage} goldcurrentPage={goldcurrentPage} setgoldCurrentPage={setgoldCurrentPage} goTogoldPrevPage={goTogoldPrevPage} />
             )}
 
-            {tab === "platinum" && link.club === "platinum" && (
+            {/* {tab === "platinum" && link.club === "platinum" && (
               <Clubplatinum e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
             )}
             {tab === "diamond" && link.club === "diamond" && (
@@ -234,4 +237,4 @@ import axios from "axios";
   );
 };
 
-export default Bronze
+export default Gold

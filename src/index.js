@@ -9,6 +9,9 @@ import About from "./routes/about";
 import Services from "./routes/contest";
 import Club from "./routes/club"
 import Bronze from "./routes/club/bronze"
+import Silver from "./routes/club/Silver"
+import Gold from "./routes/club/Gold"
+import Platinum from "./routes/club/Platinum"
 import Events from "./routes/events"
 import Achivers from "./routes/achivers";
 import Contact from "./routes/contact";
@@ -58,7 +61,20 @@ const router = createBrowserRouter([
     },{
       path:"Contest",
       element:<Contest/>
-    }
+    },
+    {
+      path:"Silver",
+      element:<Silver/>
+      
+    },
+    {
+      path:"Gold",
+      element:<Gold/>
+    },
+    {
+      path:"Platinum",
+      element:<Platinum/>
+    },
     ],
   },
 ]);

@@ -11,6 +11,18 @@ export const menuItemsData = [
         title: "Bronze",
         url: "bronze",
       },
+      {
+        title: "Silver",
+         url: "Silver",
+      },
+      {
+        title: "Gold",
+        url: "Gold",
+      },
+      {
+        title: "Platinum",
+        url: "Platinum",
+      },
     
      
     ],

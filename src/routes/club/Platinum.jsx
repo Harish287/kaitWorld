@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect,useRef} from "react";
 import Banner from "../../assets/club.jpeg";
 import {
   // ClubComponent,
@@ -13,17 +13,19 @@ import axios from "axios";
 // import "./global.css"
 
 
- const Bronze = () => {
+ const Platinum = () => {
 
 
-  const bronzeClubRef = useRef(null);
-  
-  // const [tab, setTab] = useState("bronze");
+  const PlatinumClubRef = useRef(null);
 
-  // const updateTab = (e) => {
-  //   setTab(e);
+
+
+  const [tab, setTab] = useState("platinum");
+
+  const updateTab = (e) => {
+    setTab(e);
     // console.log(e);
-  // };
+  };
 
   const [filterlist, setFilterlist] = useState([]);
 
@@ -33,7 +35,7 @@ import axios from "axios";
 
   useEffect(() => {
 
-    setTimeout(() => bronzeClubRef.current.scrollIntoView({ behavior: 'smooth' }), 1000);
+    setTimeout(() => PlatinumClubRef.current.scrollIntoView({ behavior: 'smooth' }), 1000);
 
     const fetchData = async () => {
       try {
@@ -143,24 +145,24 @@ import axios from "axios";
   return (
     <div>
       <img className="w-[100%]" src={Banner} alt="" />
-      <h1 className="flex justify-center text-xl font-bold mt-9 mb-9" ref={bronzeClubRef}>Club</h1>
+      <h1 className="flex justify-center text-xl font-bold mt-9 mb-9" ref={PlatinumClubRef}>Club</h1>
       <div className=" md:flex">
-      
+        {" "}
         <div className="md:flex px-0 md:px-28 gap-6 justify-center text-center">
           {data.data.map((link, index) => (
             <>
               <div>
                 {/* <div
                   key={link.id}
-                  onClick={() => updateTab(link.bronze)}
+                  onClick={() => updateTab(link.club)}
                   className={`md:my-0 my-7 flex flex-col  hover:text-blue-500  ${
                     tab === link.club ? " text-blue-500" : " text-black"
                   } font-semibold hover:cursor-pointer  active:text-gray-400`}
-                > */}
-                  {/* {link.club} */}
-                  {/* <div
+                >
+                  {link.club}
+                  <div
                     className={`h-1 w-28 mx-auto bg-black hover:bg-blue-500 ${
-                      tab === link.club === "bronze" ? " bg-blue-500" : " bg-black"
+                      tab === link.club ? " bg-blue-500" : " bg-black"
                     }`}
                   ></div> */}
                 </div>
@@ -171,7 +173,7 @@ import axios from "axios";
         <form class="max-w-md mx-auto">
           <label
             for="default-search"
-            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white "
+            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
           >
             Search
           </label>
@@ -209,22 +211,22 @@ import axios from "axios";
       <div className="  w-[100%]">
         {(filterlist.length > 0 ? filterlist : data.data).map((link, index) => (
           <div className="" key={link.id}>
-            {"bronze" && link.club === "bronze" && (
+            {/* {tab === "bronze" && link.club === "bronze" && (
               <Clubbronze e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
-            )}
+            )} */}
 
             {/* {tab === "silver" && link.club === "silver" && (
               <Clubsilver e={link} goTosilverNextPage={goTosilverNextPage} silvercurrentPage={silvercurrentPage} setsilverCurrentPage={setsilverCurrentPage} goTosilverPrevPage={goTosilverPrevPage}/>
-            )}
+            )} */}
 
-            {tab === "gold" && link.club === "gold" && (
+            {/* {tab === "gold" && link.club === "gold" && (
             <Clubgold e={link}  goTogoldNextPage={goTogoldNextPage} goldcurrentPage={goldcurrentPage} setgoldCurrentPage={setgoldCurrentPage} goTogoldPrevPage={goTogoldPrevPage} />
-            )}
+            )} */}
 
-            {tab === "platinum" && link.club === "platinum" && (
+          {tab === "platinum" && link.club === "platinum" && (
               <Clubplatinum e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
-            )}
-            {tab === "diamond" && link.club === "diamond" && (
+            )} 
+           {/* {tab === "diamond" && link.club === "diamond" && (
               <Clubdiamond e={link} />
             )} */}
           </div>
@@ -234,4 +236,4 @@ import axios from "axios";
   );
 };
 
-export default Bronze
+export default Platinum

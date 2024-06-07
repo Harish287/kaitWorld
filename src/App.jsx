@@ -8,7 +8,7 @@ import Image3 from "./assets/kaitav.jpeg"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from "./assets/__next_static_media_img-3.aa9c2645.jpg"
+import Image from "./assets/WhatsApp Image 2024-06-06 at 4.49.10 PM.jpeg"
 
 import Image21 from "./assets/coin.png"
 
@@ -69,15 +69,72 @@ const App = () => {
 
 {/* shape image */}
 
-            <div className=" pt-[50px]  pb-[50px]" > 
-            <img className="flex  z-10 absolute bg-white mix-blend-color-dodge w-[790px]" src={Shape} alt=""/>
-            <img className="relativ w-[790px]" src={Image} alt=""/>
-            {/* <img className="relativ w-[790px]" src={Image21} alt=""/> */}
-            </div>
-           
+{/* <div className=' flex'>
+<div className=" pt-[50px]  pb-[50px]" > 
+            <img className="flex  z-10 absolute bg-white mix-blend-screen w-[800px] h-[700px]" src={Shape} alt=""/>
+            <img className="relativ w-[800px]  h-[700px]" src={Image} alt=""/>
+           {/* <img className="relativ w-[1000px]" src={Image21} alt=""/>  */}
+            {/* </div> 
+ </div> */} 
 
 
-<div className="flex-col  md:flex  lg:flex-row  flex justify-between  bg-orange-100 items-center sm:flex-col  ">
+
+
+
+ <div className=" container flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
+
+
+  
+{/* righrimages */}
+
+<div className=" box-border relative    lg: w-auto h-auto flex float-left pt-[10px] pb-[10px]   md:flex-row  pt-[10px] pb-[10px] box-border ml-0  sm:pt-[10px] pb-[10px] ml-0">
+<div className=" pt-[50px]  pb-[50px]" > 
+            <img className="flex  z-10 absolute bg-white mix-blend-screen w-[600px] h-[500px]" src={Shape} alt=""/>
+            <img className="relativ w-[600px]  h-[500px]" src={Image} alt=""/>
+           {/* <img className="relativ w-[1000px]" src={Image21} alt=""/>  */}
+            </div> 
+</div>
+
+{/* leftcontent */}
+<div className=" pl-[50px] max-w-screen-sm sm:pl-0 md: pl-0  lg:pl-[0px]">
+<p className=" font-bold text-[30px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
+Give them a chance.
+</p>
+<h3 style={{fontFamily:"Nunito,sans-serif"}} className="  text-[56px] leading-[80px] font-extrabold relative">Believe in The Better<br/> Future of Others.</h3>
+<p className="font-roboto font-normal text-base leading-9 text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Lorem ipsum dolor sit amet consectetur. Quisque quisque cursus tellus dui gravida. Sed at a massa nunc at.</p>
+
+
+{/* left bottom content */}
+
+<div className="flex items-center max-w-screen-md mt-10 text-left">
+ <div className="flex gap-2">
+
+   <div>
+    {/* <img className="w-[300px] h-[200px]" src={Image} />   */}
+    
+   </div>
+ <div>
+   <h2 style={{fontFamily:"Nunito,sans-serif"}} className="  text-blue-900 font-bold text-4xl leading-10 mb-4">Join Our Upcoming Campaign</h2>
+
+<p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p></div>
+ </div>
+ </div>
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div className="container flex-col  md:flex  lg:flex-row  flex justify-around bg-orange-100 items-center sm:flex-col  ">
 
 {/* leftcontent */}
 <div className=" pl-[50px] max-w-screen-sm">
@@ -93,13 +150,13 @@ const App = () => {
   <div className="flex items-center max-w-screen-md mt-10 text-left">
     <div className="flex gap-2">
 
-      <div><img className="w-[300px] h-[200px]" src={Image} />  
+      <div><img className="w-[500px] h-[190px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmXYHhdwwcmW2Xm_OlS75ILepiNHIADZQ-IO9KVpvtA2iqDl_qGXpm5BFc2LGkRHQRns&usqp=CAU"/>  
        
       </div>
     <div>
-      <h2 style={{fontFamily:"Nunito,sans-serif"}} className="  text-blue-900 font-bold text-4xl leading-10 mb-4">Join Our Upcoming Campaign</h2>
+      <h2 style={{fontFamily:"Nunito,sans-serif"}} className="  text-blue-900 font-bold text-4xl leading-10 mb-4">Join Our Upcoming Events</h2>
 
-<p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p></div>
+<p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.</p></div>
     </div>
     </div>
 
@@ -113,8 +170,8 @@ const App = () => {
    {/* righrimages */}
 
 <div className="w-auto h-auto flex float-right pt-[70px] pb-[70px] box-border  md:flex float-right pt-[70px] pb-[70px] box-border ">
-  <img className=" h-[540px] w-[540px] box-border relative rounded-[500px] border-white border-[15px]" src={Image11} alt="" />
-  <img className=" h-[350px] w-[350px] box-border absolute  rounded-[500px] border-white border-[15px] ml-[-150px] mt-[-50px] " src={Image12} alt="" />
+  <img className=" h-[540px] w-[540px] box-border relative rounded-[500px] border-orange-100 border-[15px]" src="https://img.freepik.com/free-photo/cartoon-man-wearing-glasses_23-2151136839.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1717459200&semt=ais_user"alt="" />
+  <img className=" h-[350px] w-[350px] box-border absolute  rounded-[500px] border-orange-100 border-[15px] ml-[-150px] mt-[-50px] " src="https://img.freepik.com/free-photo/cartoon-man-wearing-glasses_23-2151136824.jpg" alt="" />
 
 
  {/* Happy clients */}
@@ -153,7 +210,7 @@ const App = () => {
 
 
 
-<div className=" container flex-col  md:flex  lg:flex-row  flex justify-between  items-center sm:flex-col  ">
+<div className=" container flex-col  md:flex  lg:flex-row  flex justify-between  items-center sm:flex-col justify-center items-center ">
 
 
   
@@ -167,7 +224,7 @@ const App = () => {
 </div>
 
 {/* leftcontent */}
-<div className=" pl-[50px] max-w-screen-sm sm:pl-0 md: pl-0  lg:pl-[60px]">
+<div className=" pl-[50px] max-w-screen-sm sm:pl-0 md: pl-0  lg:pl-[0px]">
   <p className=" font-bold text-[30px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
   Give them a chance.
   </p>
@@ -189,14 +246,7 @@ const App = () => {
 <p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p></div>
     </div>
     </div>
-
-
-
-
-
-
 </div>
-
 </div>
             </>;
 };
