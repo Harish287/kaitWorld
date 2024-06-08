@@ -39,7 +39,7 @@ const ClubComponent = ({ e }) => {
 
 const Clubbronze = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPage }) => {
   // const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(50); // Number of items to display per page
+  const [itemsPerPage] = useState(52); // Number of items to display per page
 
   // // Calculate the index of the first and last item to display on the current page
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -65,11 +65,11 @@ const Clubbronze = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPage
 
   return (
     <div>
-      <div className={`grid grid-cols-${e.id} bg-slate-600 items-center gap-6 p-6`}>
+      <div className={`grid md:grid-cols-4  items-center gap-6   p-6`}>
         {currentMembers.map((member, index) => (
-          <div key={index} className={`bg-gradient-to-r ${index % 2 === 0 ? " bg-red-300" : "bg-green-200"}  gap-6 p-8 flex  text-white`}>
+          <div key={index} className={`bg-gradient-to-r ${index % 2 === 0 ? " bg-[#73036b]" : "bg-[#041c8b]"}  gap-6 p-8 flex  text-white`}>
             {/* <div className="flex justify-center items-center">    */}
-            <div className="px-20 w-96">{member.user_name}</div>
+            <div className=" w-96">{member.user_name}</div>
             <div className=" ">{member.user_id}</div>
           </div>
           // </div>
@@ -136,22 +136,30 @@ const Clubsilver = ({ e, goTosilverPrevPage, silvercurrentPage, goTosilverNextPa
 
   return (
     <div>
-      <div className={`grid md:grid-cols-4  items-center gap-6 p-6`}>
+      <div className={`grid md:grid-cols-4  items-center gap-20 p-6`}>
         {currentMembers.map(member => (
-          <div key={member.user_id} className={` test-silver gap-6 p-8`}>
-            <img
-              className="h-[150px] w-[150px] m-auto object-cover"
-              src={member.user_image}
-              alt=""
-            />
-            <div
+          <div key={member.user_id} className={`w-[100%] test-silver flex-row justify-center items-center`}>
+            <div className="mt-[69px] ml-[-10px] ">
+              <img
+                className="h-[150px] w-[150px] m-auto object-cover  box-border rounded-[300px] "
+                src={member.user_image}
+                alt=""
+              /></div>
+
+            <div className=" mt-8">   <div
               className="text-center"
               dangerouslySetInnerHTML={{ __html: member.user_name }}
             ></div>
-            <div className="text-center font-bold">{member.user_id}</div>
+
+              <div className="text-center">{member.user_id}</div>
+            </div>
+
           </div>
+
         ))}
       </div>
+
+
       <div className="flex justify-center mt-4">
         <button
           onClick={goTosilverPrevPage}
@@ -214,25 +222,28 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
     <div>
       <div
         // key={e.id}
-        className={`grid md:grid-cols-4 bg-slate-600  items-center gap-6   p-6 `}
+        className={`grid md:grid-cols-4  items-center gap-6   p-6 `}
       >
         {currentMembers.map((member) => (
           <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8  md:h-[300px]   goldclubvback  ">
+            <div className="mt-[160px]  lg:mt-[107px] mr-[-116px] md:mt-[160px] sm:mt-[160px]  ">
+              <div className="">
+                <img
+                  className="h-[140px] w-[140px] m-auto object-cover flex justify-center  mt-16"
+                  src={member.user_image}
+                  alt=""
+                />
+              </div>  </div>
+            <div className="">
+              <div
+                className="text-center"
+                dangerouslySetInnerHTML={{ __html: member.user_name }}
+              ></div>
 
-            <div>
-              <img
-                className="h-[150px] w-[150px] m-auto object-cover flex justify-center"
-                src={member.user_image}
-                alt=""
-              />
-            </div>  <div
-              className="text-center"
-              dangerouslySetInnerHTML={{ __html: member.user_name }}
-            ></div>
-
-            <div className="text-center">{member.user_id}</div>
-
+              <div className="text-center">{member.user_id}</div>
+            </div>
           </div>
+
           //           <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
           //   <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 ">
           //     <img className="w-[100%] h-auto object-cover"

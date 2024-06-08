@@ -12,7 +12,11 @@ import Image from "./assets/WhatsApp Image 2024-06-06 at 4.49.10 PM.jpeg"
 
 import Image21 from "./assets/coin.png"
 
-import Shape from "./assets/shape.png"
+import { motion } from 'framer-motion'
+
+import Imageshape from "./assets/Untitled design (24).png"
+
+// import Shape from "./assets/shape.png"
 import anime1 from "./assets/Anime/anime1.jpg"
 import anime2 from "./assets/Anime/anime2.png"
 import anime3 from "./assets/Anime/anime3.png"
@@ -59,41 +63,50 @@ const App = () => {
                     {/* <p className="legend">Legend 3</p> */}
                 {/* </div>
             </Carousel> */}
-            <div>
-            <img src={Image3}  className=' w-[100%]' alt=''/>
-            </div>
+        <motion.div
+      initial={{ width: "120%" }}
+      animate={{ width: "100%", transition: { delay: 0.5, duration: 1.2 } }}>
+      <img src={Image3} style={{
+        width: "100%",
+        height: "100%",
+
+        transition: " width 2s",
+      }} className='ease-in-out duration-300  ' alt='' />
+    </motion.div>
 
 
 
 
 
-{/* shape image */}
+    {/* shape image */}
 
-{/* <div className=' flex'>
+    {/* <div className=' flex'>
 <div className=" pt-[50px]  pb-[50px]" > 
             <img className="flex  z-10 absolute bg-white mix-blend-screen w-[800px] h-[700px]" src={Shape} alt=""/>
             <img className="relativ w-[800px]  h-[700px]" src={Image} alt=""/>
            {/* <img className="relativ w-[1000px]" src={Image21} alt=""/>  */}
-            {/* </div> 
- </div> */} 
+    {/* </div> 
+ </div> */}
 
 
 
 
 
- <div className=" container flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
+    <div className=" container flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
 
 
-  
-{/* righrimages */}
 
-<div className=" box-border relative    lg: w-auto h-auto flex float-left pt-[10px] pb-[10px]   md:flex-row  pt-[10px] pb-[10px] box-border ml-0  sm:pt-[10px] pb-[10px] ml-0">
-<div className=" pt-[50px]  pb-[50px]" > 
-            <img className="flex  z-10 absolute bg-white mix-blend-screen w-[600px] h-[500px]" src={Shape} alt=""/>
-            <img className="relativ w-[600px]  h-[500px]" src={Image} alt=""/>
-           {/* <img className="relativ w-[1000px]" src={Image21} alt=""/>  */}
-            </div> 
-</div>
+      {/* righrimages */}
+
+      <div className=" box-border relative    lg: w-auto h-auto flex float-left pt-[10px] pb-[10px]   md:flex-row  pt-[10px] pb-[10px] box-border ml-0  sm:pt-[10px] pb-[10px] ml-0">
+        <div className=" pt-[50px]  pb-[50px]" >
+                  <img   className="flex  z-10  bg-white w-[600px] h-[500px]" src={Imageshape} alt="" />
+
+          {/* <img className="flex  z-10 absolute bg-white mix-blend-screen w-[600px] h-[500px]" src={Shape} alt="" /> */}
+          {/* <img className="relativ w-[600px]  h-[500px]" src={Image} alt="" /> */}
+          {/* <img className="relativ w-[1000px]" src={Image21} alt=""/>  */}
+        </div>
+      </div>
 
 {/* leftcontent */}
 <div className=" pl-[50px] max-w-screen-sm sm:pl-0 md: pl-0  lg:pl-[0px]">
@@ -210,7 +223,7 @@ Give them a chance.
 
 
 
-<div className=" container flex-col  md:flex  lg:flex-row  flex justify-between  items-center sm:flex-col justify-center items-center ">
+<div className=" container flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col justify-center items-center ">
 
 
   

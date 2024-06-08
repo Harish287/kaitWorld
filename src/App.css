@@ -49,19 +49,24 @@ header {
 }
 
 .test-silver {
-  background-image: url("../src/assets/WhatsApp Image 2024-06-07 at 12.05.35 PM.jpeg");
+  background-image: url("../src/assets/silverenew.png");
   background-repeat: no-repeat;
   object-fit: cover;
   height: 250px;
   width: 300px;
+  background-size: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .goldclubvback {
-  background-image: url("../src/assets/2.png");
+  background-image: url("../src/assets/Goldclub.png");
   background-repeat: no-repeat;
   object-fit: cover;
   height: 250px;
   width: 300px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .desktop-nav .menu-items {
@@ -242,3 +247,5 @@ header {
     display: block;
   }
 }
+
+
