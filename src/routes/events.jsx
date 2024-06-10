@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import Image1 from "../assets/pic4.jpg"
+import Eventimg from "../assets/event.png"
 
+import Imageevents from "../assets/Untitled design (25).png"
 
 
 const Events = () => {
+
+
+  
   const [countdown, setCountdown] = useState('');
 
   useEffect(() => {
@@ -39,19 +43,20 @@ const Events = () => {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"></link>
 
-
+<div><img src={Eventimg} /></div>
 
     <div className="events">
       <div className="home flex justify-center items-center" >
-        <div className=" absolute ">
-        <h6 className=' text-center text-cyan-50 font-bold text-5xl font-[Roboto, sans-serif]' >Time To Rethink</h6>
-          <h5 className=' text-center text-cyan-50 '>Unleashed Potential!</h5>
-          <p className=' text-center text-cyan-50 text-lg font-medium '>
+        {/* <div className=" absolute " */}
+<div>
+        <h6 className=' text-center text-black font-bold text-5xl font-[Roboto, sans-serif]' >Time To Rethink</h6>
+          <h5 className=' text-center text-black '>Unleashed Potential!</h5>
+          <p className=' text-center text-black text-lg font-medium '>
             Welcome to Easy Event Solutions! Our website is your go-to destination for effortless event planning and unforgettable experiences. 
             At Easy Event Solutions, we understand that organizing an event can be overwhelming and time-consuming. That's why we're here to simplify the process and make it as smooth as possible. 
             Whether you're hosting a corporate conference, a gala, a wedding, or any other special occasion, we've got you covered.
           </p> </div>
-          <img className='w-[100%] h-[400px] object-cover' src='https://www.jesvenues.com/images/services/corporate-photography/corporate-event-photography-in-hyderabad-1.jpg' alt='' />
+          {/* <img className='w-[100%] h-[400px] object-cover' src='https://www.jesvenues.com/images/services/corporate-photography/corporate-event-photography-in-hyderabad-1.jpg' alt='' /> */}
          
        
       </div>
@@ -92,6 +97,75 @@ const Events = () => {
       </div>
     </div> */}
     </div>
+
+
+    <div>
+
+<div>
+  <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Events</h2>
+</div>
+<div className='grid center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2'>
+
+  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
+    <a href="#">
+      <img class="rounded-t-lg w-[439px] h-[400px]" src={Imageevents} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
+
+    </a>
+    <div class="">
+      <a href="#">
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Introducing The Newest Addition To Trichy Network With The Opening Of A Branch Office In Your Area!</h5>
+      </a>
+      {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
+      {/* <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        View more
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </a> */}
+    </div>
+  </div>
+
+
+  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
+    <a href="#">
+      <img class="rounded-t-lg w-[439px] h-[400px] " src={Imageevents} alt="" />
+    </a>
+    <div class="">
+      <a href="#">
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Blockchain Awareness Meeting, Fueling Knowledge And Inspiring Adoption Of Blockchain.</h5>
+      </a>
+      {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
+      {/* <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        View more
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </a> */}
+    </div>
+  </div>
+
+
+  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
+    <a href="#">
+      <img class="rounded-t-lg w-[439px] h-[400px]" src={Imageevents} alt="" />
+    </a>
+    <div class="">
+      <a href="#">
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Solingur Crypto Exchange Awareness Meeting, Spreading Knowledge In Cryptocurrency!</h5>
+      </a>
+      {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
+      {/* <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        View more
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </a> */}
+    </div>
+
+  </div>
+
+</div>
+</div>
     </>
   );
 };
