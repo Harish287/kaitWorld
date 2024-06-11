@@ -38,6 +38,7 @@ const ClubComponent = ({ e }) => {
 
 const Clubbronze = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPage }) => {
   // const [currentPage, setCurrentPage] = useState(1);
+  // sdfasd
   const [itemsPerPage] = useState(52); // Number of items to display per page
 
   // // Calculate the index of the first and last item to display on the current page
