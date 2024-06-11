@@ -29,7 +29,7 @@ import Image11 from "./assets/__next_static_media_1.368f2f55.jpg"
 import Image12 from "./assets/__next_static_media_2.a97ffdb7.jpg"
 
 
-import Imagegif from "./assets/trophy.gif"
+import Imagegif from "./assets/trophy.png"
 
 // import Video1 from "./assets/video-1 (1).jpg"
 // import Video2 from "./assets/video-4 (1).jpg"
