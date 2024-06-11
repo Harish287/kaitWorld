@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Banner from "../assets/club.jpeg";
+import Banner from "../assets/KAIT King.png";
 import {
   // ClubComponent,
   Clubbronze,
@@ -46,6 +46,9 @@ import axios from "axios";
   }, []);
 
 
+
+
+
   const [silvercurrentPage, setsilverCurrentPage] = useState(1);
   const silverpaginate = pageNumber => setsilverCurrentPage(pageNumber);
 
@@ -62,6 +65,9 @@ import axios from "axios";
         setsilverCurrentPage(silvercurrentPage + 1);
       // }
     };
+
+
+
 
 
 
@@ -83,6 +89,9 @@ import axios from "axios";
       // }
     };
   
+
+
+    
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(50); // Number of items to display per page
 

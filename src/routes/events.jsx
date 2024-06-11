@@ -45,6 +45,11 @@ const Events = () => {
 
 <div><img src={Eventimg} /></div>
 
+
+<div>
+  <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Events</h2>
+</div>
+
     <div className="events">
       
 
@@ -52,11 +57,11 @@ const Events = () => {
       <div className=" w-[100%]">
         <div className="flex justify-content-center">
           <div className="col-sm-9">
-            <h6 className=' text-center font-bold text-[30px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text'>Next Event Starts In</h6>
+            {/* <h6 className=' text-center font-bold text-[30px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text'>Next Event Starts In</h6>
             <p className='font-roboto font-normal text-base leading-6 text-gray-700'>
               Get ready for the upcoming conference as it is just around the corner! The countdown has begun, and excitement is in the air. 
               Mark your calendars and prepare to be part of an unforgettable event. Stay tuned for updates, speaker announcements, and registration details. The Next Conference Starts In:
-            </p>
+            </p> */}
             <h6 className='text-center text-7xl   text-[56px] leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{countdown}</h6>
           </div>
         </div>
@@ -89,14 +94,12 @@ const Events = () => {
 
     <div>
 
-<div>
-  <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Events</h2>
-</div>
+
 <div className='grid center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2'>
 
   <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
     <a href="#">
-      <img class="rounded-t-lg w-[439px] h-[400px]" src={Imageevents} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
+      <img class="rounded-t-lg w-[490px] h-[400px]" src={Imageevents} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
 
     </a>
     <div class="">
@@ -116,7 +119,7 @@ const Events = () => {
 
   <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
     <a href="#">
-      <img class="rounded-t-lg w-[439px] h-[400px] " src={Imageevents} alt="" />
+      <img class="rounded-t-lg w-[490px] h-[400px] " src={Imageevents} alt="" />
     </a>
     <div class="">
       <a href="#">
@@ -135,7 +138,7 @@ const Events = () => {
 
   <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
     <a href="#">
-      <img class="rounded-t-lg w-[439px] h-[400px]" src={Imageevents} alt="" />
+      <img class="rounded-t-lg w-[490px] h-[400px]" src={Imageevents} alt="" />
     </a>
     <div class="">
       <a href="#">

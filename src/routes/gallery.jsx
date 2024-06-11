@@ -7,7 +7,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 import Image1 from "../assets/avatar1.jpg"
 import Image2 from "../assets/avatar2.jpg"
 import Image3 from "../assets/avatar3.jpg"
-import Image4 from "../assets/blog-detaills-1.jpg"
+// import Image4 from "../assets/blog-detaills-1.jpg"
 
 import Girl from "../assets/girl.jpeg"
 

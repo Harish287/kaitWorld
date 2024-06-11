@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "../assets/WhatsApp Image 2024-06-07 at 12.05.35 PM.jpeg"
 // import Page from "./clubsilver";
 // import PaginationNav from "./pagination";
 // import Image1 from "../assets/imgData.jpeg";

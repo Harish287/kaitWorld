@@ -1,5 +1,5 @@
 import React from 'react'
-import Achiver from "../assets/WhatsApp Image 2024-06-03 at 10.26.23 PM.jpeg"
+import Achiver from "../assets/Achivers.png"
 
 const achivers = () => {
   return (

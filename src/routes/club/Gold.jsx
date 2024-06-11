@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import Banner from "../../assets/club.jpeg";
+import Banner from "../../assets/KAIT King.png";
 import {
   // ClubComponent,
   Clubbronze,

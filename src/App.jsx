@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import Image1 from "./assets/The chance is yours. (10).png"
-import Image2 from "./assets/The chance is yours. (8).png"
-import Image3 from "./assets/The chance is yours. (9).png"
+import Image1 from "./assets/bg2.png"
+import Image2 from "./assets/bg1.png"
+
+import Image3 from "./assets/explore-trip.png"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -44,44 +45,87 @@ import Tailand from "./assets/Kerala.png"
 import Trophy from "./assets/trophy (1).png"
 
 import Slider from "react-slick";
-var settings = {
-  // dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  arrows: false,
-};
+
+
+
+
 const App = () => {
+
+  var settings = {
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+  };
+
+  var setting = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+
+
+
+  };
+
+
+
   return <>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"></link>
+
+    <Slider {...setting}>
+
+
+      <div>
+        <img className='w-[100%]  object-cover object-center' src={Image1} alt='' />
+        {/* <button className=' absolute  border-2 rounded-lg  mt-[-100px] ml-[150px] py-[7px] px-[10px] border-indigo-600 bg-neutral-100   '>Enquire</button> */}
+      </div>
+      <div>
+        <img className='w-[100%]  object-cover object-center' src={Image2} alt='' />
+        {/* <button className=' absolute  border-2 rounded-lg  mt-[-100px] ml-[150px] py-[7px] px-[10px] border-indigo-600 bg-neutral-100   '>Enquire</button> */}
+      </div>
+      <div>
+        <img className='w-[100%] object-contain ' src={Image3} alt='' />
+        {/* <button className=' absolute  border-2 rounded-lg  mt-[-100px] ml-[150px] py-[7px] px-[10px] border-indigo-600 bg-neutral-100   '>Enquire</button> */}
+      </div>
+
+    </Slider>
+
+
+    {/* 
     <Carousel>
 
       <div>
         <img src={Image3} alt='' />
-        {/* <p className="legend">Legend 3</p> */}
+       
       </div>
 
 
 
       <div>
         <img src={Image2} alt='' />
-        {/* <p className="legend">Legend 2</p> */}
+   
       </div>
       <div>
 
         <img src={Image1} alt='' />
-        {/* <p className="legend">Legend 1</p> */}
+      
       </div>
 
 
-    </Carousel>
+    </Carousel> */}
 
 
     {/* <motion.div
@@ -113,7 +157,7 @@ const App = () => {
 
 
 
-    <div className=" container flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
+    <div className="  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
 
 
 
@@ -168,7 +212,7 @@ const App = () => {
 
 
 
-    <div className="container flex-col  md:flex  lg:flex-row  flex justify-around bg-[#c8cbfe] box-border lg:rounded-[125px]  md:rounded-[0px] items-center sm:flex-col  ">
+    <div className=" flex-col  md:flex  lg:flex-row  flex justify-around bg-[#c8cbfe] box-border lg:rounded-[125px]  md:rounded-[0px] items-center sm:flex-col  ">
 
       {/* leftcontent */}
       <div className=" pl-[50px] max-w-screen-sm">
@@ -256,7 +300,7 @@ const App = () => {
 
 
 
-    <div className=" container flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col justify-center items-center ">
+    <div className="  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col justify-center items-center ">
 
       {/* righrimages */}
 
@@ -264,7 +308,7 @@ const App = () => {
         {/* <img className=" h-[520px] w-[500px] box-border relative  object-cover border-white border-[15px]" src={Image11} alt="" /> */}
         <img className=" h-[520px] w-[500px] box-border relative  object-cover border-white border-[15px]" src={Goa} alt='' />
         <div className='h-[200px] w-[200px] bg-[#ec8e1a]  rounded-[500px] absolute left-28 mt-[-100px] z-[-111]'></div>
-        <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-202px] mt-[-130px] " src={Tailand} alt="" />
+        <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-202px] mt-[-130px]  lg:visible  md:hidden sm:hidden sm:invisible lg:block " src={Tailand} alt="" />
 
         {/* <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-130px] mt-[-110px] " src={Image12} alt="" /> */}
         <div className='h-[200px] w-[200px] bg-[#009c81] rounded-[500px] absolute left-[-7rem] mt-[182px] z-[-111]'></div>
@@ -315,7 +359,7 @@ const App = () => {
 
         <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
           <a href="#">
-            <img class="rounded-t-lg w-[439px] h-[400px]" src={Imageevents} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
+            <img class="rounded-t-lg w-[490px] h-[400px]" src={Imageevents} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
 
           </a>
           <div class="">
@@ -335,7 +379,7 @@ const App = () => {
 
         <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
           <a href="#">
-            <img class="rounded-t-lg w-[439px] h-[400px] " src={Imageevents} alt="" />
+            <img class="rounded-t-lg w-[490px] h-[400px] " src={Imageevents} alt="" />
           </a>
           <div class="">
             <a href="#">
@@ -354,7 +398,7 @@ const App = () => {
 
         <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
           <a href="#">
-            <img class="rounded-t-lg w-[439px] h-[400px]" src={Imageevents} alt="" />
+            <img class="rounded-t-lg w-[490px] h-[400px]" src={Imageevents} alt="" />
           </a>
           <div class="">
             <a href="#">
@@ -372,7 +416,7 @@ const App = () => {
         </div>
 
       </div>
-      <div className=' flex justify-center'>  <a href="/events" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="/events" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         View more
         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
