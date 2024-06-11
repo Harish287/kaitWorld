@@ -11,7 +11,7 @@ const Navbar = () => {
       <ul className="menus">
         {menuItemsData.map((menu, index) => {
           return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
-        })}<button className="bg-black hover:bg-blue-700 text-white font-bold py-1 px-4 rounded  relative ml-10 w-[100%]"><a href="https://www.kaitworld.com/public/login">Login</a></button>
+        })}<button style={{}} className=" bg-[#ed91ff] text-black font-bold py-1 px-4 rounded  relative ml-10 w-[100%]"><a href="https://www.kaitworld.com/public/login">Login</a></button>
       </ul>
     </nav>
     </div>

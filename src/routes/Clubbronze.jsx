@@ -65,11 +65,11 @@ const Clubbronze = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPage
 
   return (
     <div>
-      <div className={`grid md:grid-cols-4  items-center gap-6   p-6`}>
+      <div className={`grid  md:grid-cols-4  items-center gap-6   p-6 `}>
         {currentMembers.map((member, index) => (
-          <div key={index} className={`bg-gradient-to-r ${index % 2 === 0 ? " bg-[#73036b]" : "bg-[#041c8b]"}  gap-6 p-8 flex box-border rounded-[90px]  text-white`}>
+          <div key={index} className={`bg-gradient-to-r ${index % 2 === 0 ? " bg-[#ba1895]" : "bg-[#61c2f9]"}  gap-6 p-8 flex box-border rounded-[90px]  text-white`}>
             {/* <div className="flex justify-center items-center">    */}
-            <div className=" w-96">{member.user_name}</div>
+            <div className=" lg:w-96 md:w-[10px]">{member.user_name}</div>
             <div className=" ">{member.user_id}</div>
           </div>
           // </div>
@@ -136,7 +136,7 @@ const Clubsilver = ({ e, goTosilverPrevPage, silvercurrentPage, goTosilverNextPa
 
   return (
     <div>
-      <div className={`grid md:grid-cols-4  items-center gap-20 p-6`}>
+      <div className={`grid md:grid-cols-4  items-center gap-20 p-6 md:flex-col md: justify-center`}>
         {currentMembers.map(member => (
           <div key={member.user_id} className={`w-[100%] test-silver flex-row justify-center items-center`}>
             <div className="mt-[69px] ml-[-10px] ">

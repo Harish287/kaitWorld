@@ -62,21 +62,28 @@ const App = () => {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"></link>
     <Carousel>
-    <div>
-    <img src={Image1}  alt=''/>
-    {/* <p className="legend">Legend 1</p> */}
-    </div>
-    <div>
-    <img src={Image2}alt='' />
-    {/* <p className="legend">Legend 2</p> */}
-    </div>
-    <div>
-    <img src={Image3}alt='' />
-    {/* <p className="legend">Legend 3</p> */}
-    </div> 
-      </Carousel> 
-    
-    
+
+      <div>
+        <img src={Image3} alt='' />
+        {/* <p className="legend">Legend 3</p> */}
+      </div>
+
+
+
+      <div>
+        <img src={Image2} alt='' />
+        {/* <p className="legend">Legend 2</p> */}
+      </div>
+      <div>
+
+        <img src={Image1} alt='' />
+        {/* <p className="legend">Legend 1</p> */}
+      </div>
+
+
+    </Carousel>
+
+
     {/* <motion.div
       initial={{ width: "120%" }}
       animate={{ width: "100%", transition: { delay: 0.5, duration: 1.2 } }}>
@@ -124,8 +131,8 @@ const App = () => {
 
       {/* leftcontent */}
       <div className=" pl-[50px] max-w-screen-sm sm:pl-0 md: pl-0  lg:pl-[0px]">
-        <p className=" font-bold text-[30px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
-        Join KAIT Today
+        <p className=" font-bold  text-[30px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
+          Join KAIT Today
         </p>
         <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-[56px] leading-[80px] font-extrabold relative">Are you ready to take the first step towards greatness?</h3>
         <p className="font-roboto font-normal text-base leading-9 text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Join KAIT today and start your journey towards pushing your limits and claiming victory. Together, we will unlock your true potential and pave the way for your success.</p>
@@ -161,11 +168,11 @@ const App = () => {
 
 
 
-    <div className="container flex-col  md:flex  lg:flex-row  flex justify-around bg-[#c8cbfe] box-border rounded-[125px] items-center sm:flex-col  ">
+    <div className="container flex-col  md:flex  lg:flex-row  flex justify-around bg-[#c8cbfe] box-border lg:rounded-[125px]  md:rounded-[0px] items-center sm:flex-col  ">
 
       {/* leftcontent */}
       <div className=" pl-[50px] max-w-screen-sm">
-        <p className=" font-bold text-[30px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-blue-800 to-pink-500 text-transparent bg-clip-text">
+        <p className=" font-bold text-[30px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-blue-800 to-pink-500 text-transparent bg-clip-text lg:mt-0  md:mt-[20px]">
           Success isn't a destination, it's a journey!        </p>
         <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-[56px] leading-[80px] font-extrabold relative">Is KAIT the next step in your journey?</h3>
         <p className="font-roboto font-normal text-base leading-9 text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">At Achieving the Trophy, we believe that every journey to success starts with a single step. Whether you're aiming to excel in your career with KAIT, enhance your personal life, or achieve a lifelong dream, we are here to guide and support you every step of the way.</p>
@@ -203,7 +210,7 @@ const App = () => {
 
 
         <img className='h-[540px] w-[540px] box-border relative object-cover rounded-[500px] border-[#c8cbfe] border-[15px]' src={Imagegif} alt="" />
-        <img className=" h-[350px] w-[350px] box-border absolute   rounded-[500px] border-[#c8cbfe] border-[15px] ml-[-150px] mt-[-50px] " src={Trophy} alt="" />
+        <img className=" h-[350px] w-[350px] box-border absolute   rounded-[500px] border-[#c8cbfe] border-[15px] ml-[-150px] mt-[-50px] md: " src={Trophy} alt="" />
 
 
 
@@ -266,7 +273,7 @@ const App = () => {
       {/* leftcontent */}
       <div className=" pl-[50px] max-w-screen-sm sm:pl-0 md: pl-0  lg:pl-[0px]">
         <p className=" font-bold text-[40px] leading-[55px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
-         Ready to fly
+          Ready to fly
         </p>
         <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-[49px] leading-[60px] font-extrabold relative">Join our vibrant community and unlock travel rewards!</h3>
         <p className="font-roboto font-normal text-base leading-9 text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Joining our vibrant KAIT community opens the door to exciting travel rewards! Achieve your targets and unlock journeys to captivating destinations like Goa, Kerala, Thailand, and Malaysia, with the opportunity for even more foreign trips. Explore, experience, and indulge in unforgettable adventures as you reach your goals with KAIT. </p>
@@ -284,14 +291,14 @@ const App = () => {
               <h2 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-blue-900 font-bold text-4xl leading-10 mb-4">Join now and let your journey begin!</h2>
 
               {/* <p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p> */}
-              
+
 
               <button className='mt-[20px] box-border font-bold text-lg px-2 py-1 border-4 border-black  hover:shadow-2xl hover:border-[#a455e2]'><a href='/contest'>view more</a></button>
-              </div>
+            </div>
 
 
           </div>
-         
+
         </div>
       </div>
     </div>
@@ -361,19 +368,19 @@ const App = () => {
               </svg>
             </a> */}
           </div>
-      
+
         </div>
-     
+
       </div>
       <div className=' flex justify-center'>  <a href="/events" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              View more
-              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </a>
-            </div> 
+        View more
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </a>
+      </div>
     </div>
-   
+
 
 
 

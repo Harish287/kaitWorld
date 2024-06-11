@@ -4,6 +4,19 @@ export const menuItemsData = [
     url: "/",
   },
   {
+    title: "Contest",
+    url: "/contest",
+  },
+  // {
+  //   title: "About",
+  //   url: "/about",
+  // },
+  {
+    title: "Events",
+    url: "/events",
+  },
+
+  {
     title: "Club",
     url: "/Club",
     submenu: [
@@ -28,27 +41,17 @@ export const menuItemsData = [
     ],
   },
   {
-    title: "Gallery",
-    url: "/gallery",
-  },
-  {
-    title: "Contest",
-    url: "/contest",
-  },
-  {
-    title: "About",
-    url: "/about",
-  },
-  {
-    title: "Events",
-    url: "/events",
-  },
-  {
     title: "Achivers",
     url: "/achivers",
   },
   {
-    title: "Contact",
-    url: "/contact",
+    title: "Gallery",
+    url: "/gallery",
   },
+ 
+
+  // {
+  //   title: "Contact",
+  //   url: "/contact",
+  // },
 ];

@@ -152,8 +152,10 @@ header {
 @media screen and (max-width: 960px) {
   .nav-area {
     justify-content: space-between;
+    padding: 0;
   }
 
+ 
   .desktop-nav {
     display: none;
     text-align: right;

@@ -28,7 +28,7 @@ const Events = () => {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      setCountdown(`${days}D - ${hours}H - ${minutes}M - ${seconds}S`);
+      setCountdown(`${days}Days - ${hours}Hours - ${minutes}Minutes - ${seconds}Seconds`);
     };
 
     const interval = setInterval(updateCountdown, 1000);
@@ -46,20 +46,8 @@ const Events = () => {
 <div><img src={Eventimg} /></div>
 
     <div className="events">
-      <div className="home flex justify-center items-center" >
-        {/* <div className=" absolute " */}
-<div>
-        <h6 className=' text-center text-black font-bold text-5xl font-[Roboto, sans-serif]' >Time To Rethink</h6>
-          <h5 className=' text-center text-black '>Unleashed Potential!</h5>
-          <p className=' text-center text-black text-lg font-medium '>
-            Welcome to Easy Event Solutions! Our website is your go-to destination for effortless event planning and unforgettable experiences. 
-            At Easy Event Solutions, we understand that organizing an event can be overwhelming and time-consuming. That's why we're here to simplify the process and make it as smooth as possible. 
-            Whether you're hosting a corporate conference, a gala, a wedding, or any other special occasion, we've got you covered.
-          </p> </div>
-          {/* <img className='w-[100%] h-[400px] object-cover' src='https://www.jesvenues.com/images/services/corporate-photography/corporate-event-photography-in-hyderabad-1.jpg' alt='' /> */}
-         
-       
-      </div>
+      
+
 
       <div className=" w-[100%]">
         <div className="flex justify-content-center">

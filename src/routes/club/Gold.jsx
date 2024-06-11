@@ -146,9 +146,9 @@ const Gold = () => {
   return (
     <div>
       <img className="w-[100%]" src={Banner} alt="" />
-      <h1 className="flex justify-center text-xl font-bold mt-9 mb-9" ref={goldClubRef}>Club</h1>
+      <h1 className="flex justify-center text-xl font-bold mt-9 mb-9" ref={goldClubRef}>Gold Club</h1>
       <div className=" md:flex">
-        {" "}
+      
         <div className="md:flex px-0 md:px-28 gap-6 justify-center text-center">
           {data.data.map((link, index) => (
             <>
@@ -171,7 +171,7 @@ const Gold = () => {
             </>
           ))}
         </div>
-        <form class="max-w-md mx-auto">
+        <form class="max-w-md ml-auto mr-[40px]">
           <label
             for="default-search"
             class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"

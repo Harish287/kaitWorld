@@ -9,6 +9,7 @@ import Image2 from "../assets/avatar2.jpg"
 import Image3 from "../assets/avatar3.jpg"
 import Image4 from "../assets/blog-detaills-1.jpg"
 
+import Girl from "../assets/girl.jpeg"
 
 import Galleryimg from "../assets/gallery.png"
 
@@ -41,7 +42,7 @@ const Gallery = () => {
             <div key={index} className="galley-hover rounded-lg overflow-hidden max-w-sm mx-auto h-auto transform hover: transition duration-500 hover:scale-125 hover:z-50 cursor-pointer ">
               {item.type === 'image' && (
                 <Zoom>
-                  <img src={item.src} alt={item.alt} className="  object-cover center w-[300px] h-[300px]" />
+                  <img src={Girl} alt={item.alt} className="  object-cover center w-[300px] h-[300px]" />
                 </Zoom>
               )}
               {item.type === 'video' && (

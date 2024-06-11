@@ -137,7 +137,7 @@ import axios from "axios";
     <div>
       <img className="w-[100%]" src={Banner} alt="" />
       <h1 className="flex justify-center text-xl font-bold mt-9 mb-9">Club</h1>
-      <div className=" md:flex">
+      <div className=" md:flex md:justify-center">
         {" "}
         <div className="md:flex px-0 md:px-28 gap-6 justify-center text-center">
           {data.data.map((link, index) => (
@@ -152,8 +152,8 @@ import axios from "axios";
                 >
                   {link.club}
                   <div
-                    className={`h-1 w-28 mx-auto bg-black hover:bg-blue-500 ${
-                      tab === link.club ? " bg-blue-500" : " bg-black"
+                    className={`h-1 w-28 mx-auto bg-white hover:bg-white ${
+                      tab === link.club ? " bg-white" : " bg-white"
                     }`}
                   ></div>
                 </div>
@@ -161,15 +161,15 @@ import axios from "axios";
             </>
           ))}
         </div>
-        <form class="max-w-md mx-auto">
+        <form class="max-w-md ml-auto mr-[40px]">
           <label
             for="default-search"
             class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
           >
             Search
           </label>
-          <div class="relative">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+          <div class="relative flex">
+            <div class=" inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <svg
                 class="w-4 h-4 text-gray-500 dark:text-gray-400"
                 aria-hidden="true"

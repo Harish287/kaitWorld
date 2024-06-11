@@ -12,10 +12,10 @@ const Header = () => {
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"></link>
     <header>
      
-       <div className="h-[50px] bg-slate-700"> </div>
+       <div className="h-[50px] bg-[#394782]"> </div>
       <div className="nav-area relative">
         <Link to="/" className="logo flex items-center relative container">
-         <img className="w-[60px] mt-[14px]"  src={Kiat} alt /> <p style={{fontFamily:"Nunito,sans-serif"}}  className=" text-[30px] font-extrabold ml-[-10px]">Kait</p>
+         <img className="w-[60px] mt-[14px]"  src={Kiat} alt /> <p style={{fontFamily:"Nunito,sans-serif"}}  className=" text-[15px] lg:text-[30px] font-extrabold lg:ml-[-10px] md:ml-[0px] md:text-[15px] sm:ml-[0px] sm:text-[15px]">Kait World</p>
         </Link>
 
         {/* for large screens */}

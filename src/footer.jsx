@@ -5,22 +5,23 @@ import insta from "./assets/insta.png";
 import linkedin from "./assets/im.png";
 import youtube from "./assets/48968.png";
 
-
+import { IoMdMailOpen } from "react-icons/io";
 
 const footer = () => {
   return (
     <div > 
 
-<div className='flex bg-[#95469f] justify-between  '>
+<div className='flex bg-[#394782] justify-between h-[56px] '>
 
-          <div className="">
-          <h4 className=' font-extrabold'>Contact Us</h4>
+          <div className=" flex items-center">
+          {/* <h4 className=' font-extrabold'>Email</h4> */}
           <a href="/">
-            <p>Email</p>
+        <div className=' flex text-xl text-white'> <p><IoMdMailOpen /></p>
+            <p>support@kaitworld.com</p></div> 
           </a>
-          <a href="/aboutus">
+          {/* <a href="/aboutus">
             <p>phone Number</p>
-          </a>
+          </a> */}
         
         </div>
         
@@ -32,30 +33,30 @@ const footer = () => {
       
 
 
-        <div className="flex mt-[85px]">
+        <div className="flex ">
             <p>
               <a href="https://www.facebook.com/profile.php?id=61558117415540">
-                <img className='w-[50px] h-[50px] box-border rounded-[100px]  border-[grey] border-[4px]' src={fb} alt="" />
+                <img className='w-[50px] h-[50px] box-border rounded-[100px]  border-[white]  bg-white border-[4px]' src={fb} alt="" />
               </a>
             </p>
             <p>
               <a href="https://twitter.com/Unikaabeauty">
-                <img className='w-[50px] h-[50px] box-border rounded-[100px]  border-[grey] border-[4px]' src={twitter} alt="" />
+                <img className='w-[50px] h-[50px] box-border rounded-[100px]  border-[white]  bg-white border-[4px]' src={twitter} alt="" />
               </a>
             </p>
             <p>
               <a href="https://www.instagram.com/unikaabeauty">
-                <img className='w-[50px]  h-[50px] box-border rounded-[100px]  border-[grey] border-[4px]' src={insta} alt="" />
+                <img className='w-[50px]  h-[50px] box-border rounded-[100px]  border-[white]  bg-white border-[4px]' src={insta} alt="" />
               </a>
             </p>
             <p>
               <a href="https://www.linkedin.com/in/unikaa-beauty-311122304">
-                <img className='w-[50px]  h-[50px] box-border rounded-[100px]  border-[grey] border-[4px]' src={linkedin} alt="" />
+                <img className='w-[50px]  h-[50px] box-border rounded-[100px]  border-[white]  bg-white border-[4px]' src={linkedin} alt="" />
               </a>
             </p>
             <p className='w-50px'>
               <a href="https://youtu.be/2PIagAiL_a8?si=PEUrGw_ZdJH5Fvq1">
-                <img className='w-[50px]  h-[50px] box-border rounded-[100px] border-[grey] border-[4px]' src={youtube} alt="" />
+                <img className='w-[50px]  h-[50px] box-border rounded-[100px] border-[white] bg-white  border-[4px]' src={youtube} alt="" />
               </a>
             </p>
           </div>
