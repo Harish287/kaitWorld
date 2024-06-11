@@ -28,7 +28,7 @@ import Imagesvg from "./assets/Anime/stick-man.936d1e5d.svg"
 import Image11 from "./assets/__next_static_media_1.368f2f55.jpg"
 import Image12 from "./assets/__next_static_media_2.a97ffdb7.jpg"
 
-
+// dadaasd
 import Imagegif from "./assets/trophy.png"
 // ssdfsdsadfasasdf
 // import Video1 from "./assets/video-1 (1).jpg"
