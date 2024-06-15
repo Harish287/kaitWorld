@@ -18,6 +18,10 @@ import Contact from "./routes/contact";
 import Gallery from "./routes/gallery";
 import Contest from "./routes/contest"
 
+import Goldcoin from "./routes/goldcoin"
+import Mobile from "./routes/mobile"
+
+
 const router = createBrowserRouter([
   {
     element: <Root />,
@@ -66,6 +70,14 @@ const router = createBrowserRouter([
       path:"Silver",
       element:<Silver/>
       
+    },
+    {
+      path:"Goldcoin",
+      element:<Goldcoin/>
+    },
+    {
+      path:"Mobile",
+      element:<Mobile/>
     },
     {
       path:"Gold",

@@ -25,7 +25,7 @@ header {
   margin: 0 auto;
   padding: 6px 60px;
   font-size: larger;
-  height: 50px;
+  height: 70px;
   width: 100%;
 
   /* background: rgb(157,73,160); */
@@ -69,6 +69,18 @@ background: linear-gradient(90deg, rgba(157,73,160,1) 0%, rgba(66,81,154,1) 50%)
   border-radius: 10px;
 }
 
+
+.platinumclubvback{
+  /* background-image: url("../src/assets/platinumbck.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
+  height: 500px;
+  width: 800px;
+  box-sizing: border-box;
+  border-radius: 10px; */
+}
+
 .desktop-nav .menu-items {
   position: relative;
   font-size: 19px;
@@ -94,6 +106,25 @@ background: linear-gradient(90deg, rgba(157,73,160,1) 0%, rgba(66,81,154,1) 50%)
   width: 100%;
 }
 
+
+/* .slick-slider {
+  margin:0 -15px;
+} */
+
+/* .slick-prev:before{
+  color: white;
+  box-sizing: border-box;
+  background-color: black;
+  border-radius: 90px;
+} */
+
+/* .slick-prev:after{
+  color: white;
+  box-sizing: border-box;
+  background-color: black;
+  border-radius: 90px;
+} */
+
 .desktop-nav button span {
   margin-left: 3px;
 }
@@ -106,7 +137,7 @@ background: linear-gradient(90deg, rgba(157,73,160,1) 0%, rgba(66,81,154,1) 50%)
 
 .desktop-nav .menu-items a:hover,
 .desktop-nav .menu-items button:hover {
-  background-color: #f2f2f2;
+  background-color:  rgba(157,73,160,1);
 }
 
 .desktop-nav .arrow::after {
@@ -130,7 +161,7 @@ background: linear-gradient(90deg, rgba(157,73,160,1) 0%, rgba(66,81,154,1) 50%)
   min-width: 10rem;
   padding: 0.5rem 0;
   list-style: none;
-  background-color: #fff;
+  background-color:  rgba(66,81,154,1);
   border-radius: 0.5rem;
   display: none;
 }
@@ -249,6 +280,23 @@ background: linear-gradient(90deg, rgba(157,73,160,1) 0%, rgba(66,81,154,1) 50%)
   .mobile-nav .dropdown.show {
     display: block;
   }
+
+
+
+
+
+  /* .slick-slider {
+    margin:0 -15px;
+  } */
+  .slick-slide {
+    padding:10px;
+    /* background-color:red; */
+    text-align:center;
+    margin-right:0px;
+    margin-left:0px;
+  }
+
+
 }
 
 
@@ -266,4 +314,34 @@ background: linear-gradient(90deg, rgba(157,73,160,1) 0%, rgba(66,81,154,1) 50%)
   margin: 0 50px; /* Adjust the margins as needed */
 z-index: 999;
 width: 40px;
+}
+
+
+
+
+
+.slider {
+  margin:0 20px;
+  overflow:"hidden";
+  padding:2rem 0;
+}
+
+.slider img {
+  width: 100%;
+  /* border-radius:10px; */
+ border-top-left-radius: 12px;
+ border-top-right-radius: 12px;
+
+}
+
+.react-multi-carousel-list {
+padding: 0rem 0 2rem 0;
+}
+
+.custom-dot-list-style button{
+border: none;
+background: rgb(255, 68, 68);
+}
+.react-multi-carousel-dot.react-multi-carousel-dot--active button{
+background: rgb(255, 68, 68) !important;
 }

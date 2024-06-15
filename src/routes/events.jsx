@@ -62,7 +62,7 @@ const Events = () => {
               Get ready for the upcoming conference as it is just around the corner! The countdown has begun, and excitement is in the air. 
               Mark your calendars and prepare to be part of an unforgettable event. Stay tuned for updates, speaker announcements, and registration details. The Next Conference Starts In:
             </p> */}
-            <h6 className='text-center text-7xl   text-[56px] leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{countdown}</h6>
+            <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{countdown}</h6>
           </div>
         </div>
       </div>
