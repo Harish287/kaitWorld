@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import Banner from "../assets/KAIT King.png";
 import {
   // ClubComponent,
@@ -9,12 +9,16 @@ import {
   Clubdiamond,
 
 } from "./Clubbronze";
+
+
 import axios from "axios";
 // import "./global.css"
 
 
  const Club = () => {
   const [tab, setTab] = useState("bronze");
+
+  const ClubRef = useRef(null);
 
   const updateTab = (e) => {
     setTab(e);
@@ -28,6 +32,8 @@ import axios from "axios";
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    setTimeout(() => ClubRef.current.scrollIntoView({ behavior: 'smooth' }), 1000);
+
     const fetchData = async () => {
       try {
         const response = await axios.get(
@@ -65,7 +71,6 @@ import axios from "axios";
         setsilverCurrentPage(silvercurrentPage + 1);
       // }
     };
-
 
 
 
@@ -125,16 +130,17 @@ import axios from "axios";
   }
 
  
+
+
   const handleFilter = (e) => {
     const value = (e.target.value || "").toLowerCase();
     
     console.log(value);
     const filteredMembers = data.data.map((link) => {
       const filtered = link.members.filter((member) =>
-        // (member.user_name ||member.user_id||""===value)
-        (member.user_id).toLowerCase().includes(value)
-      
-      );
+        (member.user_id || "").toLowerCase().includes(value) ||
+        (member.user_name || "").toLowerCase().includes(value)
+);
       console.log(filtered);
       setCurrentPage(1);
       return { ...link, members: filtered };
@@ -145,7 +151,7 @@ import axios from "axios";
   return (
     <div>
       <img className="w-[100%]" src={Banner} alt="" />
-      <h1 className="flex justify-center text-xl font-bold mt-9 mb-9">Club</h1>
+      <h1 ref={ClubRef} className="flex justify-center text-xl font-bold mt-9 mb-9">Club</h1>
       <div className=" md:flex md:justify-center">
         {" "}
         <div className="md:flex px-0 md:px-28 gap-6 justify-center text-center">

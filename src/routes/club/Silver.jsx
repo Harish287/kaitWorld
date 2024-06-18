@@ -15,10 +15,6 @@ const Silver = () => {
   const silverClubRef = useRef(null);
 
 
-  // const topData = document.querySelector("#sliverClub").getBoundingClientRect().top;
-  // // const elementData = topData.;
-  // window.scroll({ top: topData })
-  // window.scroll({ top: document.querySelector("#sliverClub").getBoundingClientRect().top })
 
 
 

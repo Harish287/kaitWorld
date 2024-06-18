@@ -3,6 +3,20 @@ import React, { useState } from "react";
 // import PaginationNav from "./pagination";
 // import Image1 from "../assets/imgData.jpeg";
 //C:\Users\User\Desktop\kait\src\assets\imgData.jpeg
+
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+
+
+
+
+
+
+
+
+
+
+
 const ClubComponent = ({ e }) => {
   //https://kaitworld.comv1/api/club/1
   console.log(e.id);
@@ -36,76 +50,43 @@ const ClubComponent = ({ e }) => {
   );
 };
 
+
+
 const Clubbronze = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPage }) => {
-  // const [currentPage, setCurrentPage] = useState(1);
-  // sdfasd
   const [itemsPerPage] = useState(52); // Number of items to display per page
 
-  // // Calculate the index of the first and last item to display on the current page
+  // Calculate the index of the first and last item to display on the current page
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
 
-  // // Change page
-  const paginate = pageNumber => setCurrentPage(pageNumber);
-
-  // // Go to previous page
-  // const goToPrevPage = () => {
-  //   if (currentPage > 1) {
-  //     setCurrentPage(currentPage - 1);
-  //   }
-  // };
-
-  // // Go to next page
-  // const goToNextPage = () => {
-  //   if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
-  //     setCurrentPage(currentPage + 1);
-  //   }
-  // };
+  // Change page
+  const paginate = (event, pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div>
-      <div className={`grid  md:grid-cols-4  items-center gap-6   p-6 `}>
+      <div className="grid md:grid-cols-4 items-center gap-6 p-6">
         {currentMembers.map((member, index) => (
-          <div key={index} className={`bg-gradient-to-r ${index % 2 === 0 ? " bg-[#ba1895]" : "bg-[#61c2f9]"}  gap-6 p-8 flex box-border rounded-[90px]  text-white`}>
-            {/* <div className="flex justify-center items-center">    */}
-            <div className=" lg:w-96 md:w-[10px]">{member.user_name}</div>
-            <div className=" ">{member.user_id}</div>
+          <div key={index} className={`bg-gradient-to-r ${index % 2 === 0 ? "bg-gradient-to-r from-purple-700 via-purple-500 to-blue-700" : "bg-gradient-to-r from-purple-700 via-purple-500 to-blue-700"} gap-6 p-8 flex box-border rounded-[90px] text-white`}>
+            <div className="lg:w-96 md:w-[10px]">{member.user_name}</div>
+            <div>{member.user_id}</div>
           </div>
-          // </div>
         ))}
       </div>
       <div className="flex justify-center mt-4">
-        <button
-          onClick={goToPrevPage}
-          className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
-        {Array.from({ length: Math.ceil(e.members.length / itemsPerPage) }).map((_, index) => (
-          <button
-            key={index}
-            onClick={() => paginate(index + 1)}
-            className={`px-4 py-2 mx-1 border rounded-full ${currentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'
-              }`}
-          >
-            {index + 1}
-          </button>
-        ))}
-        <button
-          onClick={goToNextPage}
-          className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
-          disabled={currentPage === Math.ceil(e.members.length / itemsPerPage)}
-        >
-          Next
-        </button>
+        <Pagination
+          count={Math.ceil(e.members.length / itemsPerPage)}
+          page={currentPage}
+          onChange={paginate}
+          color="primary"
+          size="large"
+        />
       </div>
     </div>
   );
 };
 
-
+export default Clubbronze;
 
 
 

@@ -128,10 +128,10 @@ const Services = () => {
 
       <div>
 
-        <div className='grid center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2'>
+        <div className='grid center w-[90%] m-auto grid-cols-1 gap-5 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2'>
           <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
             <a href="#">
-              <img class="rounded-t-lg w-[490px] h-[400px]" src={Image1} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
+              <img class="rounded-t-lg w-[100%] h-[400px]" src={Image1} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
 
             </a>
             <div className=" p-[10px]">

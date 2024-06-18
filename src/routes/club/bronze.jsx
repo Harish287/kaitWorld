@@ -1,16 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Banner from "../../assets/KAIT King.png";
-import {
-  // ClubComponent,
-  Clubbronze,
-  Clubgold,
-  Clubsilver,
-  Clubplatinum,
-  Clubdiamond,
-
-} from "../Clubbronze";
+import {Clubbronze} from "../Clubbronze";
 import axios from "axios";
-// import "./global.css"
+
 
 
  const Bronze = () => {
@@ -18,12 +10,7 @@ import axios from "axios";
 
   const bronzeClubRef = useRef(null);
   
-  // const [tab, setTab] = useState("bronze");
 
-  // const updateTab = (e) => {
-  //   setTab(e);
-    // console.log(e);
-  // };
 
   const [filterlist, setFilterlist] = useState([]);
 
@@ -91,9 +78,9 @@ import axios from "axios";
     };
   
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(50); // Number of items to display per page
+  const [itemsPerPage] = useState(50);
 
-  // Calculate the index of the first and last item to display on the current page
+  
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   // const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
@@ -150,21 +137,8 @@ import axios from "axios";
           {data.data.map((link, index) => (
             <>
               <div>
-                {/* <div
-                  key={link.id}
-                  onClick={() => updateTab(link.bronze)}
-                  className={`md:my-0 my-7 flex flex-col  hover:text-blue-500  ${
-                    tab === link.club ? " text-blue-500" : " text-black"
-                  } font-semibold hover:cursor-pointer  active:text-gray-400`}
-                > */}
-                  {/* {link.club} */}
-                  {/* <div
-                    className={`h-1 w-28 mx-auto bg-black hover:bg-blue-500 ${
-                      tab === link.club === "bronze" ? " bg-blue-500" : " bg-black"
-                    }`}
-                  ></div> */}
+               
                 </div>
-              {/* </div> */}
             </>
           ))}
         </div>
@@ -213,20 +187,6 @@ import axios from "axios";
               <Clubbronze e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
             )}
 
-            {/* {tab === "silver" && link.club === "silver" && (
-              <Clubsilver e={link} goTosilverNextPage={goTosilverNextPage} silvercurrentPage={silvercurrentPage} setsilverCurrentPage={setsilverCurrentPage} goTosilverPrevPage={goTosilverPrevPage}/>
-            )}
-
-            {tab === "gold" && link.club === "gold" && (
-            <Clubgold e={link}  goTogoldNextPage={goTogoldNextPage} goldcurrentPage={goldcurrentPage} setgoldCurrentPage={setgoldCurrentPage} goTogoldPrevPage={goTogoldPrevPage} />
-            )}
-
-            {tab === "platinum" && link.club === "platinum" && (
-              <Clubplatinum e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
-            )}
-            {tab === "diamond" && link.club === "diamond" && (
-              <Clubdiamond e={link} />
-            )} */}
           </div>
         ))}
       </div>
