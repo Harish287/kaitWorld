@@ -181,7 +181,7 @@ const achivers = () => {
           {sliderImageUrl.map((imageUrl, index) => {
             return (
               <div className="slider transition-all duration-300 hover:scale-110 " key={index}>
-                <img src={imageUrl.url} className="h-[400px]" alt="movie" /><p className='relative bg-gray-500 '>{imageUrl.para}</p>
+                <img src={imageUrl.url} className="h-[300px]" alt="movie" /><p className='relative bg-gray-500 '>{imageUrl.para}</p>
               </div>
             );
           })}
@@ -213,7 +213,7 @@ const achivers = () => {
           {mobileImageUrl.map((imageUrl, index) => {
             return (
               <div className="slider transition-all duration-300 hover:scale-110 " key={index}>
-                <img src={imageUrl.url} className=" object-fill p-[20px] w-[300px] h-[400px]" alt="movie" /><p className='relative bg-gray-500 '>{imageUrl.para}</p>
+                <img src={imageUrl.url} className=" object-fill p-[20px] w-[300px] h-[300px]" alt="movie" /><p className='relative bg-gray-500 '>{imageUrl.para}</p>
               </div>
             );
           })}
