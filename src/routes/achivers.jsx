@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import Imageshape from "../assets/abc.jpeg"
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -153,6 +154,23 @@ const achivers = () => {
 
 
 
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div>
 
 
@@ -161,7 +179,55 @@ const achivers = () => {
           <h2 className=' lg:text-center lg:text-[50px] lg:mb-9 lg:font-bold text-center text-[30px] mb-9 font-bold md:text-[30px] ' style={{ fontFamily: "Nunito,sans-serif" }}>Achivers</h2>
         </div>
 
+        <div className=" container  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
 
+
+
+{/* righrimages */}
+
+<div className=" box-border relative    lg: w-auto h-auto flex float-left pt-[10px] pb-[10px]   md:flex-row  pt-[10px] pb-[10px] box-border ml-0  sm:pt-[10px] pb-[10px] ml-0">
+  <div className=" lg:pt-[50px] md:pt-[30px] md:pb-[0px] sm:pt-[30px] sm:pb-[0px]  lg:pb-[50px]" >
+    <img className="flex  z-10  bg-white w-[150px] h-[150px] md:w-[300px] md:h-[500px] lg:w-[600px] lg:h-[360px] sm:w-[200px] sm:h-[200px]" src={Imageshape} alt="" />
+
+    {/* <img className="flex  z-10 absolute bg-white mix-blend-screen w-[600px] h-[500px]" src={Shape} alt="" /> */}
+    {/* <img className="relativ w-[600px]  h-[500px]" src={Image} alt="" /> */}
+    {/* <img className="relativ w-[1000px]" src={Image21} alt=""/>  */}
+  </div>
+</div>
+
+{/* leftcontent */}
+<div className=" pl-[0] md:pl-[50px] lg:pl-[50px] max-w-screen-sm ">
+  <p className=" font-bold  lg:text-[30px] sm:text-[19px] lg:leading-[30px] sm:leading-[10px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
+    Join KAIT Community Today
+  </p>
+  <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px] sm:[19px] lg:leading-[65px] sm:leading-[20px] font-extrabold relative">Are you ready to take the first step towards greatness?</h3>
+  <p className="font-roboto font-normal text-base lg:leading-9  sm:leading-3 text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Join KAIT community today and start your journey towards pushing your limits and claiming victory. Together, we will unlock your true potential and pave the way for your success.</p>
+
+
+  {/* left bottom content */}
+
+  <div className="flex items-center max-w-screen-md mt-10 text-left">
+    <div className="flex gap-2">
+
+      <div>
+        {/* <img className="w-[300px] h-[200px]" src={Image} />   */}
+
+      </div>
+      {/* <div>
+        <h2 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-blue-900 font-bold text-4xl leading-10 mb-4">Join Our Upcoming Campaign</h2>
+
+        <p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p></div> */}
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+</div>
 
 
 

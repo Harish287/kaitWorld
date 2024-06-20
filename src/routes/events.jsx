@@ -3,6 +3,10 @@ import Eventimg from "../assets/event.png"
 
 import Imageevents from "../assets/Untitled design (25).png"
 
+import Eventimgs from "../assets/maxresdefault.jpg"
+// import Card from "../routes/pages/flipcard"
+// import New from "../routes/pages/new"
+
 
 const Events = () => {
 
@@ -57,11 +61,7 @@ const Events = () => {
       <div className=" w-[100%]">
         <div className="flex justify-content-center">
           <div className="col-sm-9">
-            {/* <h6 className=' text-center font-bold text-[30px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text'>Next Event Starts In</h6>
-            <p className='font-roboto font-normal text-base leading-6 text-gray-700'>
-              Get ready for the upcoming conference as it is just around the corner! The countdown has begun, and excitement is in the air. 
-              Mark your calendars and prepare to be part of an unforgettable event. Stay tuned for updates, speaker announcements, and registration details. The Next Conference Starts In:
-            </p> */}
+           
             <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{countdown}</h6>
           </div>
         </div>
@@ -92,10 +92,10 @@ const Events = () => {
     </div>
 
 
-    <div>
+    <div className='mb-[30px] mt-[20px]'>
 
 
-<div className='grid center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2'>
+<div className='grid center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2 '>
 
   <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
     <a href="#">
@@ -157,6 +157,21 @@ const Events = () => {
 
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <Card/> */}
+{/* <New/> */}
+
     </>
   );
 };

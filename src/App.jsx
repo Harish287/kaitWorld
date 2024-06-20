@@ -89,15 +89,15 @@ const App = () => {
 
 
       <div>
-        <img className='w-[100%] h-[650px]  object-cover object-center' src={Image1} alt='' />
+        <img className='w-[100%] lg:h-[650px] md:h-[175px]  object-cover object-center' src={Image1} alt='' />
         {/* <button className=' absolute  border-2 rounded-lg  mt-[-100px] ml-[150px] py-[7px] px-[10px] border-indigo-600 bg-neutral-100   '>Enquire</button> */}
       </div>
       <div>
-        <img className='w-[100%] h-[650px] object-cover object-center' src={Image2} alt='' />
+        <img className='w-[100%] lg:h-[650px] md:h-[175px] object-cover object-center' src={Image2} alt='' />
         {/* <button className=' absolute  border-2 rounded-lg  mt-[-100px] ml-[150px] py-[7px] px-[10px] border-indigo-600 bg-neutral-100   '>Enquire</button> */}
       </div>
       <div>
-        <img className='w-[100%] h-[650px] object-cover ' src={Image3} alt='' />
+        <img className='w-[100%] lg:h-[650px] md:h-[175px] object-cover ' src={Image3} alt='' />
         {/* <button className=' absolute  border-2 rounded-lg  mt-[-100px] ml-[150px] py-[7px] px-[10px] border-indigo-600 bg-neutral-100   '>Enquire</button> */}
       </div>
 
@@ -157,7 +157,7 @@ const App = () => {
 
 
 
-    <div className="  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
+    <div className=" container  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
 
 
 
@@ -165,7 +165,16 @@ const App = () => {
 
       <div className=" box-border relative    lg: w-auto h-auto flex float-left pt-[10px] pb-[10px]   md:flex-row  pt-[10px] pb-[10px] box-border ml-0  sm:pt-[10px] pb-[10px] ml-0">
         <div className=" lg:pt-[50px] md:pt-[30px] md:pb-[0px] sm:pt-[30px] sm:pb-[0px]  lg:pb-[50px]" >
-          <img className="flex  z-10  bg-white w-[150px] h-[150px] md:w-[600px] md:h-[500px] lg:w-[600px] lg:h-[500px] sm:w-[200px] sm:h-[200px]" src={Imageshape} alt="" />
+        <motion.div
+      variants={{
+        hidden: { opacity: 0, translateX: 90 },
+        visible: { opacity: 1, translateX: 0 },
+      }}
+      initial="hidden"
+      animate="visible"
+    >
+            <img className="flex  z-10  bg-white w-[150px] h-[150px] md:w-[600px] md:h-[500px] lg:w-[600px] lg:h-[500px] sm:w-[200px] sm:h-[200px]" src={Imageshape} alt="" />
+          </motion.div>
 
           {/* <img className="flex  z-10 absolute bg-white mix-blend-screen w-[600px] h-[500px]" src={Shape} alt="" /> */}
           {/* <img className="relativ w-[600px]  h-[500px]" src={Image} alt="" /> */}
@@ -200,11 +209,7 @@ const App = () => {
 
 
 
-
-
-
       </div>
-
     </div>
 
 
@@ -212,7 +217,7 @@ const App = () => {
 
 
 
-    <div className=" flex-col  md:flex  lg:flex-row  flex justify-around bg-[#c8cbfe] box-border lg:rounded-[125px]  md:rounded-[0px] items-center sm:flex-col  ">
+    <div className="container flex-col  md:flex  lg:flex-row  flex justify-around bg-[#c8cbfe] box-border lg:rounded-[125px]  md:rounded-[0px] items-center sm:flex-col  ">
 
       {/* leftcontent */}
       <div className=" lg:pl-[50px] sm:pl-[0px] sm:p-[30px] max-w-screen-sm">
@@ -225,7 +230,7 @@ const App = () => {
         {/* left bottom content */}
 
         <div className="flex items-center max-w-screen-md mt-10 text-left">
-          <div className="flex gap-2"> 
+          <div className="flex gap-2">
 
             {/* <div><img className="w-[500px] h-[190px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmXYHhdwwcmW2Xm_OlS75ILepiNHIADZQ-IO9KVpvtA2iqDl_qGXpm5BFc2LGkRHQRns&usqp=CAU" /> */}
 
@@ -300,7 +305,7 @@ const App = () => {
 
 
 
-    <div className="  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
+    <div className=" container  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
 
       {/* righrimages */}
 

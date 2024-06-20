@@ -39,7 +39,7 @@ const Silver = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost/kait/admin/club/api.php"
+          "https://kairaablockchainacademy.com/kait/admin/club/api.php"
         );
         setData(response.data);
         setLoading(false);
