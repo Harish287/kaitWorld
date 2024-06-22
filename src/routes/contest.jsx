@@ -21,7 +21,8 @@ import Imageevents from "../assets/trophy (1).png"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-
+import Goa from "../assets/Goa trip.png"
+import Tailand from "../assets/Kerala.png"
 
 const Services = () => {
   const responsive = {
@@ -112,6 +113,67 @@ const Services = () => {
         <h2 className=' text-center text-[30px] lg:text-[50px] md:text-[25px] sm:text-[25px]  mb-9 font-extrabold' style={{ fontFamily: "Nunito,sans-serif" }}>Contest</h2>
       </div>
 
+
+
+
+
+
+
+      <div className=" container  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
+
+{/* righrimages */}
+
+<div className=" box-border relative    lg:ml-44 w-auto h-auto flex float-left   md:flex-row  pt-[150px] pb-[70px]  ml-0  sm:pt-[150px] ">
+  {/* <img className=" h-[520px] w-[500px] box-border relative  object-cover border-white border-[15px]" src={Image11} alt="" /> */}
+  <img className=" h-[520px] w-[500px] box-border relative  object-cover border-white border-[15px]" src={Goa} alt='' />
+  <div className='  hidden md:block h-[200px] w-[200px] bg-[#ec8e1a]  rounded-[500px] absolute left-28 mt-[-100px] z-[-111]'></div>
+  <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-202px] mt-[-130px]  hidden md:block " src={Tailand} alt="" />
+
+  {/* <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-130px] mt-[-110px] " src={Image12} alt="" /> */}
+  <div className=' hidden md:block h-[200px] w-[200px] bg-[#009c81] rounded-[500px] absolute left-[-7rem] mt-[182px] z-[-111]'></div>
+</div>
+
+{/* leftcontent */}
+<div className=" lg:pl-[50px] max-w-screen-sm sm:pl-0 md:pl-0  lg:pl-[0px]">
+  <p className=" font-bold lg:text-[40px] md:text-[25px] leading-[55px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
+    Ready To Fly
+  </p>
+  <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px] md:text-[20px] lg:leading-[60px] md:leading-[10px] font-extrabold relative">Join Our Vibrant Community And Unlock Awards & Rewards!</h3>
+  <p className="font-roboto font-normal lg:text-base md:text-[15px] lg:leading-9 md:leading-none text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Joining Our Vibrant KAIT Community Opens The Door To Exciting Travel Rewards! Achieve Your Targets And Unlock Journeys To Captivating Destinations Like Goa, Kerala, Thailand, And Malaysia, With The Opportunity For Even More Foreign Trips. Explore, Experience, And Indulge In Unforgettable Adventures As You Reach Your Goals With KAIT. </p>
+
+
+  {/* left bottom content */}
+
+  <div className="flex items-center max-w-screen-md mt-10 text-left">
+    <div className="flex gap-2">
+
+      {/* <div><img className="w-[300px] h-[200px]" src={Image} />
+
+      </div> */}
+      <div>
+        <h2 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-blue-900 font-bold lg:text-4xl md:text-[25px] lg:leading-10 md:leading-[0] lg:mb-4 md:mb-0">Join now and let your journey begin!</h2>
+
+        {/* <p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p> */}
+
+        <button className='mt-[20px] box-border font-bold lg:text-lg md:text-sm px-2 py-1 border-4 border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out'><a href='/contest'>view more</a></button>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
       <div className=" w-[100%]  ">
         <div className="flex justify-center w-[100%]">
           <div className="col-sm-9">
@@ -126,7 +188,7 @@ const Services = () => {
       </div>
 
 
-      <div>
+      <div className='mb-[30px] mt-[30px]'>
 
         <div className='grid center w-[90%] m-auto grid-cols-1 gap-5 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2'>
           <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
@@ -174,7 +236,7 @@ const Services = () => {
           </div>
 
         </div>
-        <div className=' flex justify-center mt-[20px] mb-[20px]'>  <a href="/contest" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <div className=' flex justify-center mt-[40px] mb-[20px]'>  <a href="/contest" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           View more
           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />

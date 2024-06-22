@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Eventimg from "../assets/event.png"
 
 import Imageevents from "../assets/Untitled design (25).png"
-
+import Shape from "../assets/shape.png"
 import Eventimgs from "../assets/maxresdefault.jpg"
 // import Card from "../routes/pages/flipcard"
 // import New from "../routes/pages/new"
-
+import Image21 from "../assets/coin.png"
 
 const Events = () => {
 
@@ -48,6 +48,19 @@ const Events = () => {
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"></link>
 
 <div><img src={Eventimg} /></div>
+
+
+
+
+
+    {/* shape image */}
+
+    {/* <div className=' flex'>
+<div className=" pt-[50px]  pb-[50px]" > 
+            <img className="flex  z-10 absolute bg-white mix-blend-screen w-[800px] h-[700px]" src={Shape} alt=""/>
+            <img className="relativ w-[800px]  h-[700px]"  src={Image21} alt=""/> */}
+    {/* </div> 
+ </div> */}
 
 
 <div>

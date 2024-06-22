@@ -51,6 +51,13 @@ import Slider from "react-slick";
 
 const App = () => {
 
+
+
+
+
+
+
+
   var settings = {
     // dots: true,
     infinite: true,
@@ -157,7 +164,11 @@ const App = () => {
 
 
 
-    <div className=" container  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
+    {/* <motion.div
+      initial={{ y: -70 }}
+      animate={{ y: 0, transition: { delay: 0.8, duration: 0.8 } }} */}
+
+    <div  className=" container  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col   ">
 
 
 
@@ -165,16 +176,9 @@ const App = () => {
 
       <div className=" box-border relative    lg: w-auto h-auto flex float-left pt-[10px] pb-[10px]   md:flex-row  pt-[10px] pb-[10px] box-border ml-0  sm:pt-[10px] pb-[10px] ml-0">
         <div className=" lg:pt-[50px] md:pt-[30px] md:pb-[0px] sm:pt-[30px] sm:pb-[0px]  lg:pb-[50px]" >
-        <motion.div
-      variants={{
-        hidden: { opacity: 0, translateX: 90 },
-        visible: { opacity: 1, translateX: 0 },
-      }}
-      initial="hidden"
-      animate="visible"
-    >
-            <img className="flex  z-10  bg-white w-[150px] h-[150px] md:w-[600px] md:h-[500px] lg:w-[600px] lg:h-[500px] sm:w-[200px] sm:h-[200px]" src={Imageshape} alt="" />
-          </motion.div>
+
+          <img className="flex  z-10  bg-white w-[150px] h-[150px] md:w-[600px] md:h-[500px] lg:w-[600px] lg:h-[500px] sm:w-[200px] sm:h-[200px]" src={Imageshape} alt="" />
+
 
           {/* <img className="flex  z-10 absolute bg-white mix-blend-screen w-[600px] h-[500px]" src={Shape} alt="" /> */}
           {/* <img className="relativ w-[600px]  h-[500px]" src={Image} alt="" /> */}
@@ -184,11 +188,24 @@ const App = () => {
 
       {/* leftcontent */}
       <div className=" pl-[0] md:pl-[50px] lg:pl-[50px] max-w-screen-sm ">
-        <p className=" font-bold  lg:text-[30px] sm:text-[19px] lg:leading-[30px] sm:leading-[10px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
-          Join KAIT Community Today
-        </p>
-        <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px] sm:[19px] lg:leading-[65px] sm:leading-[20px] font-extrabold relative">Are you ready to take the first step towards greatness?</h3>
-        <p className="font-roboto font-normal text-base lg:leading-9  sm:leading-3 text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Join KAIT community today and start your journey towards pushing your limits and claiming victory. Together, we will unlock your true potential and pave the way for your success.</p>
+      <motion.div
+          initial={{ opacity: 0, y: -70    }}
+          whileInView={{ opacity: 100, y:0 ,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}> 
+            <p className=" font-bold  lg:text-[30px] sm:text-[19px] lg:leading-[30px] sm:leading-[10px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
+            Join KAIT Community Today
+          </p>
+          </motion.div>
+
+          <motion.div
+          initial={{ opacity: 0  }}
+          whileInView={{ opacity: 100,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}>  <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px] sm:[19px] lg:leading-[65px] sm:leading-[20px] font-extrabold relative">Are you ready to take the first step towards greatness?</h3></motion.div>
+         
+          <motion.div
+          initial={{ opacity: 0 ,y: 140 }}
+          whileInView={{ opacity: 100, y:0 ,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}>  <p className="font-roboto font-normal text-base lg:leading-9  sm:leading-3 text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Join KAIT community today and start your journey towards pushing your limits and claiming victory. Together, we will unlock your true potential and pave the way for your success.</p></motion.div>
 
 
         {/* left bottom content */}
@@ -210,8 +227,8 @@ const App = () => {
 
 
       </div>
-    </div>
-
+    {/* </motion.div> */}
+</div>
 
 
 
@@ -221,11 +238,26 @@ const App = () => {
 
       {/* leftcontent */}
       <div className=" lg:pl-[50px] sm:pl-[0px] sm:p-[30px] max-w-screen-sm">
-        <p className=" font-bold lg:text-[30px] sm:text-[16px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-blue-800 to-pink-500 text-transparent bg-clip-text lg:mt-0  md:mt-[20px]">
+      <motion.div
+          initial={{ opacity: 0, y: -70    }}
+          whileInView={{ opacity: 100, y:0 ,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}> 
+              <p className=" font-bold lg:text-[30px] sm:text-[16px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-blue-800 to-pink-500 text-transparent bg-clip-text lg:mt-0  md:mt-[20px]">
           Success isn't a destination, it's a journey!        </p>
-        <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px]  sm:text-[16px] lg:leading-[60px] sm:leading-[10px] font-extrabold relative">Is KAIT The Next Step In Your Journey?</h3>
-        <p className="font-roboto font-normal lg:text-base lg:leading-9  sm:leading-[10px] text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">At Achieving the Trophy, we believe that every journey to success starts with a single step. Whether you're aiming to excel in your career with KAIT, enhance your personal life, or achieve a lifelong dream, we are here to guide and support you every step of the way.</p>
-
+          </motion.div>
+          
+          <motion.div
+          initial={{ opacity: 0  }}
+          whileInView={{ opacity: 100,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}> 
+            <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px]  sm:text-[16px] lg:leading-[60px] sm:leading-[10px] font-extrabold relative">Is KAIT The Next Step In Your Journey?</h3>
+       </motion.div>
+       <motion.div
+          initial={{ opacity: 0  }}
+          whileInView={{ opacity: 100,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}> 
+            <p className="font-roboto font-normal lg:text-base lg:leading-9  sm:leading-[10px] text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">At Achieving the Trophy, we believe that every journey to success starts with a single step. Whether you're aiming to excel in your career with KAIT, enhance your personal life, or achieve a lifelong dream, we are here to guide and support you every step of the way.</p>
+</motion.div>
 
         {/* left bottom content */}
 
@@ -236,9 +268,20 @@ const App = () => {
 
             {/* </div> */}
             <div>
-              <h2 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-blue-900 font-bold lg:text-4xl sm:text-lg  lg:leading-10 sm:leading-[20px] lg:mb-4 sm:mb-2">Join Our KAIT Community</h2>
+            <motion.div
+          initial={{ opacity: 0, y: -70    }}
+          whileInView={{ opacity: 100, y:0 ,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}>   <h2 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-blue-900 font-bold lg:text-4xl sm:text-lg  lg:leading-10 sm:leading-[20px] lg:mb-4 sm:mb-2">Join Our KAIT Community</h2>
+          </motion.div>
 
-              <p className="text-gray-700 font-normal text-base lg:leading-7 sm:leading-[10px] mb-0 font-roboto">Become a part of the KAIT revolution and unlock the power of the KAIT Community. Dive into the future of finance and explore the wealth of opportunities within the dynamic world of cryptocurrency.</p></div>
+         
+          <motion.div
+          initial={{ opacity: 0  }}
+          whileInView={{ opacity: 100,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}> 
+              <p className="text-gray-700 font-normal text-base lg:leading-7 sm:leading-[10px] mb-0 font-roboto">Become a part of the KAIT revolution and unlock the power of the KAIT Community. Dive into the future of finance and explore the wealth of opportunities within the dynamic world of cryptocurrency.</p>
+              </motion.div>
+              </div>
 
           </div>
 
@@ -246,7 +289,7 @@ const App = () => {
 
 
 
-        <div className='flex justify-center cursor-pointer '>     <a href='/achivers'><h1 className='  font-bold text-lg px-2 py-1 border-4 border-black  hover:shadow-2xl hover:border-[#a455e2]'>view more</h1></a>  </div>
+        <div className='flex justify-center cursor-pointer '>     <a href='/achivers'><h1 className='  font-bold text-lg px-2 py-1 border-4  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out '>view more</h1></a>  </div>
 
 
       </div>
@@ -341,8 +384,7 @@ const App = () => {
 
               {/* <p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p> */}
 
-
-              <button className='mt-[20px] box-border font-bold lg:text-lg md:text-sm px-2 py-1 border-4 border-black  hover:shadow-2xl hover:border-[#a455e2]'><a href='/contest'>view more</a></button>
+              <button className='mt-[20px] box-border font-bold lg:text-lg md:text-sm px-2 py-1 border-4 border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out'><a href='/contest'>view more</a></button>
             </div>
 
 
@@ -360,7 +402,7 @@ const App = () => {
       <div>
         <h2 className=' text-center text-[30px] lg:text-[50px]  sm:mb-0 lg:mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Events</h2>
       </div>
-      <div className='grid center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2'>
+      <div className='grid center w-[90%] m-auto pb-[20px] grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2'>
 
         <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
           <a href="#">
@@ -421,11 +463,9 @@ const App = () => {
         </div>
 
       </div>
-      <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="/events" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        View more
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-        </svg>
+      <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="" className="">
+      
+        <a href="/events" class="btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out" >View more</a>
       </a>
       </div>
     </div>
