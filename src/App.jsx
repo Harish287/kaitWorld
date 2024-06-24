@@ -243,8 +243,7 @@ const App = () => {
           viewport={{ once: true }}> 
               <p className=" font-bold lg:text-[30px] sm:text-[16px] leading-[30px] font-[Roboto, sans-serif] bg-gradient-to-r from-blue-800 to-pink-500 text-transparent bg-clip-text lg:mt-0  md:mt-[20px]">
           Success 
-          {/* isn't a destination, it's a  */}
-          journey!        </p>
+          isn't a destination, it's a journey!        </p>
           </motion.div>
           
           <motion.div
