@@ -112,16 +112,17 @@ import axios from "axios";
  
   const handleFilter = (e) => {
     const value = (e.target.value || "").toLowerCase();
-    
+
     console.log(value);
     const filteredMembers = data.data.map((link) => {
       const filtered = link.members.filter((member) =>
-        // (member.user_name ||member.user_id||""===value)
-        (member.user_id).toLowerCase().includes(value)
-      
+        (member.user_id || "").toLowerCase().includes(value) ||
+        (member.user_name || "").toLowerCase().includes(value)
       );
       console.log(filtered);
       setCurrentPage(1);
+      setsilverCurrentPage(1);
+      setgoldCurrentPage(1);
       return { ...link, members: filtered };
     });
     setFilterlist(filteredMembers);

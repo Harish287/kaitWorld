@@ -18,7 +18,7 @@ const Gallery = () => {
 
     { type: 'image', src: 'https://tse2.mm.bing.net/th?id=OIP.mOjrQ0yMjA-BSqW-Fi1cpQHaE8&pid=Api&P=0&h=180', alt: 'Image 1' },
     { type: 'video', src: 'https://youtu.be/tiLpqfDTHeM?si=rOPzenfXkZXHpa3F' },
-    { type: 'i mage', src: 'https://www.jesvenues.com/images/services/corporate-photography/corporate-event-photography-in-hyderabad-1.jpg', alt: 'Image 2' },
+    { type: 'image', src: 'https://www.jesvenues.com/images/services/corporate-photography/corporate-event-photography-in-hyderabad-1.jpg', alt: 'Image 2' },
     { type: 'image', src: 'https://tse4.mm.bing.net/th?id=OIP.uWKiWdXtY9FL5QDmQyLgZgEyDM&pid=Api&P=0&h=180', alt: 'Image 3' },
     { type: 'image', src: 'https://tse2.explicit.bing.net/th?id=OIP._u2-3M4TrXXx5gZ4rvIsCAHaE8&pid=Api&P=0&h=180', alt: 'Image 4' },
     { type: 'image', src: 'https://tse4.mm.bing.net/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&pid=Api&P=0&h=180', alt: 'Image 5' },

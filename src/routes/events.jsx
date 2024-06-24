@@ -74,7 +74,9 @@ const Events = () => {
       <div className=" w-[100%]">
         <div className="flex justify-content-center">
           <div className="col-sm-9">
-           
+          <div>
+  <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Event Starts In</h2>
+</div>
             <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{countdown}</h6>
           </div>
         </div>

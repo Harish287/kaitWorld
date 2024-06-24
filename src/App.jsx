@@ -48,7 +48,6 @@ import Slider from "react-slick";
 
 
 
-
 const App = () => {
 
 
@@ -289,7 +288,7 @@ const App = () => {
 
 
 
-        <div className='flex justify-center cursor-pointer '>     <a href='/achivers'><h1 className='  font-bold text-lg px-2 py-1 border-4  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out '>view more</h1></a>  </div>
+        <div className='flex justify-center cursor-pointer '>     <a href='/achivers'><h1 className='  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out '>view more</h1></a>  </div>
 
 
       </div>
@@ -364,12 +363,21 @@ const App = () => {
 
       {/* leftcontent */}
       <div className=" lg:pl-[50px] max-w-screen-sm sm:pl-0 md:pl-0  lg:pl-[0px]">
-        <p className=" font-bold lg:text-[40px] md:text-[25px] leading-[55px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
+      <motion.div
+          initial={{ opacity: 0, y: -70    }}
+          whileInView={{ opacity: 100, y:0 ,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}> <p className=" font-bold lg:text-[40px] md:text-[25px] leading-[55px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
           Ready To Fly
-        </p>
-        <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px] md:text-[20px] lg:leading-[60px] md:leading-[10px] font-extrabold relative">Join Our Vibrant Community And Unlock Awards & Rewards!</h3>
-        <p className="font-roboto font-normal lg:text-base md:text-[15px] lg:leading-9 md:leading-none text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Joining Our Vibrant KAIT Community Opens The Door To Exciting Travel Rewards! Achieve Your Targets And Unlock Journeys To Captivating Destinations Like Goa, Kerala, Thailand, And Malaysia, With The Opportunity For Even More Foreign Trips. Explore, Experience, And Indulge In Unforgettable Adventures As You Reach Your Goals With KAIT. </p>
-
+        </p></motion.div>
+        <motion.div
+          initial={{ opacity: 0  }}
+          whileInView={{ opacity: 100,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}>  <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px] md:text-[20px] lg:leading-[60px] md:leading-[10px] font-extrabold relative">Join Our Vibrant Community And Unlock Awards & Rewards!</h3></motion.div>
+           <motion.div
+          initial={{ opacity: 0  }}
+          whileInView={{ opacity: 100,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}>  <p className="font-roboto font-normal lg:text-base md:text-[15px] lg:leading-9 md:leading-none text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Joining Our Vibrant KAIT Community Opens The Door To Exciting Travel Rewards! Achieve Your Targets And Unlock Journeys To Captivating Destinations Like Goa, Kerala, Thailand, And Malaysia, With The Opportunity For Even More Foreign Trips. Explore, Experience, And Indulge In Unforgettable Adventures As You Reach Your Goals With KAIT. </p>
+</motion.div>
 
         {/* left bottom content */}
 
@@ -380,11 +388,14 @@ const App = () => {
 
             </div> */}
             <div>
-              <h2 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-blue-900 font-bold lg:text-4xl md:text-[25px] lg:leading-10 md:leading-[0] lg:mb-4 md:mb-0">Join now and let your journey begin!</h2>
+            <motion.div
+          initial={{ opacity: 0  }}
+          whileInView={{ opacity: 100,transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}>  <h2 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-blue-900 font-bold lg:text-4xl md:text-[25px] lg:leading-10 md:leading-[0] lg:mb-4 md:mb-0">Join now and let your journey begin!</h2></motion.div>
 
               {/* <p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p> */}
 
-              <button className='mt-[20px] box-border font-bold lg:text-lg md:text-sm px-2 py-1 border-4 border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out'><a href='/contest'>view more</a></button>
+              <a href='/contest'>  <button className='mt-[20px] btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out'>view more</button></a>
             </div>
 
 

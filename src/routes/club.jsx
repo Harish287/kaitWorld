@@ -233,7 +233,7 @@ const Club = () => {
               <Clubplatinum e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
             )}
             {tab === "diamond" && link.club === "diamond" && (
-              <Clubdiamond e={link} />
+              <Clubdiamond e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
             )}
           </div>
         ))}
