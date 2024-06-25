@@ -155,7 +155,7 @@ const Services = () => {
 
         {/* <p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p> */}
 
-        <button className='mt-[20px] box-border font-bold lg:text-lg md:text-sm px-2 py-1 border-4 border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out'><a href='/contest'>view more</a></button>
+        {/* <button className='mt-[20px] box-border font-bold lg:text-lg md:text-sm px-2 py-1 border-4 border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out'><a href='/contest'>view more</a></button> */}
       </div>
 
 
@@ -236,13 +236,11 @@ const Services = () => {
           </div>
 
         </div>
-        <div className=' flex justify-center mt-[40px] mb-[20px]'>  <a href="/contest" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        {/* <div className=' flex justify-center mt-[40px] mb-[20px]'>  <a href="/contest" class="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
           View more
-          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-          </svg>
+         
         </a>
-        </div>
+        </div> */}
       </div>
 
 
@@ -273,11 +271,9 @@ const Services = () => {
           })}
         </Carousel>
       </div>
-      <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="mobile" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="mobile" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
         View more
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-        </svg>
+        
       </a>
       </div>
 
