@@ -203,11 +203,11 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
     <div>
       <div
         // key={e.id}
-        className={`grid md:grid-cols-4  items-center gap-6   p-6 `}
+        className={`grid lg:grid-cols-4 md:grid-cols-2  items-center gap-6   p-6 `}
       >
         {currentMembers.map((member) => (
-          <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8  md:h-[300px]   goldclubvback  ">
-            <div className="mt-[160px]  lg:mt-[107px] mr-[-116px] md:mt-[160px] sm:mt-[160px]  ">
+          <div className=" flex justify-center gap-6 m-auto  flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8  md:h-[300px]  mt-12 lg:mt-0  goldclubvback  ">
+            <div className="mt-[160px]  lg:mt-[107px] mr-[-116px] md:mt-[108px] sm:mt-[160px]  ">
               <div className="">
                 <img
                   className="h-[140px] w-[140px] m-auto object-cover flex justify-center  mt-16"
@@ -215,7 +215,7 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
                   alt=""
                 />
               </div>  </div>
-            <div className="">
+            <div className="relative">
               <div
                 className="text-center"
                 dangerouslySetInnerHTML={{ __html: member.user_name }}
@@ -242,7 +242,7 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
           // </div>  
         ))}
       </div>
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-8">
         <button
           onClick={goTogoldPrevPage}
           className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
@@ -391,7 +391,7 @@ const Clubdiamond = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPag
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-8">
         <button
           onClick={goToPrevPage}
           className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"

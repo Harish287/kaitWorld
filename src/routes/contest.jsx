@@ -26,22 +26,22 @@ import Tailand from "../assets/Kerala.png"
 
 const Services = () => {
   const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-      slidesToSlide: 4 // optional, default to 1.
-
-
+      items: 4
     },
     tablet: {
-      breakpoint: { max: 1024, min: 768 },
-      items: 3,
-      slidesToSlide: 3 // optional, default to 1.
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
     },
     mobile: {
-      breakpoint: { max: 767, min: 464 },
-      items: 2,
-      slidesToSlide: 1 // optional, default to 1.
+      breakpoint: { max: 464, min: 0 },
+      items: 1
     }
   };
   const sliderImageUrl = [
@@ -121,49 +121,49 @@ const Services = () => {
 
       <div className=" container  flex-col  md:flex  lg:flex-row  flex justify-evenly  items-center sm:flex-col  ">
 
-{/* righrimages */}
+        {/* righrimages */}
 
-<div className=" box-border relative    lg:ml-44 w-auto h-auto flex float-left   md:flex-row  pt-[150px] pb-[70px]  ml-0  sm:pt-[150px] ">
-  {/* <img className=" h-[520px] w-[500px] box-border relative  object-cover border-white border-[15px]" src={Image11} alt="" /> */}
-  <img className=" h-[520px] w-[500px] box-border relative  object-cover border-white border-[15px]" src={Goa} alt='' />
-  <div className='  hidden md:block h-[200px] w-[200px] bg-[#ec8e1a]  rounded-[500px] absolute left-28 mt-[-100px] z-[-111]'></div>
-  <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-202px] mt-[-130px]  hidden md:block " src={Tailand} alt="" />
+        <div className=" box-border relative  lg:pt-[150px]  lg:ml-44 w-auto h-auto flex float-left   md:flex-row  md:pt-[150px] pb-[70px]  ml-0  sm:pt-[15px] ">
+          {/* <img className=" h-[520px] w-[500px] box-border relative  object-cover border-white border-[15px]" src={Image11} alt="" /> */}
+          <img className=" h-[520px] w-[500px] box-border relative  object-cover border-white border-[15px]" src={Goa} alt='' />
+          <div className='  hidden md:block h-[200px] w-[200px] bg-[#ec8e1a]  rounded-[500px] absolute left-28 mt-[-100px] z-[-111]'></div>
+          <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-202px] mt-[-130px]  hidden md:block " src={Tailand} alt="" />
 
-  {/* <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-130px] mt-[-110px] " src={Image12} alt="" /> */}
-  <div className=' hidden md:block h-[200px] w-[200px] bg-[#009c81] rounded-[500px] absolute left-[-7rem] mt-[182px] z-[-111]'></div>
-</div>
+          {/* <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-130px] mt-[-110px] " src={Image12} alt="" /> */}
+          <div className=' hidden md:block h-[200px] w-[200px] bg-[#009c81] rounded-[500px] absolute left-[-7rem] mt-[182px] z-[-111]'></div>
+        </div>
 
-{/* leftcontent */}
-<div className=" lg:pl-[50px] max-w-screen-sm sm:pl-0 md:pl-0  lg:pl-[0px]">
-  <p className=" font-bold lg:text-[40px] md:text-[25px] leading-[55px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
-    Ready To Fly
-  </p>
-  <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px] md:text-[20px] lg:leading-[60px] md:leading-[10px] font-extrabold relative">Join Our Vibrant Community And Unlock Awards & Rewards!</h3>
-  <p className="font-roboto font-normal lg:text-base md:text-[15px] lg:leading-9 md:leading-none text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Joining Our Vibrant KAIT Community Opens The Door To Exciting Travel Rewards! Achieve Your Targets And Unlock Journeys To Captivating Destinations Like Goa, Kerala, Thailand, And Malaysia, With The Opportunity For Even More Foreign Trips. Explore, Experience, And Indulge In Unforgettable Adventures As You Reach Your Goals With KAIT. </p>
+        {/* leftcontent */}
+        <div className=" lg:pl-[50px] max-w-screen-sm sm:pl-0 md:pl-0  lg:pl-[0px]">
+          <p className=" font-bold lg:text-[40px] md:text-[25px] leading-[55px] font-[Roboto, sans-serif] bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
+            Ready To Fly
+          </p>
+          <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px] md:text-[20px] lg:leading-[60px] md:leading-[10px] font-extrabold relative">Join Our Vibrant Community And Unlock Awards & Rewards!</h3>
+          <p className="font-roboto font-normal lg:text-base md:text-[15px] lg:leading-9 md:leading-none text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Joining Our Vibrant KAIT Community Opens The Door To Exciting Travel Rewards! Achieve Your Targets And Unlock Journeys To Captivating Destinations Like Goa, Kerala, Thailand, And Malaysia, With The Opportunity For Even More Foreign Trips. Explore, Experience, And Indulge In Unforgettable Adventures As You Reach Your Goals With KAIT. </p>
 
 
-  {/* left bottom content */}
+          {/* left bottom content */}
 
-  <div className="flex items-center max-w-screen-md mt-10 text-left">
-    <div className="flex gap-2">
+          <div className="flex items-center max-w-screen-md mt-10 text-left">
+            <div className="flex gap-2">
 
-      {/* <div><img className="w-[300px] h-[200px]" src={Image} />
+              {/* <div><img className="w-[300px] h-[200px]" src={Image} />
 
       </div> */}
-      <div>
-        <h2 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-blue-900 font-bold lg:text-4xl md:text-[25px] lg:leading-10 md:leading-[0] lg:mb-4 md:mb-0">Join now and let your journey begin!</h2>
+              <div>
+                <h2 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-blue-900 font-bold lg:text-4xl md:text-[25px] lg:leading-10 md:leading-[0] lg:mb-4 md:mb-0">Join now and let your journey begin!</h2>
 
-        {/* <p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p> */}
+                {/* <p className="text-gray-700 font-normal text-base leading-7 mb-0 font-roboto">Make an impact one piece of clothing at a time to need of others</p> */}
 
-        {/* <button className='mt-[20px] box-border font-bold lg:text-lg md:text-sm px-2 py-1 border-4 border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out'><a href='/contest'>view more</a></button> */}
+                {/* <button className='mt-[20px] box-border font-bold lg:text-lg md:text-sm px-2 py-1 border-4 border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out'><a href='/contest'>view more</a></button> */}
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
       </div>
-
-
-    </div>
-
-  </div>
-</div>
-</div>
 
 
 
@@ -198,7 +198,7 @@ const Services = () => {
             </a>
             <div className=" p-[10px]">
               <a href="#">
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Introducing The Newest Addition To Trichy Network With The Opening Of A Branch Office In Your Area!</h5>
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Introducing The Newest Addition To Trichy Network With The Opening Of A Branch Office In Your Area!</h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
 
@@ -213,7 +213,7 @@ const Services = () => {
             </a>
             <div className=" p-[10px]">
               <a href="#">
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Blockchain Awareness Meeting, Fueling Knowledge And Inspiring Adoption Of Blockchain.</h5>
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Blockchain Awareness Meeting, Fueling Knowledge And Inspiring Adoption Of Blockchain.</h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
 
@@ -227,7 +227,7 @@ const Services = () => {
             </a>
             <div className=" p-[10px]">
               <a href="#">
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Solingur Crypto Exchange Awareness Meeting, Spreading Knowledge In Cryptocurrency!</h5>
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Solingur Crypto Exchange Awareness Meeting, Spreading Knowledge In Cryptocurrency!</h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
 
@@ -273,7 +273,7 @@ const Services = () => {
       </div>
       <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="mobile" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
         View more
-        
+
       </a>
       </div>
 
