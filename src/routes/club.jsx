@@ -75,6 +75,41 @@ const Club = () => {
 
 
 
+  const [platinumcurrentPage, setplatinumCurrentPage] = useState(1);
+  const platinumpaginate = pageNumber => setplatinumCurrentPage(pageNumber);
+  
+  // Go to previous page
+  const goToplatinumPrevPage = () => {
+    if (platinumcurrentPage > 1) {
+      setplatinumCurrentPage(platinumcurrentPage - 1);
+    }
+  };
+  
+  // Go to next page
+  const goToplatinumNextPage = () => {
+    // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+    setplatinumCurrentPage(platinumcurrentPage + 1);
+    // }
+  };
+  
+
+  const [diamondcurrentPage, setdiamondCurrentPage] = useState(1);
+  const diamondpaginate = pageNumber => setdiamondCurrentPage(pageNumber);
+  
+  // Go to previous page
+  const goTodiamondPrevPage = () => {
+    if (diamondcurrentPage > 1) {
+      setdiamondCurrentPage(diamondcurrentPage - 1);
+    }
+  };
+  
+  // Go to next page
+  const goTodiamondNextPage = () => {
+    // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+    setdiamondCurrentPage(diamondcurrentPage + 1);
+    // }
+  };
+  
 
 
   const [goldcurrentPage, setgoldCurrentPage] = useState(1);
@@ -230,10 +265,10 @@ const Club = () => {
             )}
 
             {tab === "platinum" && link.club === "platinum" && (
-              <Clubplatinum e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
+              <Clubplatinum e={link} goToplatinumNextPage={goToplatinumNextPage} platinumcurrentPage={platinumcurrentPage} setplatinumCurrentPage={setplatinumCurrentPage} goToplatinumPrevPage={goToplatinumPrevPage} />
             )}
             {tab === "diamond" && link.club === "diamond" && (
-              <Clubdiamond e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
+              <Clubdiamond e={link} goTodiamondNextPage={goTodiamondNextPage} diamondcurrentPage={diamondcurrentPage} setdiamondCurrentPage={setdiamondCurrentPage} goTodiamondPrevPage={goTodiamondPrevPage} />
             )}
           </div>
         ))}

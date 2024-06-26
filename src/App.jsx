@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import Image1 from "./assets/bg2.png"
-import Image2 from "./assets/chance.png"
+import Image1 from "./assets/homepage.png"
+import Image2 from "./assets/2.png"
 
-import Image3 from "./assets/explore-trip.png"
+import Image3 from "./assets/1.png"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -204,9 +204,9 @@ const App = () => {
         <motion.div
           initial={{ opacity: 0, y: 140 }}
           whileInView={{ opacity: 100, y: 0, transition: { delay: 0.8, duration: 0.8 } }}
-          viewport={{ once: true }}>  <p className="font-roboto font-normal text-base lg:leading-9  sm:leading-3 text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Join KAIT community today and start your journey towards pushing your limits and claiming victory. Together, we will unlock your true potential and pave the way for your success.</p></motion.div>
+          viewport={{ once: true }}>  <p className="font-roboto font-normal text-base lg:leading-9  sm:leading-3 text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">Join the KAIT community today and start your journey towards pushing your limits and claiming victory.  Our user-friendly KAIT staking app allows you to earn passive income. Maximize your returns with industry-leading APYs.</p></motion.div>
 
-
+         <a href='https://www.kaitworld.com/public/register'><h2 className='  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out ' >Start Staking Today!</h2></a>
         {/* left bottom content */}
 
         <div className="flex items-center max-w-screen-md mt-10 text-left">
@@ -256,7 +256,8 @@ const App = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 100, transition: { delay: 0.8, duration: 0.8 } }}
           viewport={{ once: true }}>
-          <p className="font-roboto font-normal lg:text-base lg:leading-9  sm:leading-[10px] text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">At Achieving the Trophy, we believe that every journey to success starts with a single step. Whether you're aiming to excel in your career with KAIT, enhance your personal life, or achieve a lifelong dream, we are here to guide and support you every step of the way.</p>
+          <p className="font-roboto font-normal lg:text-base lg:leading-9  sm:leading-[10px] text-gray-700 max-w-full sm:max-w-md md:max-w-lg lg:max-w-[28rem] xl:max-w-[30rem]">At KAIT, we believe in the power of connection. Join our thriving community of like-minded individuals and unlock a world of possibilities.
+          Not only will you be part of a vibrant community, but you'll also have the chance to earn exciting awards and rewards for your engagement and achievements within KAIT.</p>
         </motion.div>
 
         {/* left bottom content */}
@@ -279,7 +280,7 @@ const App = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 100, transition: { delay: 0.8, duration: 0.8 } }}
                 viewport={{ once: true }}>
-                <p className="text-gray-700 font-normal text-base lg:leading-7 sm:leading-[10px] mb-0 font-roboto">Become a part of the KAIT revolution and unlock the power of the KAIT Community. Dive into the future of finance and explore the wealth of opportunities within the dynamic world of cryptocurrency.</p>
+                <p className="text-gray-700 font-normal text-base lg:leading-7 sm:leading-[10px] mb-0 font-roboto max-w-full sm:max-w-md md:max-w-lg lg:max-w-[28rem] xl:max-w-[30rem]">Become a part of the KAIT revolution and unlock the power of the KAIT Community. Dive into the future of finance and explore the wealth of opportunities within the dynamic world of cryptocurrency.</p>
               </motion.div>
             </div>
 
@@ -289,7 +290,7 @@ const App = () => {
 
 
 
-        <div className='flex justify-center cursor-pointer '>     <a href='/achivers'><h1 className='  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out '>view more</h1></a>  </div>
+        <div className='flex justify-center cursor-pointer '>     <a href='https://www.kaitworld.com/public/login'><h1 className='  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out '>view more</h1></a>  </div>
 
 
       </div>

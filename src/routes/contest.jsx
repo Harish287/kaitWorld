@@ -12,7 +12,9 @@ import Image3 from "../assets/Malaysia.png"
 
 
 import Contest from "../assets/trip.png"
+import { motion } from 'framer-motion'
 
+import Trip from "../assets/trip.jpeg"
 
 
 import Imageevents from "../assets/trophy (1).png"
@@ -175,7 +177,7 @@ const Services = () => {
 
 
       <div className=" w-[100%]  ">
-        <div className="flex justify-center w-[100%]">
+        <div className="flex justify-center w-[100%] mt-[20px] mb-[20px]">
           <div className="col-sm-9">
             <h6 className='  text-center text-[30px] lg:text-[40px] sm:text-[25px] font-extrabold' style={{ fontFamily: "Nunito,sans-serif" }}> Contest Ends In</h6>
             {/* <p className='font-roboto font-normal text-base leading-6 text-gray-700'>
@@ -186,6 +188,107 @@ const Services = () => {
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className="container flex-col  md:flex  lg:flex-row  flex justify-around  box-border lg:rounded-[125px]  md:rounded-[0px] items-center sm:flex-col lg:mt-[50px] lg:mb-[50px]  ">
+
+{/* leftcontent */}
+<div className="   max-w-screen-sm">
+  <motion.div
+    initial={{ opacity: 0, y: -70 }}
+    whileInView={{ opacity: 100, y: 0, transition: { delay: 0.8, duration: 0.8 } }}
+    viewport={{ once: true }}>
+    <p style={{ fontFamily: "Nunito,sans-serif" }} className=" font-bold lg:text-[30px] sm:text-[16px] leading-[30px]  font-[Roboto, sans-serif] bg-gradient-to-r from-blue-800 to-pink-500 text-transparent bg-clip-text lg:mt-0  md:mt-[20px] lg:mb-4">
+    Experience the Extraordinary: KAIT Community</p>
+  </motion.div>
+
+  {/* <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 100, transition: { delay: 0.8, duration: 0.8 } }}
+    viewport={{ once: true }}>
+    <h3 style={{ fontFamily: "Nunito,sans-serif" }} className="  lg:text-[46px]  sm:text-[16px] lg:leading-[60px] sm:leading-[10px] font-extrabold relative">Is KAIT The Next Step In Your Journey?</h3>
+  </motion.div> */}
+  <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 100, transition: { delay: 0.8, duration: 0.8 } }}
+    viewport={{ once: true }}>
+    <p className="font-roboto font-normal lg:text-base lg:leading-6 md:leading-[20px]  sm:leading-[10px] text-gray-700 max-w-full sm:max-w-md md:max-w-lg lg:max-w-[28rem] xl:max-w-[40rem]">Escape the ordinary and embark on extraordinary adventures! 
+    Joining our vibrant KAIT Community isn't just about connecting with like-minded individuals; it's your key to unlocking unforgettable travel experiences.</p>
+  </motion.div>
+
+  {/* left bottom content */}
+
+  <div className="flex items-center max-w-screen-md mt-10 text-left">
+    <div className="flex gap-2">
+
+      {/* <div><img className="w-[500px] h-[190px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmXYHhdwwcmW2Xm_OlS75ILepiNHIADZQ-IO9KVpvtA2iqDl_qGXpm5BFc2LGkRHQRns&usqp=CAU" /> */}
+
+      {/* </div> */}
+      <div>
+        <motion.div
+          initial={{ opacity: 0, y: -70 }}
+          whileInView={{ opacity: 100, y: 0, transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}>   <h2 style={{ fontFamily: "Nunito,sans-serif" }} className="  text-blue-900 font-bold lg:text-[30px] sm:text-lg  lg:leading-10 sm:leading-[20px] lg:mb-4 sm:mb-2">Unlock Your Next Travel Adventure with KAIT</h2>
+        </motion.div>
+
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 100, transition: { delay: 0.8, duration: 0.8 } }}
+          viewport={{ once: true }}>
+          <p className="text-gray-700 font-normal text-base lg:leading-7 sm:leading-[10px] md:leading-[20px]  mb-0 font-roboto max-w-full sm:max-w-md md:max-w-lg lg:max-w-[28rem] xl:max-w-[40rem]">Achieve your goals with KAIT, and watch your dream destinations turn into reality.  Set your sights on the pristine beaches of Goa, the lush backwaters of Kerala, the vibrant culture of Thailand, or the captivating energy of Malaysia.  These are just the beginning!  As you progress within KAIT, even more, exotic foreign adventures await.</p>
+        </motion.div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  {/* <div className='flex justify-center cursor-pointer '>     <a href='https://www.kaitworld.com/public/login'><h1 className='  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out '>view more</h1></a>  </div> */}
+
+
+</div>
+
+{/* righrimages */}
+
+<div className=" box-border relative    w-auto h-auto flex float-left   md:flex-row  pb-[70px]  ml-0  sm:pt-[15px] ">
+          {/* <img className=" h-[520px] w-[500px] box-border relative  object-cover border-white border-[15px]" src={Image11} alt="" /> */}
+          <img className=" h-[520px] w-[500px] box-border rounded-[80px] relative  object-cover border-white border-[15px]" src={Trip} alt='' />
+          {/* <div className='  hidden md:block h-[200px] w-[200px] bg-[#ec8e1a]  rounded-[500px] absolute left-28 mt-[-100px] z-[-111]'></div> */}
+          {/* <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-202px] mt-[-130px]  hidden md:block " src={Tailand} alt="" /> */}
+
+          {/* <img className=" h-[390px] w-[380px] box-border absolute  border-white border-[15px] ml-[-130px] mt-[-110px] " src={Image12} alt="" /> */}
+          {/* <div className=' hidden md:block h-[200px] w-[200px] bg-[#009c81] rounded-[500px] absolute left-[-7rem] mt-[182px] z-[-111]'></div> */}
+        </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       <div className='mb-[30px] mt-[30px]'>
@@ -250,7 +353,7 @@ const Services = () => {
 
 
 
-      <h2 className=' text-[40px] font-extrabold ml-9'>yercud Trip  </h2>
+      <h2 className=' text-[40px] font-extrabold ml-9'>Local Trip  </h2>
       <div className="">
         <Carousel
           responsive={responsive}

@@ -49,7 +49,7 @@ background: linear-gradient(90deg, rgba(157,73,160,1) 0%, rgba(66,81,154,1) 50%)
 }
 
 .test-silver {
-  background-image: url("../src/assets/silverenew.png");
+  background-image: url("../src/assets/SilverClub.png");
   background-repeat: no-repeat;
   object-fit: cover;
   height: 250px;

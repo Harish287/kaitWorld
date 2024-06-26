@@ -26,7 +26,7 @@ export const menuItemsData = [
       },
       {
         title: "Silver",
-         url: "Silver",
+        url: "Silver",
       },
       {
         title: "Gold",
@@ -36,8 +36,11 @@ export const menuItemsData = [
         title: "Platinum",
         url: "Platinum",
       },
-    
-     
+      {
+        title: "Diamond",
+        url: "Diamond",
+      }
+
     ],
   },
   {
@@ -48,7 +51,7 @@ export const menuItemsData = [
     title: "Gallery",
     url: "/gallery",
   },
- 
+
 
   // {
   //   title: "Contact",

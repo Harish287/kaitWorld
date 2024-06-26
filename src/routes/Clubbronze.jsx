@@ -120,9 +120,9 @@ const Clubsilver = ({ e, goTosilverPrevPage, silvercurrentPage, goTosilverNextPa
       <div className={`grid md:grid-cols-4  items-center gap-20 p-6 md:flex-col md: justify-center`}>
         {currentMembers.map(member => (
           <div key={member.user_id} className={`w-[100%] test-silver flex-row justify-center items-center`}>
-            <div className="mt-[69px] ml-[-10px] ">
+            <div className="mt-[36px] ml-[-17px] ">
               <img
-                className="h-[150px] w-[150px] m-auto object-cover  box-border rounded-[300px] "
+                className="h-[195px] w-[195px] m-auto object-cover  box-border rounded-[300px] "
                 src={member.user_image}
                 alt=""
               /></div>
@@ -141,7 +141,7 @@ const Clubsilver = ({ e, goTosilverPrevPage, silvercurrentPage, goTosilverNextPa
       </div>
 
 
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-[50px]">
         <button
           onClick={goTosilverPrevPage}
           className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
@@ -271,15 +271,15 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
   );
 };
 
-const Clubplatinum = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPage }) => {
+const Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatinumNextPage, setplatinumCurrentPage }) => {
   // const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(2);
 
-  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfLastItem = platinumcurrentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
 
-  const paginate = pageNumber => setCurrentPage(pageNumber);
+  const paginate = pageNumber => setplatinumCurrentPage(pageNumber);
 
 
   // // Go to previous page
@@ -324,9 +324,9 @@ const Clubplatinum = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPa
       </div>
       <div className="flex justify-center mt-4">
         <button
-          onClick={goToPrevPage}
+          onClick={goToplatinumPrevPage}
           className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
-          disabled={currentPage === 1}
+          disabled={platinumcurrentPage === 1}
         >
           Previous
         </button>
@@ -334,15 +334,15 @@ const Clubplatinum = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPa
           <button
             key={index}
             onClick={() => paginate(index + 1)}
-            className={`px-4 py-2 mx-1 border rounded-full ${currentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'
+            className={`px-4 py-2 mx-1 border rounded-full ${platinumcurrentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'
               }`}
           >
             {index + 1}
           </button>
         ))}  <button
-          onClick={goToNextPage}
+          onClick={goToplatinumNextPage}
           className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
-          disabled={currentPage === Math.ceil(e.members.length / itemsPerPage)}
+          disabled={platinumcurrentPage === Math.ceil(e.members.length / itemsPerPage)}
         >
           Next
         </button>
@@ -352,15 +352,15 @@ const Clubplatinum = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPa
 };
 
 
-const Clubdiamond = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPage }) => {
+const Clubdiamond = ({ e, goTodiamondPrevPage, diamondcurrentPage, goTodiamondNextPage, setdiamondCurrentPage }) => {
   // const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(1);
 
-  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfLastItem = diamondcurrentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
 
-  const paginate = pageNumber => setCurrentPage(pageNumber);
+  const paginate = pageNumber => setdiamondCurrentPage(pageNumber);
 
 
   // // Go to previous page
@@ -381,21 +381,32 @@ const Clubdiamond = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPag
     <div>
       <div
         key={e.id}
-        className=" grid grid-cols-1 bg-slate-600  items-center  md:overflow-x-scroll h-[500px] gap-6 p-6"
+        className={`grid md:grid-cols-2 bg-slate-600  items-center gap-6   p-6 `}
       >
         {e.members.map((e) => (
-          <div className="bg-cyan-500 gap-6 p-8  h-[400px] flex justify-center items-center">
+          <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  md:p-8     ">
 
-            <div className="font-extrabold">{e.notes}</div>
+            <img
+              className=" text-center m-auto md:h-[300px]  md:w-[300px] h-[100px]w-[100px] object-cover"
+              src={e.user_image}
+              alt=""
+            />
+
+            <div className="text-center">{e.user_id}</div>
+            <div
+              className="text-center"
+              dangerouslySetInnerHTML={{ __html: e.user_name }}
+            ></div>{" "}
+
 
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-4">
         <button
-          onClick={goToPrevPage}
+          onClick={goTodiamondPrevPage}
           className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
-          disabled={currentPage === 1}
+          disabled={diamondcurrentPage === 1}
         >
           Previous
         </button>
@@ -403,15 +414,15 @@ const Clubdiamond = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPag
           <button
             key={index}
             onClick={() => paginate(index + 1)}
-            className={`px-4 py-2 mx-1 border rounded-full ${currentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'
+            className={`px-4 py-2 mx-1 border rounded-full ${diamondcurrentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'
               }`}
           >
             {index + 1}
           </button>
         ))}  <button
-          onClick={goToNextPage}
+          onClick={goTodiamondNextPage}
           className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
-          disabled={currentPage === Math.ceil(e.members.length / itemsPerPage)}
+          disabled={diamondcurrentPage === Math.ceil(e.members.length / itemsPerPage)}
         >
           Next
         </button>

@@ -12,6 +12,9 @@ import Bronze from "./routes/club/bronze"
 import Silver from "./routes/club/Silver"
 import Gold from "./routes/club/Gold"
 import Platinum from "./routes/club/Platinum"
+import Diamond from "./routes/club/Diamond"
+
+
 import Events from "./routes/events"
 import Achivers from "./routes/achivers";
 import Contact from "./routes/contact";
@@ -87,6 +90,10 @@ const router = createBrowserRouter([
       path:"Platinum",
       element:<Platinum/>
     },
+    {
+      path:"Diamond",
+      element:<Diamond/>
+    }
     ],
   },
 ]);
