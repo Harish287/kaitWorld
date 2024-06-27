@@ -351,7 +351,7 @@ const achivers = () => {
 
 
 
-        <h2 className='text-[25px] md:text-[25px] sm:text-[25px] lg:text-[40px] font-extrabold lg:ml-9'>Gold Coin  </h2>
+        {/* <h2 className='text-[25px] md:text-[25px] sm:text-[25px] lg:text-[40px] font-extrabold lg:ml-9'>Gold Coin  </h2>
         <div className="">
         <Carousel
           responsive={responsive}
@@ -376,7 +376,14 @@ const achivers = () => {
         View more
         
       </a>
-      </div>
+      </div> */}
+
+
+
+
+
+
+      
 </div>
 
 

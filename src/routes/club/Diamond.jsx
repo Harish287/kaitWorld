@@ -3,25 +3,24 @@ import Banner from "../../assets/KAIT King.png";
 import {
     // ClubComponent,
     Clubbronze,
-    ClubDiamond,
+    Clubgold,
     Clubsilver,
     Clubplatinum,
     Clubdiamond,
-
+    Clubdoublediamond,
+    Clubtriplediamond,
+    Clubkaitking
 } from "../Clubbronze";
+
+
 import axios from "axios";
 // import "./global.css"
 
 
-
-
 const Diamond = () => {
+    const [tab, setTab] = useState("bronze");
 
-
-
-    const DiamondClubRef = useRef(null);
-
-    const [tab, setTab] = useState("Diamond");
+    const DimondClubRef = useRef(null);
 
     const updateTab = (e) => {
         setTab(e);
@@ -35,8 +34,7 @@ const Diamond = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-
-        setTimeout(() => DiamondClubRef.current.scrollIntoView({ behavior: 'smooth' }), 1000);
+        setTimeout(() => DimondClubRef.current.scrollIntoView({ behavior: 'smooth' }), 1000);
 
         const fetchData = async () => {
             try {
@@ -54,6 +52,9 @@ const Diamond = () => {
 
         fetchData();
     }, []);
+
+
+
 
 
     const [silvercurrentPage, setsilverCurrentPage] = useState(1);
@@ -76,22 +77,116 @@ const Diamond = () => {
 
 
 
-    const [DiamondcurrentPage, setDiamondCurrentPage] = useState(1);
-    const Diamondpaginate = pageNumber => setDiamondCurrentPage(pageNumber);
+    const [platinumcurrentPage, setplatinumCurrentPage] = useState(1);
+    const platinumpaginate = pageNumber => setplatinumCurrentPage(pageNumber);
 
     // Go to previous page
-    const goToDiamondPrevPage = () => {
-        if (DiamondcurrentPage > 1) {
-            setDiamondCurrentPage(DiamondcurrentPage - 1);
+    const goToplatinumPrevPage = () => {
+        if (platinumcurrentPage > 1) {
+            setplatinumCurrentPage(platinumcurrentPage - 1);
         }
     };
 
     // Go to next page
-    const goToDiamondNextPage = () => {
+    const goToplatinumNextPage = () => {
         // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
-        setDiamondCurrentPage(DiamondcurrentPage + 1);
+        setplatinumCurrentPage(platinumcurrentPage + 1);
         // }
     };
+
+
+    const [diamondcurrentPage, setdiamondCurrentPage] = useState(1);
+    const diamondpaginate = pageNumber => setdiamondCurrentPage(pageNumber);
+
+    // Go to previous page
+    const goTodiamondPrevPage = () => {
+        if (diamondcurrentPage > 1) {
+            setdiamondCurrentPage(diamondcurrentPage - 1);
+        }
+    };
+
+    // Go to next page
+    const goTodiamondNextPage = () => {
+        // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+        setdiamondCurrentPage(diamondcurrentPage + 1);
+        // }
+    };
+
+
+
+    const [goldcurrentPage, setgoldCurrentPage] = useState(1);
+    const goldpaginate = pageNumber => setgoldCurrentPage(pageNumber);
+
+    // Go to previous page
+    const goTogoldPrevPage = () => {
+        if (goldcurrentPage > 1) {
+            setgoldCurrentPage(goldcurrentPage - 1);
+        }
+    };
+
+    // Go to next page
+    const goTogoldNextPage = () => {
+        // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+        setgoldCurrentPage(goldcurrentPage + 1);
+        // }
+    };
+
+
+
+    const [doublediamondcurrentPage, setdoublediamondCurrentPage] = useState(1);
+    const doublediamondpaginate = pageNumber => setdoublediamondCurrentPage(pageNumber);
+
+    // Go to previous page
+    const goTodoublediamondPrevPage = () => {
+        if (doublediamondcurrentPage > 1) {
+            setdoublediamondCurrentPage(doublediamondcurrentPage - 1);
+        }
+    };
+
+    // Go to next page
+    const goTodoublediamondNextPage = () => {
+        // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+        setdoublediamondCurrentPage(doublediamondcurrentPage + 1);
+        // }
+    };
+
+
+    const [triplediamondcurrentPage, settriplediamondCurrentPage] = useState(1);
+    const triplediamondpaginate = pageNumber => settriplediamondCurrentPage(pageNumber);
+
+    // Go to previous page
+    const goTotriplediamondPrevPage = () => {
+        if (triplediamondcurrentPage > 1) {
+            settriplediamondCurrentPage(triplediamondcurrentPage - 1);
+        }
+    };
+
+    // Go to next page
+    const goTotriplediamondNextPage = () => {
+        // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+        settriplediamondCurrentPage(triplediamondcurrentPage + 1);
+        // }
+    };
+
+
+
+    const [kaitkingcurrentPage, setkaitkingCurrentPage] = useState(1);
+    const kaitkingpaginate = pageNumber => setkaitkingCurrentPage(pageNumber);
+
+    // Go to previous page
+    const goTokaitkingPrevPage = () => {
+        if (kaitkingcurrentPage > 1) {
+            setkaitkingCurrentPage(kaitkingcurrentPage - 1);
+        }
+    };
+
+    // Go to next page
+    const goTokaitkingNextPage = () => {
+        // if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+        setkaitkingCurrentPage(kaitkingcurrentPage + 1);
+        // }
+    };
+
 
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage] = useState(50); // Number of items to display per page
@@ -126,6 +221,8 @@ const Diamond = () => {
     }
 
 
+
+
     const handleFilter = (e) => {
         const value = (e.target.value || "").toLowerCase();
 
@@ -138,7 +235,7 @@ const Diamond = () => {
             console.log(filtered);
             setCurrentPage(1);
             setsilverCurrentPage(1);
-            setDiamondCurrentPage(1);
+            setgoldCurrentPage(1);
             return { ...link, members: filtered };
         });
         setFilterlist(filteredMembers);
@@ -147,9 +244,9 @@ const Diamond = () => {
     return (
         <div>
             <img className="w-[100%]" src={Banner} alt="" />
-            <h1 className="flex justify-center text-xl font-bold mt-9 mb-9" ref={DiamondClubRef}>Diamond Club</h1>
-            <div className=" md:flex">
-
+            <h1 ref={DimondClubRef} className="flex justify-center text-xl font-bold mt-9 mb-9">Diamond Club</h1>
+            <div className=" md:flex md:justify-center">
+                {" "}
                 <div className="md:flex px-0 md:px-28 gap-6 justify-center text-center">
                     {data.data.map((link, index) => (
                         <>
@@ -157,15 +254,13 @@ const Diamond = () => {
                                 {/* <div
                   key={link.id}
                   onClick={() => updateTab(link.club)}
-                  className={`md:my-0 my-7 flex flex-col  hover:text-blue-500  ${
-                    tab === link.club ? " text-blue-500" : " text-black"
-                  } font-semibold hover:cursor-pointer  active:text-gray-400`}
+                  className={`md:my-0 my-7 flex flex-col  hover:text-blue-500  ${tab === link.club ? " text-blue-500" : " text-black"
+                    } font-semibold hover:cursor-pointer  active:text-gray-400`}
                 >
                   {link.club}
                   <div
-                    className={`h-1 w-28 mx-auto bg-black hover:bg-blue-500 ${
-                      tab === link.club ? " bg-blue-500" : " bg-black"
-                    }`}
+                    className={`h-1 w-28 mx-auto bg-white hover:bg-white ${tab === link.club ? " bg-white" : " bg-white"
+                      }`}
                   ></div> */}
                             </div>
                             {/* </div> */}
@@ -179,10 +274,10 @@ const Diamond = () => {
                     >
                         Search
                     </label>
-                    <div class="relative">
-                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <div class="relative flex">
+                        <div class=" inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                             <svg
-                                class="w-4 h-4 text-gray-500 dark:text-gray-400 ml-[-35px]"
+                                class="w-4 h-4 text-gray-500 dark:text-gray-400"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -215,22 +310,32 @@ const Diamond = () => {
                     <div className="" key={link.id}>
                         {/* {tab === "bronze" && link.club === "bronze" && (
               <Clubbronze e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
+            )} */}
+
+                        {/* {tab === "silver" && link.club === "silver" && (
+              <Clubsilver e={link} goTosilverNextPage={goTosilverNextPage} silvercurrentPage={silvercurrentPage} setsilverCurrentPage={setsilverCurrentPage} goTosilverPrevPage={goTosilverPrevPage} />
+            )} */}
+
+                        {/* {tab === "gold" && link.club === "gold" && (
+              <Clubgold e={link} goTogoldNextPage={goTogoldNextPage} goldcurrentPage={goldcurrentPage} setgoldCurrentPage={setgoldCurrentPage} goTogoldPrevPage={goTogoldPrevPage} />
             )}
 
-            {tab === "silver" && link.club === "silver" && (
-              <Clubsilver e={link} goTosilverNextPage={goTosilverNextPage} silvercurrentPage={silvercurrentPage} setsilverCurrentPage={setsilverCurrentPage} goTosilverPrevPage={goTosilverPrevPage}/>
+            {tab === "platinum" && link.club === "platinum" && (
+              <Clubplatinum e={link} goToplatinumNextPage={goToplatinumNextPage} platinumcurrentPage={platinumcurrentPage} setplatinumCurrentPage={setplatinumCurrentPage} goToplatinumPrevPage={goToplatinumPrevPage} />
             )} */}
-
-                        {/* {tab === "Diamond" && link.club === "Diamond" && (
-              <ClubDiamond e={link} goToDiamondNextPage={goToDiamondNextPage} DiamondcurrentPage={DiamondcurrentPage} setDiamondCurrentPage={setDiamondCurrentPage} goToDiamondPrevPage={goToDiamondPrevPage} />
-            )} */}
-
-                        {/* {tab === "platinum" && link.club === "platinum" && (
-              <Clubplatinum e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
-            )} */}
-                       {tab === "diamond" && link.club === "diamond" && (
-              <Clubdiamond e={link} goToNextPage={goToNextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} goToPrevPage={goToPrevPage} />
+                        {tab === "diamond" && link.club === "diamond" && (
+                            <Clubdiamond e={link} goTodiamondNextPage={goTodiamondNextPage} diamondcurrentPage={diamondcurrentPage} setdiamondCurrentPage={setdiamondCurrentPage} goTodiamondPrevPage={goTodiamondPrevPage} />
+                        )}
+                        {/* {tab === "doublediamond" && link.club === "doublediamond" && (
+              <Clubdoublediamond e={link} goTodoublediamondNextPage={goTodoublediamondNextPage} doublediamondcurrentPage={doublediamondcurrentPage} setdoublediamondCurrentPage={setdoublediamondCurrentPage} goTodoublediamondPrevPage={goTodoublediamondPrevPage} />
             )}
+            {tab === "triplediamond" && link.club === "triplediamond" && (
+              <Clubtriplediamond e={link} goTotriplediamondNextPage={goTotriplediamondNextPage} triplediamondcurrentPage={triplediamondcurrentPage} settriplediamondCurrentPage={settriplediamondCurrentPage} goTotriplediamondPrevPage={goTotriplediamondPrevPage} />
+            )}
+
+{tab === "kaitking" && link.club === "kaitking" && (
+  <Clubkaitking e={link} goTokaitkingNextPage={goTokaitkingNextPage} kaitkingcurrentPage={kaitkingcurrentPage} setkaitkingCurrentPage={setkaitkingCurrentPage} goTokaitkingPrevPage={goTokaitkingPrevPage} />
+)} */}
                     </div>
                 ))}
             </div>

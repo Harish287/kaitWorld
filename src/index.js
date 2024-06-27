@@ -13,7 +13,9 @@ import Silver from "./routes/club/Silver"
 import Gold from "./routes/club/Gold"
 import Platinum from "./routes/club/Platinum"
 import Diamond from "./routes/club/Diamond"
-
+import Doublediamond from "./routes/club/doublediamond"
+import Triplediamond from "./routes/club/tripledaimond.jsx"
+import Kaitking from "./routes/club/Kaitking"
 
 import Events from "./routes/events"
 import Achivers from "./routes/achivers";
@@ -93,6 +95,18 @@ const router = createBrowserRouter([
     {
       path:"Diamond",
       element:<Diamond/>
+    },
+    {
+      path:"Doublediamond",
+      element:<Doublediamond/>
+    },
+    {
+      path:"Triplediamond",
+      element:<Triplediamond/>
+    },
+    {
+      path:"Kaitking",
+      element:<Kaitking/>
     }
     ],
   },

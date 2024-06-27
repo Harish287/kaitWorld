@@ -301,10 +301,10 @@ const Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatin
     <div>
       <div
         key={e.id}
-        className={`grid md:grid-cols-2 bg-slate-600  items-center gap-6   p-6 `}
+        className={`grid md:grid-cols-2 items-center gap-6   p-6 `}
       >
         {e.members.map((e) => (
-          <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  md:p-8     ">
+          <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8     ">
 
             <img
               className=" text-center m-auto md:h-[300px]  md:w-[300px] h-[100px]w-[100px] object-cover"
@@ -352,6 +352,8 @@ const Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatin
 };
 
 
+
+
 const Clubdiamond = ({ e, goTodiamondPrevPage, diamondcurrentPage, goTodiamondNextPage, setdiamondCurrentPage }) => {
   // const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(1);
@@ -381,10 +383,10 @@ const Clubdiamond = ({ e, goTodiamondPrevPage, diamondcurrentPage, goTodiamondNe
     <div>
       <div
         key={e.id}
-        className={`grid md:grid-cols-2 bg-slate-600  items-center gap-6   p-6 `}
+        className={`grid md:grid-cols-2  items-center gap-6   p-6 `}
       >
         {e.members.map((e) => (
-          <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  md:p-8     ">
+          <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5   md:p-8     ">
 
             <img
               className=" text-center m-auto md:h-[300px]  md:w-[300px] h-[100px]w-[100px] object-cover"
@@ -431,6 +433,247 @@ const Clubdiamond = ({ e, goTodiamondPrevPage, diamondcurrentPage, goTodiamondNe
   );
 };
 
+
+const Clubdoublediamond = ({ e, goTodoublediamondPrevPage, doublediamondcurrentPage, goTodoublediamondNextPage, setdoublediamondCurrentPage }) => {
+  // const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(1);
+
+  const indexOfLastItem = doublediamondcurrentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
+
+  const paginate = pageNumber => setdoublediamondCurrentPage(pageNumber);
+
+
+  // // Go to previous page
+  // const goToPrevPage = () => {
+  //   if (currentPage > 1) {
+  //     setCurrentPage(currentPage - 1);
+  //   }
+  // };
+
+  // // Go to next page
+  // const goToNextPage = () => {
+  //   if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+  //     setCurrentPage(currentPage + 1);
+  //   }
+  // };
+
+  return (
+    <div>
+      <div
+        key={e.id}
+        className={`grid md:grid-cols-2 bg-slate-600  items-center gap-6   p-6 `}
+      >
+        {e.members.map((e) => (
+          <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  md:p-8     ">
+
+            <img
+              className=" text-center m-auto md:h-[300px]  md:w-[300px] h-[100px]w-[100px] object-cover"
+              src={e.user_image}
+              alt=""
+            />
+
+            <div className="text-center">{e.user_id}</div>
+            <div
+              className="text-center"
+              dangerouslySetInnerHTML={{ __html: e.user_name }}
+            ></div>{" "}
+
+
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-center mt-4">
+        <button
+          onClick={goTodoublediamondPrevPage}
+          className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
+          disabled={doublediamondcurrentPage === 1}
+        >
+          Previous
+        </button>
+        {Array.from({ length: Math.ceil(e.members.length / itemsPerPage) }).map((_, index) => (
+          <button
+            key={index}
+            onClick={() => paginate(index + 1)}
+            className={`px-4 py-2 mx-1 border rounded-full ${doublediamondcurrentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'
+              }`}
+          >
+            {index + 1}
+          </button>
+        ))}  <button
+          onClick={goTodoublediamondNextPage}
+          className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
+          disabled={doublediamondcurrentPage === Math.ceil(e.members.length / itemsPerPage)}
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  );
+};
+
+
+const Clubtriplediamond = ({ e, goTotriplediamondPrevPage, triplediamondcurrentPage, goTotriplediamondNextPage, settriplediamondCurrentPage }) => {
+  // const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(1);
+
+  const indexOfLastItem = triplediamondcurrentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
+
+  const paginate = pageNumber => settriplediamondCurrentPage(pageNumber);
+
+
+  // // Go to previous page
+  // const goToPrevPage = () => {
+  //   if (currentPage > 1) {
+  //     setCurrentPage(currentPage - 1);
+  //   }
+  // };
+
+  // // Go to next page
+  // const goToNextPage = () => {
+  //   if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+  //     setCurrentPage(currentPage + 1);
+  //   }
+  // };
+
+  return (
+    <div>
+      <div
+        key={e.id}
+        className={`grid md:grid-cols-2 bg-slate-600  items-center gap-6   p-6 `}
+      >
+        {e.members.map((e) => (
+          <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  md:p-8     ">
+
+            <img
+              className=" text-center m-auto md:h-[300px]  md:w-[300px] h-[100px]w-[100px] object-cover"
+              src={e.user_image}
+              alt=""
+            />
+
+            <div className="text-center">{e.user_id}</div>
+            <div
+              className="text-center"
+              dangerouslySetInnerHTML={{ __html: e.user_name }}
+            ></div>{" "}
+
+
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-center mt-4">
+        <button
+          onClick={goTotriplediamondPrevPage}
+          className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
+          disabled={triplediamondcurrentPage === 1}
+        >
+          Previous
+        </button>
+        {Array.from({ length: Math.ceil(e.members.length / itemsPerPage) }).map((_, index) => (
+          <button
+            key={index}
+            onClick={() => paginate(index + 1)}
+            className={`px-4 py-2 mx-1 border rounded-full ${triplediamondcurrentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'
+              }`}
+          >
+            {index + 1}
+          </button>
+        ))}  <button
+          onClick={goTotriplediamondNextPage}
+          className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
+          disabled={triplediamondcurrentPage === Math.ceil(e.members.length / itemsPerPage)}
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const Clubkaitking = ({ e, goTokaitkingPrevPage, kaitkingcurrentPage, goTokaitkingNextPage, setkaitkingCurrentPage }) => {
+  // const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(1);
+
+  const indexOfLastItem = kaitkingcurrentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
+
+  const paginate = pageNumber => setkaitkingCurrentPage(pageNumber);
+
+
+  // // Go to previous page
+  // const goToPrevPage = () => {
+  //   if (currentPage > 1) {
+  //     setCurrentPage(currentPage - 1);
+  //   }
+  // };
+
+  // // Go to next page
+  // const goToNextPage = () => {
+  //   if (currentPage < Math.ceil(e.members.length / itemsPerPage)) {
+  //     setCurrentPage(currentPage + 1);
+  //   }
+  // };
+
+  return (
+    <div>
+      <div
+        key={e.id}
+        className={`grid md:grid-cols-2 bg-slate-600  items-center gap-6   p-6 `}
+      >
+        {e.members.map((e) => (
+          <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  md:p-8     ">
+
+            <img
+              className=" text-center m-auto md:h-[300px]  md:w-[300px] h-[100px]w-[100px] object-cover"
+              src={e.user_image}
+              alt=""
+            />
+
+            <div className="text-center">{e.user_id}</div>
+            <div
+              className="text-center"
+              dangerouslySetInnerHTML={{ __html: e.user_name }}
+            ></div>{" "}
+
+
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-center mt-4">
+        <button
+          onClick={goTokaitkingPrevPage}
+          className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
+          disabled={kaitkingcurrentPage === 1}
+        >
+          Previous
+        </button>
+        {Array.from({ length: Math.ceil(e.members.length / itemsPerPage) }).map((_, index) => (
+          <button
+            key={index}
+            onClick={() => paginate(index + 1)}
+            className={`px-4 py-2 mx-1 border rounded-full ${kaitkingcurrentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'
+              }`}
+          >
+            {index + 1}
+          </button>
+        ))}  <button
+          onClick={goTokaitkingNextPage}
+          className="px-4 py-2 mx-1 border rounded-full bg-white text-gray-700"
+          disabled={kaitkingcurrentPage === Math.ceil(e.members.length / itemsPerPage)}
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  );
+};
+
+
+
 export {
   ClubComponent,
   Clubbronze,
@@ -438,4 +681,7 @@ export {
   Clubsilver,
   Clubplatinum,
   Clubgold,
+  Clubdoublediamond,
+  Clubtriplediamond,
+  Clubkaitking,
 };
