@@ -210,7 +210,7 @@ const Services = () => {
     whileInView={{ opacity: 100, y: 0, transition: { delay: 0.8, duration: 0.8 } }}
     viewport={{ once: true }}>
     <p style={{ fontFamily: "Nunito,sans-serif" }} className=" font-bold lg:text-[30px] sm:text-[16px] leading-[30px]  font-[Roboto, sans-serif] bg-gradient-to-r from-blue-800 to-pink-500 text-transparent bg-clip-text lg:mt-0  md:mt-[20px] lg:mb-4">
-    Experience the Extraordinary: KAIT Community</p>
+    Escape the ordinary and embark on extraordinary adventures! </p>
   </motion.div>
 
   {/* <motion.div
@@ -223,7 +223,7 @@ const Services = () => {
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 100, transition: { delay: 0.8, duration: 0.8 } }}
     viewport={{ once: true }}>
-    <p className="font-roboto font-normal lg:text-base lg:leading-6 md:leading-[20px]  sm:leading-[10px] text-gray-700 max-w-full sm:max-w-md md:max-w-lg lg:max-w-[28rem] xl:max-w-[40rem]">Escape the ordinary and embark on extraordinary adventures! 
+    <p className="font-roboto font-normal lg:text-base lg:leading-6 md:leading-[20px]  sm:leading-[10px] text-gray-700 max-w-full sm:max-w-md md:max-w-lg lg:max-w-[28rem] xl:max-w-[40rem]">
     Joining our vibrant KAIT Community isn't just about connecting with like-minded individuals; it's your key to unlocking unforgettable travel experiences.</p>
   </motion.div>
 
