@@ -271,7 +271,7 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
   );
 };
 
-const Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatinumNextPage, setplatinumCurrentPage }) => {
+const  Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatinumNextPage, setplatinumCurrentPage }) => {
   // const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(2);
 

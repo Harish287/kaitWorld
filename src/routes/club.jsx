@@ -113,6 +113,8 @@ const Club = () => {
 
 
 
+
+
   const [goldcurrentPage, setgoldCurrentPage] = useState(1);
   const goldpaginate = pageNumber => setgoldCurrentPage(pageNumber);
 
@@ -332,9 +334,9 @@ const Club = () => {
               <Clubtriplediamond e={link} goTotriplediamondNextPage={goTotriplediamondNextPage} triplediamondcurrentPage={triplediamondcurrentPage} settriplediamondCurrentPage={settriplediamondCurrentPage} goTotriplediamondPrevPage={goTotriplediamondPrevPage} />
             )}
 
-{tab === "kaitking" && link.club === "kaitking" && (
-  <Clubkaitking e={link} goTokaitkingNextPage={goTokaitkingNextPage} kaitkingcurrentPage={kaitkingcurrentPage} setkaitkingCurrentPage={setkaitkingCurrentPage} goTokaitkingPrevPage={goTokaitkingPrevPage} />
-)}
+            {tab === "kaitking" && link.club === "kaitking" && (
+              <Clubkaitking e={link} goTokaitkingNextPage={goTokaitkingNextPage} kaitkingcurrentPage={kaitkingcurrentPage} setkaitkingCurrentPage={setkaitkingCurrentPage} goTokaitkingPrevPage={goTokaitkingPrevPage} />
+            )}
           </div>
         ))}
       </div>

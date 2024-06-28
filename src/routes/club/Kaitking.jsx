@@ -18,7 +18,7 @@ import axios from "axios";
 
 
 const Club = () => {
-  const [tab, setTab] = useState("bronze");
+  const [tab, setTab] = useState("kaitking");
 
   const ClubRef = useRef(null);
 
