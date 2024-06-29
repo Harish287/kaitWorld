@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import Achiver from "../assets/Achivers.png"
 
 import Imageevents from "../assets/Achivers.png"
@@ -26,7 +26,7 @@ import Trophy from "../assets/trophy (1).png"
 import Imagesvg from "../assets/Anime/stick-man.936d1e5d.svg"
 import Imagegif from "../assets/trophy.png"
 
-const achivers = () => {
+const Achivers = () => {
 
 
 
@@ -175,6 +175,39 @@ const achivers = () => {
 
 
 
+
+
+
+  const [bronzecountdown, setbronzeCountdown] = useState('');
+
+  useEffect(() => {
+    const countdownDate = new Date("2024-07-20").getTime();
+    
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+
+      if (distance < 0) {
+        clearInterval(interval);
+        setbronzeCountdown("SORRY, THE EVENT IS OVER");
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      setbronzeCountdown(`${days}Days - ${hours}Hours - ${minutes}Minutes - ${seconds}Seconds`);
+    };
+
+    const interval = setInterval(updateCountdown, 1000);
+    updateCountdown(); // Call immediately to avoid initial delay
+    return () => clearInterval(interval);
+  }, []);
+
+
+
   return (
     <div>
 
@@ -222,10 +255,10 @@ const achivers = () => {
 
 
 
-        <div className="container flex-col  md:flex  lg:flex-row  flex justify-around  box-border lg:rounded-[125px]  md:rounded-[0px] items-center sm:flex-col  ">
+        <div className="container flex-col  md:flex  lg:flex-row  flex justify-around  box-border lg:rounded-[125px]  md:rounded-[0px] items-center sm:flex-col gap-9">
 
 {/* leftcontent */}
-<div className=" lg:pl-[50px] sm:pl-[0px] sm:p-[30px] max-w-screen-sm">
+<div className=" lg:pl-[50px] sm:pl-[0px] sm:p-[30px] max-w-screen-sm lg:mr-20px">
 <motion.div
     initial={{ opacity: 0, y: -70    }}
     whileInView={{ opacity: 100, y:0 ,transition: { delay: 0.8, duration: 0.8 } }}
@@ -443,7 +476,7 @@ const achivers = () => {
 
 
 
-      <h2 className='text-[25px] md:text-[25px] sm:text-[25px] lg:text-[40px] font-extrabold lg:ml-9'>5G mobile   </h2>
+      <h2 className='text-[25px] md:text-[25px] sm:text-[25px] lg:text-[40px] font-extrabold lg:ml-9'>Achivers Rewards   </h2>
       <div className="">
         <Carousel
           responsive={responsive}
@@ -475,6 +508,80 @@ const achivers = () => {
 
 
       
+{/* meet achivers */}
+
+      <div className='mt-[20px]'>
+<h1 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Achivers meet</h1>
+<h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{bronzecountdown}</h6>
+<div className='mb-[30px] mt-[20px]'>
+
+
+<div className='grid center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2 '>
+
+  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
+    <a href="#">
+      <img class="rounded-t-lg w-[490px] h-[400px]" src={Imageevents} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
+
+    </a>
+    <div class="">
+      <a href="#">
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Introducing The Newest Addition To Trichy Network With The Opening Of A Branch Office In Your Area!</h5>
+      </a>
+      {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
+      {/* <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        View more
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </a> */}
+    </div>
+  </div>
+
+
+  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
+    <a href="#">
+      <img class="rounded-t-lg w-[490px] h-[400px] " src={Imageevents} alt="" />
+    </a>
+    <div class="">
+      <a href="#">
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Blockchain Awareness Meeting, Fueling Knowledge And Inspiring Adoption Of Blockchain.</h5>
+      </a>
+      {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
+      {/* <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        View more
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </a> */}
+    </div>
+  </div>
+
+
+  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
+    <a href="#">
+      <img class="rounded-t-lg w-[490px] h-[400px]" src={Imageevents} alt="" />
+    </a>
+    <div class="">
+      <a href="#">
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Solingur Crypto Exchange Awareness Meeting, Spreading Knowledge In Cryptocurrency!</h5>
+      </a>
+      {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
+      {/* <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        View more
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+        </svg>
+      </a> */}
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+
+</div>
+
 
 
 
@@ -483,4 +590,4 @@ const achivers = () => {
   )
 }
 
-export default achivers
+export default Achivers

@@ -236,7 +236,7 @@ const App = () => {
     <div className="container flex-col  md:flex  lg:flex-row  flex justify-around bg-[#c8cbfe] box-border lg:rounded-[125px]  md:rounded-[0px] items-center sm:flex-col  ">
 
       {/* leftcontent */}
-      <div className=" lg:pl-[50px] sm:pl-[0px] sm:p-[30px] max-w-screen-sm">
+      <div className=" lg:pl-[50px] sm:pl-[0px] sm:p-[30px] max-w-screen-sm lg:mr-[20px]">
         <motion.div
           initial={{ opacity: 0, y: -70 }}
           whileInView={{ opacity: 100, y: 0, transition: { delay: 0.8, duration: 0.8 } }}

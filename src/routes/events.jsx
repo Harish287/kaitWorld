@@ -84,7 +84,7 @@ const Events = () => {
 
       if (distance < 0) {
         clearInterval(interval);
-        setCountdown("SORRY, THE EVENT IS OVER");
+        setsilverCountdown("SORRY, THE EVENT IS OVER");
         return;
       }
 
@@ -114,7 +114,7 @@ const Events = () => {
 
       if (distance < 0) {
         clearInterval(interval);
-        setCountdown("SORRY, THE EVENT IS OVER");
+        setbronzeCountdown("SORRY, THE EVENT IS OVER");
         return;
       }
 
