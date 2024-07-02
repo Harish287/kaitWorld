@@ -81,7 +81,7 @@ const router = createBrowserRouter([
       element:<Goldcoin/>
     },
     {
-      path:"Mobile",
+      path:"awards",
       element:<Mobile/>
     },
     {

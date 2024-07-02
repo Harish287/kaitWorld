@@ -13,7 +13,8 @@ import Imageshape from "../assets/abc.jpeg"
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import axios from 'axios';
+ 
 
 import anime1 from "../assets/Anime/anime1.jpg"
 import anime2 from "../assets/Anime/anime2.png"
@@ -72,6 +73,10 @@ const Achivers = () => {
 
 
 
+
+
+
+ 
 
 
 
@@ -206,6 +211,25 @@ const Achivers = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const [achiversData, setAchiversData] = useState(null);
+  const apiUrl = 'https://kairaablockchainacademy.com/kait/admin/achivers/achiver_api.php';
+
+  useEffect(() => {
+    const fetchContestData = async () => {
+      try {
+        const response = await axios.get(apiUrl);
+        setAchiversData(response.data);  // assuming response.data is the JSON object
+      } catch (error) {
+        console.error('Error fetching contest data:', error);
+      }
+    };
+
+    fetchContestData();
+  }, []);
+
+  if (!achiversData) {
+    return <div>Loading...</div>;
+  }
 
 
   return (
@@ -488,17 +512,20 @@ const Achivers = () => {
           partialVisible={false}
           dotListClass="custom-dot-list-style"
         >
-          {mobileImageUrl.map((imageUrl, index) => {
+         {achiversData.data[0].members.map((img, i) => {
             return (
-              <div className="slider transition-all duration-300 hover:scale-110 " key={index}>
-                <img src={imageUrl.url} className=" object-fill p-[20px] w-[300px] h-[300px]" alt="movie" /><p className='relative bg-gray-500 '>{imageUrl.para}</p>
+              <div className="slider transition-all duration-300 hover:scale-110" key={i}>
+                <img src={img.user_image} alt="#"  className='w-[300px] h-[300px]'/>
+                {/* <p className='relative bg-gray-500 '>{img.title}</p> */}
               </div>
             );
-          })}
+          })
+
+          }
         </Carousel>
       </div>
 
-      <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="mobile" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
+      <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="awards" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
         View more
         
       </a>
