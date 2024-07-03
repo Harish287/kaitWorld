@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.526f2333.css",
-    "main.js": "/static/js/main.55a94883.js",
+    "main.js": "/static/js/main.a4661f14.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.b351c09d.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.adc23f67.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.6786f465.chunk.js",
@@ -29,19 +29,19 @@
     "static/media/trip.png": "/static/media/trip.40d6408a9f8cba9ea94d.png",
     "static/media/Untitled design (24).png": "/static/media/Untitled design (24).37d98dd6f39bae4b7bea.png",
     "static/media/trophy.png": "/static/media/trophy.128d3b826ae5c8760629.png",
-    "static/media/blockchain.jpeg": "/static/media/blockchain.ba57d7e52ffb15630cea.jpeg",
     "static/media/gallery.png": "/static/media/gallery.a48159d31e8382d30543.png",
-    "static/media/vpay.jpeg": "/static/media/vpay.0d75e364473b66aa3a49.jpeg",
     "static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM (1).jpeg": "/static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM (1).63c0bb207aebbd54377d.jpeg",
     "static/media/anime5.png": "/static/media/anime5.5f04a5d7b94d37c4e6fc.png",
     "static/media/event.png": "/static/media/event.eaddd1f6fb01ca137967.png",
     "static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM (2).jpeg": "/static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM (2).f6a0cecafc39c0e08442.jpeg",
     "static/media/anime4.png": "/static/media/anime4.beb0f8bac9f0c0f561c1.png",
+    "static/media/aniversary.jpeg": "/static/media/aniversary.4cc85147e22afb0d8027.jpeg",
     "static/media/trip.jpeg": "/static/media/trip.7c6af906747970009e75.jpeg",
     "static/media/anime6.png": "/static/media/anime6.eca28c249bf8de08e6e7.png",
     "static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM.jpeg": "/static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM.56b5501cefb0f4fb8d61.jpeg",
     "static/media/anime2.png": "/static/media/anime2.60daad2bef705f015f95.png",
     "static/media/anime3.png": "/static/media/anime3.4559f31c7e563bffa4e3.png",
+    "static/media/exchange.jpeg": "/static/media/exchange.f2d2c062d85306c964c9.jpeg",
     "static/media/abc.jpeg": "/static/media/abc.29c77c2664f4a00249a1.jpeg",
     "static/media/maxresdefault.jpg": "/static/media/maxresdefault.0da0df7b53e0bf6b56b3.jpg",
     "static/media/coin.png": "/static/media/coin.4aa1f89807e5ea92cbdf.png",
@@ -71,7 +71,7 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.526f2333.css.map": "/static/css/main.526f2333.css.map",
-    "main.55a94883.js.map": "/static/js/main.55a94883.js.map",
+    "main.a4661f14.js.map": "/static/js/main.a4661f14.js.map",
     "reactPlayerYouTube.b351c09d.chunk.js.map": "/static/js/reactPlayerYouTube.b351c09d.chunk.js.map",
     "reactPlayerSoundCloud.adc23f67.chunk.js.map": "/static/js/reactPlayerSoundCloud.adc23f67.chunk.js.map",
     "reactPlayerVimeo.6786f465.chunk.js.map": "/static/js/reactPlayerVimeo.6786f465.chunk.js.map",
@@ -89,6 +89,6 @@
   },
   "entrypoints": [
     "static/css/main.526f2333.css",
-    "static/js/main.55a94883.js"
+    "static/js/main.a4661f14.js"
   ]
 }
