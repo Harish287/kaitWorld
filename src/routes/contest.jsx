@@ -9,9 +9,9 @@ import Image2 from "../assets/Kerala.png"
 import Image3 from "../assets/Malaysia.png"
 
 
-import Upcoming1 from "../assets/contest/WhatsApp Image 2024-07-03 at 12.37.58 PM (1).jpeg"
-import Upcoming2 from "../assets/contest/WhatsApp Image 2024-07-03 at 12.37.58 PM (2).jpeg"
-import Upcoming3 from "../assets/contest/WhatsApp Image 2024-07-03 at 12.37.58 PM.jpeg"
+import Upcoming2 from "../assets/contest/WhatsApp Image 2024-07-03 at 12.37.58 PM (1).jpeg"
+import Upcoming3 from "../assets/contest/WhatsApp Image 2024-07-03 at 12.37.58 PM (2).jpeg"
+import Upcoming1 from "../assets/contest/WhatsApp Image 2024-07-03 at 12.37.58 PM.jpeg"
 
 
 
