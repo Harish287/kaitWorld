@@ -25,6 +25,7 @@ import Contest from "./routes/contest"
 
 import Goldcoin from "./routes/goldcoin"
 import Mobile from "./routes/mobile"
+import Localtrips from "./localtrips.jsx"
 
 // import Scroll from "./scrolltop"
 const router = createBrowserRouter([
@@ -48,66 +49,71 @@ const router = createBrowserRouter([
         path: "club",
         element: <Club />,
       },
-    
+
+      {
+        path: "localtrips",
+        element: <Localtrips />,
+      },
+
       {
         path: "bronze",
         element: <Bronze />,
       },
       {
-        path:"events",
-        element:<Events/>
+        path: "events",
+        element: <Events />
       },
-    {
-      path:"achivers",
-      element:<Achivers/>
-    },
-    {
-      path:"contact",
-      element:<Contact/>
-    },{
-      path:"gallery",
-      element:<Gallery/>
-    },{
-      path:"Contest",
-      element:<Contest/>
-    },
-    {
-      path:"Silver",
-      element:<Silver/>
-      
-    },
-    {
-      path:"Goldcoin",
-      element:<Goldcoin/>
-    },
-    {
-      path:"awards",
-      element:<Mobile/>
-    },
-    {
-      path:"Gold",
-      element:<Gold/>
-    },
-    {
-      path:"Platinum",
-      element:<Platinum/>
-    },
-    {
-      path:"Diamond",
-      element:<Diamond/>
-    },
-    {
-      path:"Doublediamond",
-      element:<Doublediamond/>
-    },
-    {
-      path:"Triplediamond",
-      element:<Triplediamond/>
-    },
-    {
-      path:"Kaitking",
-      element:<Kaitking/>
-    }
+      {
+        path: "achivers",
+        element: <Achivers />
+      },
+      {
+        path: "contact",
+        element: <Contact />
+      }, {
+        path: "gallery",
+        element: <Gallery />
+      }, {
+        path: "Contest",
+        element: <Contest />
+      },
+      {
+        path: "Silver",
+        element: <Silver />
+
+      },
+      {
+        path: "Goldcoin",
+        element: <Goldcoin />
+      },
+      {
+        path: "awards",
+        element: <Mobile />
+      },
+      {
+        path: "Gold",
+        element: <Gold />
+      },
+      {
+        path: "Platinum",
+        element: <Platinum />
+      },
+      {
+        path: "Diamond",
+        element: <Diamond />
+      },
+      {
+        path: "Doublediamond",
+        element: <Doublediamond />
+      },
+      {
+        path: "Triplediamond",
+        element: <Triplediamond />
+      },
+      {
+        path: "Kaitking",
+        element: <Kaitking />
+      }
     ],
   },
 ]);
