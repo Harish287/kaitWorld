@@ -199,7 +199,7 @@ const Services = () => {
 
 
 
-
+      {/* Upcoming events */}
 
 
       <div className=" w-[100%]  ">
@@ -215,15 +215,15 @@ const Services = () => {
         </div>
 
         <div>
-        <div className='mb-[30px] mt-[30px]'>
+          <div className='mb-[30px] mt-[30px]'>
 
-<div className='grid center w-[90%] m-auto grid-cols-1 gap-5 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2'>
-  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
-    <a href="#">
-      <img class="rounded-t-lg w-[100%] h-[400px]" src={Upcoming1} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
+            <div className='grid center w-[90%] m-auto grid-cols-1 gap-5 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2'>
+              <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
+                <a href="#">
+                  <img class="rounded-t-lg w-[100%] h-[400px]" src={Upcoming1} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
 
-    </a>
-    {/* <div className=" p-[10px]">
+                </a>
+                {/* <div className=" p-[10px]">
       <a href="#">
         <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Introducing The Newest Addition To Trichy Network With The Opening Of A Branch Office In Your Area!</h5>
       </a>
@@ -231,28 +231,28 @@ const Services = () => {
 
 
     </div> */}
-  </div>
+              </div>
 
 
-  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
-    <a href="#">
-      <img class="rounded-t-lg w-[490px] h-[400px] " src={Upcoming2} alt="" />
-    </a>
-    {/* <div className=" p-[10px]">
+              <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
+                <a href="#">
+                  <img class="rounded-t-lg w-[490px] h-[400px] " src={Upcoming2} alt="" />
+                </a>
+                {/* <div className=" p-[10px]">
       <a href="#">
         <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Blockchain Awareness Meeting, Fueling Knowledge And Inspiring Adoption Of Blockchain.</h5>
       </a>
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
 
     </div> */}
-  </div>
+              </div>
 
 
-  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
-    <a href="#">
-      <img class="rounded-t-lg w-[490px] h-[400px]" src={Upcoming3} alt="" />
-    </a>
-    {/* <div className=" p-[10px]">
+              <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
+                <a href="#">
+                  <img class="rounded-t-lg w-[490px] h-[400px]" src={Upcoming3} alt="" />
+                </a>
+                {/* <div className=" p-[10px]">
       <a href="#">
         <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Solingur Crypto Exchange Awareness Meeting, Spreading Knowledge In Cryptocurrency!</h5>
       </a>
@@ -260,15 +260,15 @@ const Services = () => {
 
     </div> */}
 
-  </div>
+              </div>
 
-</div>
-{/* <div className=' flex justify-center mt-[40px] mb-[20px]'>  <a href="/contest" class="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
+            </div>
+            {/* <div className=' flex justify-center mt-[40px] mb-[20px]'>  <a href="/contest" class="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
   View more
  
 </a>
 </div> */}
-</div>
+          </div>
 
 
         </div>
