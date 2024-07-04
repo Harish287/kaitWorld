@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.93eb9ba0.css",
-    "main.js": "/static/js/main.ec45ab2b.js",
+    "main.js": "/static/js/main.4d7ceafc.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.b351c09d.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.adc23f67.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.6786f465.chunk.js",
@@ -33,6 +33,7 @@
     "static/media/kait.jpeg": "/static/media/kait.70ab76a9d3ff7c4b29c2.jpeg",
     "static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM (1).jpeg": "/static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM (1).63c0bb207aebbd54377d.jpeg",
     "static/media/anime5.png": "/static/media/anime5.5f04a5d7b94d37c4e6fc.png",
+    "static/media/july-contest.jpeg": "/static/media/july-contest.27db90b8fc03486ee090.jpeg",
     "static/media/event.png": "/static/media/event.eaddd1f6fb01ca137967.png",
     "static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM (2).jpeg": "/static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM (2).f6a0cecafc39c0e08442.jpeg",
     "static/media/anime4.png": "/static/media/anime4.beb0f8bac9f0c0f561c1.png",
@@ -71,7 +72,7 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.93eb9ba0.css.map": "/static/css/main.93eb9ba0.css.map",
-    "main.ec45ab2b.js.map": "/static/js/main.ec45ab2b.js.map",
+    "main.4d7ceafc.js.map": "/static/js/main.4d7ceafc.js.map",
     "reactPlayerYouTube.b351c09d.chunk.js.map": "/static/js/reactPlayerYouTube.b351c09d.chunk.js.map",
     "reactPlayerSoundCloud.adc23f67.chunk.js.map": "/static/js/reactPlayerSoundCloud.adc23f67.chunk.js.map",
     "reactPlayerVimeo.6786f465.chunk.js.map": "/static/js/reactPlayerVimeo.6786f465.chunk.js.map",
@@ -89,6 +90,6 @@
   },
   "entrypoints": [
     "static/css/main.93eb9ba0.css",
-    "static/js/main.ec45ab2b.js"
+    "static/js/main.4d7ceafc.js"
   ]
 }

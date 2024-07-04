@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import 'tailwindcss/tailwind.css'; // Import Tailwind CSS
-import imge from "../../assets/contest/WhatsApp Image 2024-07-03 at 12.37.58 PM.jpeg";
+import imge from "../../assets/july-contest.jpeg";
 
 const App = () => {
     const [showModal, setShowModal] = useState(false); // State to control modal visibility
