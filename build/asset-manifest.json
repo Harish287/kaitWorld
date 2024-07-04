@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8650ab1.css",
-    "main.js": "/static/js/main.aec0f458.js",
+    "main.css": "/static/css/main.93eb9ba0.css",
+    "main.js": "/static/js/main.119ea864.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.b351c09d.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.adc23f67.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.6786f465.chunk.js",
@@ -30,6 +30,7 @@
     "static/media/Untitled design (24).png": "/static/media/Untitled design (24).37d98dd6f39bae4b7bea.png",
     "static/media/trophy.png": "/static/media/trophy.128d3b826ae5c8760629.png",
     "static/media/gallery.png": "/static/media/gallery.a48159d31e8382d30543.png",
+    "static/media/kait.jpeg": "/static/media/kait.70ab76a9d3ff7c4b29c2.jpeg",
     "static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM (1).jpeg": "/static/media/WhatsApp Image 2024-07-03 at 12.37.58 PM (1).63c0bb207aebbd54377d.jpeg",
     "static/media/anime5.png": "/static/media/anime5.5f04a5d7b94d37c4e6fc.png",
     "static/media/event.png": "/static/media/event.eaddd1f6fb01ca137967.png",
@@ -46,7 +47,6 @@
     "static/media/maxresdefault.jpg": "/static/media/maxresdefault.0da0df7b53e0bf6b56b3.jpg",
     "static/media/coin.png": "/static/media/coin.4aa1f89807e5ea92cbdf.png",
     "static/media/anime1.jpg": "/static/media/anime1.8f4bc50a85f3d20334f0.jpg",
-    "static/media/kait staking.jpeg": "/static/media/kait staking.b5f9180b36d718c8cef9.jpeg",
     "static/media/WhatsApp Image 2024-06-06 at 4.49.10 PM.jpeg": "/static/media/WhatsApp Image 2024-06-06 at 4.49.10 PM.52b6d95abdd6a530d6a8.jpeg",
     "static/media/SilverClub.png": "/static/media/SilverClub.fed8360fc35bb2936be3.png",
     "static/media/Goldclub.png": "/static/media/Goldclub.0cd0008ab6651d9e69db.png",
@@ -70,8 +70,8 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.a8650ab1.css.map": "/static/css/main.a8650ab1.css.map",
-    "main.aec0f458.js.map": "/static/js/main.aec0f458.js.map",
+    "main.93eb9ba0.css.map": "/static/css/main.93eb9ba0.css.map",
+    "main.119ea864.js.map": "/static/js/main.119ea864.js.map",
     "reactPlayerYouTube.b351c09d.chunk.js.map": "/static/js/reactPlayerYouTube.b351c09d.chunk.js.map",
     "reactPlayerSoundCloud.adc23f67.chunk.js.map": "/static/js/reactPlayerSoundCloud.adc23f67.chunk.js.map",
     "reactPlayerVimeo.6786f465.chunk.js.map": "/static/js/reactPlayerVimeo.6786f465.chunk.js.map",
@@ -88,7 +88,7 @@
     "reactPlayerPreview.dffcf16e.chunk.js.map": "/static/js/reactPlayerPreview.dffcf16e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8650ab1.css",
-    "static/js/main.aec0f458.js"
+    "static/css/main.93eb9ba0.css",
+    "static/js/main.119ea864.js"
   ]
 }

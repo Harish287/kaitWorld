@@ -35,7 +35,7 @@ import Imagegif from "./assets/trophy.png"
 // import Video2 from "./assets/video-4 (1).jpg"
 // import Video3 from "./assets/video-5 (1).jpg"
 
-import Imageevents1 from "./assets/kait staking.jpeg"
+import Imageevents1 from "./assets/kait.jpeg"
 import Imageevents2 from "./assets/exchange.jpeg"
 import Imageevents3 from "./assets/aniversary.jpeg"
 

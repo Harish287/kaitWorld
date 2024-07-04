@@ -29,12 +29,12 @@ const AchiverBronze = () => {
        
         <div className="grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
           {
-            bronzeClubData && bronzeClubData?.data[2]?.members.slice(0, 2).map((e, i) => (
+            bronzeClubData && bronzeClubData?.data[2]?.members.map((e, i) => (
               <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px] md:mb-[100px] '>
                 <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
                   <img src={e.silver_club_achivers_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
-                  {/* <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.place1 }}></p>
-             </div> */}
+                  <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.title }}></p>
+             </div>
                 </div>
               </div>
             ))

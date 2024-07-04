@@ -676,73 +676,10 @@ const Achivers = () => {
 
 
 
-      {/* Gold */}
+  {/* bronze */}
 
-
-      <div>
-        <h1 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Gold Club Achivers meet</h1>
-        {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{goldcountdown}</h6> */}
-
-
-        <div className="grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
-          {
-            bronzeClubData && bronzeClubData?.data[0]?.members.slice(0, 2).map((e, i) => (
-              <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px]  md:mb-[50px] '>
-                <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
-                  <img src={e.gold_club_achivers_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
-                  {/* <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.place1 }}></p>
-             </div> */}
-                </div>
-              </div>
-            ))
-          }
-
-        </div>
-        <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="/GoldAchiver" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
-        View more
-
-      </a>
-      </div>
-
-      </div>
-
-
-
-      {/* Silver */}
-
-      <div className='mt-[20px]'>
-        <h1 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Silver Club Achivers meet</h1>
-        {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{silvercountdown}</h6> */}
-       
-        <div className="grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
-          {
-            bronzeClubData && bronzeClubData?.data[2]?.members.slice(0, 2).map((e, i) => (
-              <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px] md:mb-[50px] '>
-                <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
-                  <img src={e.silver_club_achivers_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
-                  {/* <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.place1 }}></p>
-             </div> */}
-                </div>
-              </div>
-            ))
-          }
-
-        </div>
-        <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="/SilverAchiver" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
-        View more
-
-      </a>
-      </div>
-
-      </div>
-
-
-
-
-      {/* bronze */}
-
-      <div className='mt-[20px]'>
-        <h1 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Bronze Club Achivers meet</h1>
+  <div className='mt-[20px]'>
+        <h1 className='container text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Bronze Club Achivers meet</h1>
         {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{ fontFamily: "Nunito,sans-serif" }} id="conferenceTimingClock">{bronzecountdown}</h6> */}
  <div className="grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px]  ">
           {
@@ -773,6 +710,106 @@ const Achivers = () => {
 
 
       </div>
+
+
+
+      {/* Silver */}
+
+      <div className='mt-[20px]'>
+        <h1 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Silver Club Achivers meet</h1>
+        {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{silvercountdown}</h6> */}
+       
+        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
+          {
+            bronzeClubData && bronzeClubData?.data[2]?.members.slice(0, 3).map((e, i) => (
+              <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px] md:mb-[50px] '>
+                <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
+                  <img src={e.silver_club_achivers_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
+                  <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.title }}></p>
+             </div>
+                </div>
+              </div>
+            ))
+          }
+
+        </div>
+        <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="/SilverAchiver" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
+        View more
+
+      </a>
+      </div>
+
+      </div>
+
+
+
+
+
+
+      <div>
+        <h1 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>4G Tab</h1>
+        {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{goldcountdown}</h6> */}
+
+
+        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
+          {
+            bronzeClubData && bronzeClubData?.data[6]?.members.slice(0, 3).map((e, i) => (
+              <div className='flex justify-center  box-border rounded-[30px]  md:mb-[50px] '>
+                <div className="   transition-all duration-300 hover:scale-110  box-border rounded-[30px]" key={i}>
+                  <img src={e.tab_image} alt="#" className='w-[440px] h-[250px] box-border rounded-[30px] object-cover' />
+                  <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.title }}></p>
+             </div>
+                </div>
+              </div>
+            ))
+          }
+
+        </div>
+        <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="/Tab-achivers" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
+        View more
+
+      </a>
+      </div>
+
+      </div>
+
+
+
+
+      {/* Gold */}
+
+
+      <div>
+        <h1 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Gold Club Achivers meet</h1>
+        {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{goldcountdown}</h6> */}
+
+
+        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
+          {
+            bronzeClubData && bronzeClubData?.data[0]?.members.slice(0, 3).map((e, i) => (
+              <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px]  md:mb-[50px] '>
+                <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
+                  <img src={e.gold_club_achivers_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
+                  <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.title }}></p>
+             </div>
+                </div>
+              </div>
+            ))
+          }
+
+        </div>
+        <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="/GoldAchiver" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
+        View more
+
+      </a>
+      </div>
+
+      </div>
+
+
+
+
+    
 
 
 

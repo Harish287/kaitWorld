@@ -39,7 +39,7 @@ const App = () => {
                                 </div>
                             </div>
 
-                            <div className="modal-footer mt-4">
+                            <div className="modal-footer mt-4 justify-center">
                                 <button className="btn btn-secondary mr-4" onClick={() => setShowModal(false)}>Close</button>
                                 <button className="btn btn-primary" onClick={() => setShowModal(false)}><a href='/contest'> View More</a></button>
                             </div>

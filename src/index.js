@@ -31,6 +31,7 @@ import Localtrips from "./localtrips.jsx"
 import Bronzeachiver from "./routes/pages/achiverbronze.jsx"
 import SilverAchiver from "./routes/pages/silverachiver.jsx"
 import GoldAchiver from "./routes/pages/goldachivers.jsx"
+import Tab from "./routes/pages/tab.jsx"
 
 // import Scroll from "./scrolltop"
 const router = createBrowserRouter([
@@ -130,7 +131,11 @@ const router = createBrowserRouter([
       {
         path: "GoldAchiver",
         element: <GoldAchiver />
-      }
+      },
+      {
+        path: "Tab-achivers",
+        element: <Tab />,
+      },
     ],
   },
 ]);
