@@ -551,7 +551,7 @@ const Achivers = () => {
 
 <div className=" box-border relative    lg: w-auto h-auto flex float-left pt-[10px] pb-[10px]   md:flex-row  pt-[10px] pb-[10px] box-border ml-0  sm:pt-[10px] pb-[10px] ml-0">
   <div className=" lg:pt-[50px] md:pt-[30px] md:pb-[0px] sm:pt-[30px] sm:pb-[0px]  lg:pb-[50px]" >
-    <img className="flex  z-10  bg-white w-[150px] h-[150px] md:w-[300px] md:h-[500px] lg:w-[600px] lg:h-[360px] sm:w-[200px] sm:h-[200px]" src={Imageshape} alt="" />
+    <img className="flex  z-10  bg-white w-[150px] h-[150px] md:w-[300px] md:h-[500px] lg:w-[600px] lg:h-[360px] sm:w-[200px] sm:h-[200px] box-border rounded-[40px]" src={Imageshape} alt="" />
 
     {/* <img className="flex  z-10 absolute bg-white mix-blend-screen w-[600px] h-[500px]" src={Shape} alt="" /> */}
     {/* <img className="relativ w-[600px]  h-[500px]" src={Image} alt="" /> */}
@@ -595,7 +595,7 @@ const Achivers = () => {
 
 
 
-      <h2 className='text-[25px] md:text-[25px] sm:text-[25px] lg:text-[40px] font-extrabold lg:ml-9'>Achivers Rewards   </h2>
+      {/* <h2 className='text-[25px] md:text-[25px] sm:text-[25px] lg:text-[40px] font-extrabold lg:ml-9'>Achivers Rewards   </h2>
       <div className="">
         <Carousel
           responsive={responsive}
@@ -611,7 +611,7 @@ const Achivers = () => {
             return (
               <div className="slider transition-all duration-300 hover:scale-110" key={i}>
                 <img src={img.user_image} alt="#"  className='w-[300px] h-[300px]'/>
-                {/* <p className='relative bg-gray-500 '>{img.title}</p> */}
+              
               </div>
             );
           })
@@ -624,7 +624,7 @@ const Achivers = () => {
         View more
         
       </a>
-      </div>
+      </div> */}
 
 
 

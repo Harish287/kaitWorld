@@ -11,6 +11,9 @@ import Image21 from "../assets/coin.png"
 import axios from 'axios';
 
 
+import Upcoming from './pages/upcoming';
+
+
 const Events = () => {
 
 
@@ -157,7 +160,7 @@ const Events = () => {
 
 
 
- 
+
 
 
   return (
@@ -182,11 +185,18 @@ const Events = () => {
       {/* </div> 
  </div> */}
 
-{/* <div>
+
+                                                       {/* upcoming events */}
+
+
+
+      {/* <div>
         <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Upcoming Events</h2>
       </div> */}
 
-
+      {/* <div>
+<Upcoming/>
+</div> */}
 
       <div>
         <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Our Events</h2>
@@ -208,33 +218,33 @@ const Events = () => {
         </div>
 
 
-     
 
 
-      <div className="grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
 
-        {achiversData.data[0].members.map((img, i) => {
-          return (
-            // <div className=' grid-cols-3'>
-           <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px] lg:mb-[250px] md:mb-[100px] sm:mb-[300px]'>
-             <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
-              <img src={img.event_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover'  />
-            <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: img.place }}></p>
-              <p className='relative bg-white text-center  p-2 pt-0'  dangerouslySetInnerHTML={{__html:img.content}}></p>
-            </div></div>
-           </div>
-          );
-        })
+        <div className="grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
 
-        }
+          {achiversData.data[0].members.map((img, i) => {
+            return (
+              // <div className=' grid-cols-3'>
+              <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px] lg:mb-[250px] md:mb-[100px] sm:mb-[300px]'>
+                <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
+                  <img src={img.event_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
+                  <div className=''>  <p className='relative bg-white text-center font-extrabold  ' dangerouslySetInnerHTML={{ __html: img.place }}></p>
+                    <p className='relative bg-white text-center  p-2 pt-0' dangerouslySetInnerHTML={{ __html: img.content }}></p>
+                  </div></div>
+              </div>
+            );
+          })
 
+          }
+
+        </div>
       </div>
-      </div>
 
 
-<br/>
+      <br />
 
-    
+
 
     </>
   );

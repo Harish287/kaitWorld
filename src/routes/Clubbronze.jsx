@@ -307,7 +307,7 @@ const  Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplati
           <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8     ">
 
             <img
-              className=" text-center m-auto md:h-[300px]  md:w-[300px] h-[100px]w-[100px] object-cover"
+              className=" text-center m-auto md:h-[330px]  md:w-[400px] h-[100px]w-[100px] object-cover"
               src={e.user_image}
               alt=""
             />
@@ -389,7 +389,7 @@ const Clubdiamond = ({ e, goTodiamondPrevPage, diamondcurrentPage, goTodiamondNe
           <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5   md:p-8     ">
 
             <img
-              className=" text-center m-auto md:h-[300px]  md:w-[300px] h-[100px]w-[100px] object-cover"
+              className=" text-center m-auto md:h-[350px]  md:w-[500px] h-[100px]w-[100px] object-cover"
               src={e.user_image}
               alt=""
             />
