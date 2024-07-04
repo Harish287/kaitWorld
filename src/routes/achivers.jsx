@@ -746,32 +746,7 @@ const Achivers = () => {
 
 
 
-      <div>
-        <h1 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>4G Tab</h1>
-        {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{goldcountdown}</h6> */}
-
-
-        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
-          {
-            bronzeClubData && bronzeClubData?.data[6]?.members.slice(0, 3).map((e, i) => (
-              <div className='flex justify-center  box-border rounded-[30px]  md:mb-[50px] '>
-                <div className="   transition-all duration-300 hover:scale-110  box-border rounded-[30px]" key={i}>
-                  <img src={e.tab_image} alt="#" className='w-[440px] h-[250px] box-border rounded-[30px] object-cover' />
-                  <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.title }}></p>
-             </div>
-                </div>
-              </div>
-            ))
-          }
-
-        </div>
-        <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="/Tab-achivers" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
-        View more
-
-      </a>
-      </div>
-
-      </div>
+     
 
 
 
@@ -815,10 +790,34 @@ const Achivers = () => {
 
 
 
-      {/* <Card/> */}
-      {/* <New/> */}
+    
+
+      <div>
+        <h1 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>4G Tab</h1>
+        {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{goldcountdown}</h6> */}
 
 
+        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
+          {
+            bronzeClubData && bronzeClubData?.data[6]?.members.slice(0, 3).map((e, i) => (
+              <div className='flex justify-center  box-border rounded-[30px]  md:mb-[50px] '>
+                <div className="   transition-all duration-300 hover:scale-110  box-border rounded-[30px]" key={i}>
+                  <img src={e.tab_image} alt="#" className='w-[440px] h-[250px] box-border rounded-[30px] object-cover' />
+                  <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.title }}></p>
+             </div>
+                </div>
+              </div>
+            ))
+          }
+
+        </div>
+        <div className=' flex justify-center mb-[15px] mt-[15px]'>  <a href="/Tab-achivers" className="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
+        View more
+
+      </a>
+      </div>
+
+      </div>
 
     </div>
   )

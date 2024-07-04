@@ -441,7 +441,7 @@ const Services = () => {
 
 
 
-      <h2 className=' text-[40px] font-extrabold ml-9'>Local Trip  </h2>
+      {/* <h2 className=' text-[40px] font-extrabold ml-9'>Local Trip  </h2>
       <div className="">
         <Carousel
           responsive={responsive}
@@ -466,13 +466,7 @@ const Services = () => {
           })
 
           }
-          {/* {sliderImageUrl.map((imageUrl, index) => {
-            return (
-              <div className="slider transition-all duration-300 hover:scale-110" key={index}>
-                <img src={imageUrl.url} alt="movie" /><p className='relative bg-gray-500 '>{imageUrl.para}</p>
-              </div>
-            );
-          })} */}
+          
           { }
         </Carousel>
       </div>
@@ -480,7 +474,7 @@ const Services = () => {
         View more
 
       </a>
-      </div>
+      </div> */}
 
 
 
