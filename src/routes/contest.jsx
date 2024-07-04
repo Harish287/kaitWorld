@@ -458,7 +458,9 @@ const Services = () => {
           {contestData.data[0].members.map((img, i) => {
             return (
               <div className="slider transition-all duration-300 hover:scale-110" key={i}>
-                <img src={img.image} alt="#" className='w-[300px] h-[300px]' /><p className='relative bg-gray-500 '>{img.title}</p>
+                <img src={img.image} alt="#" className='w-[300px] h-[300px]' />
+                <p className='relative bg-gray-500 '>{img.title}</p>
+                
               </div>
             );
           })
