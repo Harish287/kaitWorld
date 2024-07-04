@@ -27,6 +27,11 @@ import Goldcoin from "./routes/goldcoin"
 import Mobile from "./routes/mobile"
 import Localtrips from "./localtrips.jsx"
 
+
+import Bronzeachiver from "./routes/pages/achiverbronze.jsx"
+import SilverAchiver from "./routes/pages/silverachiver.jsx"
+import GoldAchiver from "./routes/pages/goldachivers.jsx"
+
 // import Scroll from "./scrolltop"
 const router = createBrowserRouter([
   {
@@ -113,6 +118,18 @@ const router = createBrowserRouter([
       {
         path: "Kaitking",
         element: <Kaitking />
+      },
+      {
+        path: "Bronzeachiver",
+        element: <Bronzeachiver />
+      },
+      {
+        path: "SilverAchiver",
+        element: <SilverAchiver />
+      },
+      {
+        path: "GoldAchiver",
+        element: <GoldAchiver />
       }
     ],
   },
