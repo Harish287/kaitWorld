@@ -117,26 +117,28 @@ const Clubsilver = ({ e, goTosilverPrevPage, silvercurrentPage, goTosilverNextPa
 
   return (
     <div>
-      <div className={`grid md:grid-cols-4  items-center gap-20 p-6 md:flex-col md: justify-center`}>
+      <div className={`grid md:grid-cols-4  items-center gap-20 p-6 md:flex-col md: justify-center `}>
         {currentMembers.map(member => (
-          <div key={member.user_id} className={`w-[100%] test-silver flex-row justify-center items-center`}>
-            <div className="mt-[36px] ml-[-17px] ">
+
+          <div key={member.user_id} className={` test-silver flex-row justify-center items-center  `}>
+            <div className="mt-[160px] ml-[-151px]  lg:mt-[34px] lg:ml-[42px]  md:mt-[108px] sm:mt-[160px] relative   ">
               <img
-                className="h-[195px] w-[195px] m-auto object-cover  box-border rounded-[300px] "
+                className="h-[195px] w-[195px] object-cover  box-border rounded-[300px]  "
                 src={member.user_image}
                 alt=""
               /></div>
 
-            <div className=" mt-8">   <div
-              className="text-center"
-              dangerouslySetInnerHTML={{ __html: member.user_name }}
-            ></div>
+            <div className=" mt-8">
+              <div
+                className="text-center"
+                dangerouslySetInnerHTML={{ __html: member.user_name }}
+              ></div>
 
               <div className="text-center">{member.user_id}</div>
             </div>
 
-          </div>
 
+          </div>
         ))}
       </div>
 
@@ -225,21 +227,7 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
             </div>
           </div>
 
-          //           <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
-          //   <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 ">
-          //     <img className="w-[100%] h-auto object-cover"
-          //       src={member.user_image}
-          //             alt=""/>
-          //   </div>
-          //   <div class="p-6">
-          //     <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center"  dangerouslySetInnerHTML={{ __html: member.user_name }}
-          //     ></h5>
 
-          //    <h6 class="block mb-2 font-sans text-l antialiased font-semibold leading-snug tracking-normal text-center text-blue-gray-900" 
-          //     >{member.user_id}</h6>
-          //   </div>
-
-          // </div>  
         ))}
       </div>
       <div className="flex justify-center mt-8">
@@ -271,7 +259,7 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
   );
 };
 
-const  Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatinumNextPage, setplatinumCurrentPage }) => {
+const Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatinumNextPage, setplatinumCurrentPage }) => {
   // const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(2);
 

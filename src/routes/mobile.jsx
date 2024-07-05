@@ -1,79 +1,68 @@
-import React from 'react'
-import ReactPlayer from 'react-player';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-//  import Image from "../Assets/fdssdf.jpg"
-//  import "./global.css"
-import Image1 from "../assets/avatar1.jpg"
-import Image2 from "../assets/avatar2.jpg"
-import Image3 from "../assets/avatar3.jpg"
-// import Image4 from "../assets/blog-detaills-1.jpg"
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-import Girl from "../assets/girl.jpeg"
+const Achiverachivers = () => {
+    const [achiversClubData, setachiversClubData] = useState(null);
+    const [activeTab, setActiveTab] = useState(1); // Default to the first tab (Mobile Achivers)
 
-import Galleryimg from "../assets/gallery.png"
+    const fetchachiversClub = async () => {
+        try {
+            const response = await axios.get("https://kairaablockchainacademy.com/kait/admin/achivers/achiver_api.php");
+            setachiversClubData(response.data);  // assuming response.data is the JSON object
+        } catch (error) {
+            console.error('Error fetching achivers club data:', error);
+            // Handle error state or retry mechanism here
+        }
+    };
 
+    useEffect(() => {
+        fetchachiversClub();
+    }, []);
 
-const mobile = () => {
-    const galleryItems = [
+    const handleTabClick = (tabIndex) => {
+        setActiveTab(tabIndex);
+    };
 
-        { type: 'image', src: 'https://tse2.mm.bing.net/th?id=OIP.mOjrQ0yMjA-BSqW-Fi1cpQHaE8&pid=Api&P=0&h=180', alt: 'Image 1' },
-        // { type: 'video', src: 'https://youtu.be/tiLpqfDTHeM?si=rOPzenfXkZXHpa3F' },
-        { type: 'image', src: 'https://www.jesvenues.com/images/services/corporate-photography/corporate-event-photography-in-hyderabad-1.jpg', alt: 'Image 2' },
-        { type: 'image', src: 'https://tse4.mm.bing.net/th?id=OIP.uWKiWdXtY9FL5QDmQyLgZgEyDM&pid=Api&P=0&h=180', alt: 'Image 3' },
-        { type: 'image', src: 'https://tse2.explicit.bing.net/th?id=OIP._u2-3M4TrXXx5gZ4rvIsCAHaE8&pid=Api&P=0&h=180', alt: 'Image 4' },
-        { type: 'image', src: 'https://tse4.mm.bing.net/th?id=OIP.SGQCj7eA1C3zjj-X9-PeKQHaEK&pid=Api&P=0&h=180', alt: 'Image 5' },
-        { type: 'image', src: 'https://tse1.mm.bing.net/th?id=OIP.3utt-mxwQh4Io_t78VtKpAHaE8&pid=Api&P=0&h=180', alt: 'Image 6' },
-        // { type: 'video', src: 'https://youtu.be/tiLpqfDTHeM?si=rOPzenfXkZXHpa3F' },
-        { type: 'image', src: 'https://tse2.mm.bing.net/th?id=OIP.fNqamSGoRmOKidO7joQQbAHaEK&pid=Api&P=0&h=180', alt: 'Image 7' },
-      ]
-    
-  return (
-    <div><div className="bg-gray-100 min-h-screen">
+    if (!achiversClubData) {
+        return <div>Loading...</div>;
+    }
 
-    <div>
-      {/* <div className=' w-[100%] h-[300px]  bg-[#b25eda] flex text-center justify-center items-center'> */}
-      {/* <img className=' w-[100%] h-[300px] object-cover' alt="" src={Galleryimg} /> */}
+    const renderTabContent = (categoryIndex, imageKey, titleKey) => {
+        return (
+            <div className="">
+                <h1 className='text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito, sans-serif" }}>{achiversClubData.data[categoryIndex]?.title}</h1>
+                <div className="grid center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 mt-[30px] lg:pb-[60px]">
+                    {achiversClubData.data[categoryIndex]?.members.map((e, i) => (
+                        <div className='flex justify-center box-border rounded-[30px] md:mb-[10px]' key={i}>
+                            <div className="transition-all duration-300 hover:scale-110 box-border rounded-[30px]">
+                                <img src={e[imageKey]} alt="#" className='w-[350px] h-[300px] box-border rounded-[30px] object-cover' />
+                                <div className=''>
+                                    <p className='relative bg-white text-center' dangerouslySetInnerHTML={{ __html: e[titleKey] }}></p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+    };
 
+    return (
+        <>
+            <div className='mt-[20px]'>
+                <div className="flex justify-center gap-16 text-lg font-bold ">
+                    <button className={`tab-btn ${activeTab === 1 ? 'active' : ''} hover:text-[#594f9c] border-b-2  hover:border-[#594f9c]`} onClick={() => handleTabClick(1)}>Mobile Achivers</button>
+                    <button className={`tab-btn ${activeTab === 2 ? 'active' : ''} hover:text-[#594f9c] border-b-2  hover:border-[#594f9c]`} onClick={() => handleTabClick(2)}>Laptop Achivers</button>
+                    <button className={`tab-btn ${activeTab === 3 ? 'active' : ''} hover:text-[#594f9c] border-b-2  hover:border-[#594f9c]`} onClick={() => handleTabClick(3)}>EV Bike Achivers</button>
+                    <button className={`tab-btn ${activeTab === 4 ? 'active' : ''} hover:text-[#594f9c] border-b-2  hover:border-[#594f9c]`} onClick={() => handleTabClick(4)}>Car Achivers</button>
+                </div>
+                {activeTab === 1 && renderTabContent(1, 'mobile_achivers_image', 'title')}
+                {activeTab === 2 && renderTabContent(2, 'laptop_achivers_image', 'title')}
+                {activeTab === 3 && renderTabContent(3, 'evbike_achivers_image', 'title')}
+                {activeTab === 4 && renderTabContent(4, 'car_achivers_image', 'title')}
+            </div>
+        </>
+    );
+};
 
-
-      <p className='text-center justify-center items-center text-black  text-5xl font-black mb-9'>Mobile Phone Achivers</p>
-    </div>
-    <main className="container mx-auto py-8">
-      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
-        {galleryItems.map((item, index) => (
-          <div key={index} className="galley-hover rounded-lg overflow-hidden max-w-sm mx-auto h-auto transform hover: transition duration-500 hover:scale-125 hover:z-50 cursor-pointer ">
-            {item.type === 'image' && (
-              <Zoom>
-                <img src={Girl} alt={item.alt} className="  object-cover center w-[300px] h-[300px]" />
-              </Zoom>
-            )}
-            {/* {item.type === 'video' && (
-              <ReactPlayer
-                url={item.src}
-                controls
-                width="100%"
-                height="300px"
-              />
-            )} */}
-          </div>
-
-
-        ))}
-
-
-
-      </div>
-    </main >
-
-
-
-
-
-
-  </div >
-</div>
-  )
-}
-
-export default mobile
+export default Achiverachivers;
