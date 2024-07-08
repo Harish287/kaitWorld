@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const Upcoming = () => {
     const [upcomingData, setupcomingsData] = useState(null);
-    const apiUrl = 'https://kairaablockchainacademy.com/kait/admin/events/event_api.php';
+    const apiUrl = 'https://admin.kaitworld.org/events/event_api.php';
 
     useEffect(() => {
         const fetchContestData = async () => {

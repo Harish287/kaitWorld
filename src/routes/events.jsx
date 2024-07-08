@@ -139,7 +139,7 @@ const Events = () => {
 
 
   const [achiversData, setAchiversData] = useState(null);
-  const apiUrl = 'https://kairaablockchainacademy.com/kait/admin/events/event_api.php';
+  const apiUrl = 'https://admin.kaitworld.org/events/event_api.php';
 
   useEffect(() => {
     const fetchContestData = async () => {
@@ -186,7 +186,7 @@ const Events = () => {
  </div> */}
 
 
-                                                       {/* upcoming events */}
+      {/* upcoming events */}
 
 
 

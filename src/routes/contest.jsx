@@ -115,7 +115,7 @@ const Services = () => {
 
 
   const [contestData, setContestData] = useState(null);
-  const apiUrl = 'https://kairaablockchainacademy.com/kait/admin/contest/contest_api.php';
+  const apiUrl = 'https://admin.kaitworld.org/contest/contest_api.php';
 
   useEffect(() => {
     const fetchContestData = async () => {

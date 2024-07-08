@@ -41,7 +41,7 @@ const Gold = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://kairaablockchainacademy.com/kait/admin/club/api.php"
+          "https://admin.kaitworld.org/club/api.php"
         );
         setData(response.data);
         setLoading(false);

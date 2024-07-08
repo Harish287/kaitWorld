@@ -13,7 +13,7 @@ const Gallery = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://kairaablockchainacademy.com/kait/admin/gallery/gallery_api.php");
+        const response = await axios.get("https://admin.kaitworld.org/gallery/gallery_api.php");
         setData(response.data.data); // Assuming API returns an array of objects
       } catch (error) {
         setError(error);

@@ -201,7 +201,7 @@ const Achivers = () => {
 
   const fetchBronzeClub = async () => {
     try {
-      const response = await axios.get("https://kairaablockchainacademy.com/kait/admin/gold/gold_api.php");
+      const response = await axios.get("https://admin.kaitworld.org/gold/gold_api.php");
       setbronzeClubData(response.data);  // assuming response.data is the JSON object
     } catch (error) {
       console.error('Error fetching contest data:', error);
@@ -333,7 +333,7 @@ const Achivers = () => {
 
 
   const [achiversData, setAchiversData] = useState(null);
-  const apiUrl = 'https://kairaablockchainacademy.com/kait/admin/achivers/achiver_api.php';
+  const apiUrl = 'https://admin.kaitworld.org/achivers/achiver_api.php';
 
   useEffect(() => {
     const fetchContestData = async () => {
@@ -355,7 +355,7 @@ const Achivers = () => {
 
 
   // const [BronzeData, setbronzeData] = useState(null);
-  // const bronzeUrl = 'https://kairaablockchainacademy.com/kait/admin/events/event_api.php';
+  // const bronzeUrl = 'https://admin.kaitworld.org/events/event_api.php';
 
 
 
