@@ -198,9 +198,9 @@ const Events = () => {
 <Upcoming/>
 </div> */}
 
-      <div>
+      {/* <div>
         <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Our Events</h2>
-      </div>
+      </div> */}
 
     {/* <div>   <Upcoming/></div> */}
 
