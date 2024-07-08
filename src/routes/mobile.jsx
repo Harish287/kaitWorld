@@ -7,7 +7,7 @@ const Achiverachivers = () => {
 
     const fetchachiversClub = async () => {
         try {
-            const response = await axios.get("https://kairaablockchainacademy.com/kait/admin/achivers/achiver_api.php");
+            const response = await axios.get("https://admin.kaitworld.org/admin/achivers/achiver_api.php");
             setachiversClubData(response.data);  // assuming response.data is the JSON object
         } catch (error) {
             console.error('Error fetching achivers club data:', error);

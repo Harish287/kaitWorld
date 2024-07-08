@@ -202,6 +202,8 @@ const Events = () => {
         <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Our Events</h2>
       </div>
 
+    {/* <div>   <Upcoming/></div> */}
+
       <div className="events">
 
 
@@ -219,7 +221,9 @@ const Events = () => {
 
 
 
-
+        <div>
+        <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Our Events</h2>
+      </div>
 
         <div className="grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
 

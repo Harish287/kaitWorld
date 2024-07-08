@@ -6,7 +6,7 @@ const AchiverBronze = () => {
 
   const fetchBronzeClub = async () => {
     try {
-      const response = await axios.get("https://kairaablockchainacademy.com/kait/admin/gold/gold_api.php");
+      const response = await axios.get("https://admin.kaitworld.org/admin/gold/gold_api.php");
       setBronzeClubData(response.data);  // assuming response.data is the JSON object
     } catch (error) {
       console.error('Error fetching bronze club data:', error);
