@@ -70,7 +70,7 @@ const AchiverBronze = () => {
                             <div className="   transition-all duration-300 hover:scale-110  box-border  mt-[20px]" key={i}>
                                 <img src={e.upcoming_image} alt="#" className='rounded-t-lg w-[380px] h-[400px] box-border rounded-[30px] object-cover' />
                                 <div className=''> 
-                                     {/* <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.place1 }}></p> */}
+                                        {/* <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.place1 }}></p> */}
                                 </div>
                             </div>
                         </div>
