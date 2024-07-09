@@ -65,7 +65,7 @@ const Clubbronze = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPage
 
   return (
     <div>
-      <div className="grid md:grid-cols-4 items-center gap-6 p-6">
+      <div className="grid md:grid-cols-4 items-center container gap-6 p-6">
         {currentMembers.map((member, index) => (
           <div key={index} className={`bg-gradient-to-r ${index % 2 === 0 ? "bg-gradient-to-r from-purple-700 via-purple-500 to-blue-700" : "bg-gradient-to-r from-purple-700 via-purple-500 to-blue-700"} gap-6 p-8 flex box-border rounded-[90px] text-white`}>
             <div className="lg:w-96 md:w-[10px]">{member.user_name}</div>
@@ -117,7 +117,7 @@ const Clubsilver = ({ e, goTosilverPrevPage, silvercurrentPage, goTosilverNextPa
 
   return (
     <div>
-      <div className={`grid md:grid-cols-4  items-center gap-20 p-6 md:flex-col md: justify-center `}>
+      <div className={`grid md:grid-cols-4  items-center gap-20 p-6 md:flex-col  container md: justify-center `}>
         {currentMembers.map(member => (
 
           <div key={member.user_id} className={` test-silver flex-row justify-center items-center  `}>
@@ -205,7 +205,7 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
     <div>
       <div
         // key={e.id}
-        className={`grid lg:grid-cols-4 md:grid-cols-2  items-center gap-6   p-6 `}
+        className={`grid lg:grid-cols-4 md:grid-cols-2  items-center gap-6  container  p-6 `}
       >
         {currentMembers.map((member) => (
           <div className=" flex justify-center gap-6 m-auto  flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8  md:h-[300px]  mt-12 lg:mt-0  goldclubvback  ">
@@ -289,7 +289,7 @@ const Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatin
     <div>
       <div
         key={e.id}
-        className={`grid md:grid-cols-2 items-center gap-6   p-6 `}
+        className={`grid md:grid-cols-2 items-center gap-6 container   p-6 `}
       >
         {e.members.map((e) => (
           <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8     ">
@@ -371,7 +371,7 @@ const Clubdiamond = ({ e, goTodiamondPrevPage, diamondcurrentPage, goTodiamondNe
     <div>
       <div
         key={e.id}
-        className={`grid md:grid-cols-2  items-center gap-6   p-6 `}
+        className={`grid md:grid-cols-2  items-center gap-6 container   p-6 `}
       >
         {e.members.map((e) => (
           <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5   md:p-8     ">

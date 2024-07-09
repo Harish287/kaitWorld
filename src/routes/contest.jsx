@@ -31,6 +31,8 @@ import Goa from "../assets/Goa trip.png"
 import Tailand from "../assets/Kerala.png"
 
 import axios from 'axios';
+import Upcomingcontest from './pages/Upcomingcontest';
+
 
 
 const Services = () => {
@@ -196,20 +198,19 @@ const Services = () => {
 
 
 
+   {/* Upcoming events */}
+<Upcomingcontest/>
 
 
 
-      {/* Upcoming events */}
+   
 
 
-      <div className=" w-[100%]  ">
+      {/* <div className=" w-[100%]  ">
         <div className="flex justify-center w-[100%] mt-[20px] mb-[20px]">
           <div className="col-sm-9">
             <h6 className='  text-center text-[30px] lg:text-[40px] sm:text-[25px] font-extrabold' style={{ fontFamily: "Nunito,sans-serif" }}> Contest Ends In</h6>
-            {/* <p className='font-roboto font-normal text-base leading-6 text-gray-700'>
-              Get ready for the upcoming conference as it is just around the corner! The countdown has begun, and excitement is in the air. 
-              Mark your calendars and prepare to be part of an unforgettable event. Stay tuned for updates, speaker announcements, and registration details. The Next Conference Starts In:
-            </p> */}
+        
             <h6 className='text-center lg:text-[52px]  sm:text-[50px] lg:leading-[80px] sm:leading-0 font-extrabold relative' style={{ fontFamily: "Nunito,sans-serif" }} id="conferenceTimingClock">{countdown}</h6>
           </div>
         </div>
@@ -223,14 +224,7 @@ const Services = () => {
                   <img class="rounded-t-lg w-[100%] h-[400px]" src={Upcoming1} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
 
                 </a>
-                {/* <div className=" p-[10px]">
-      <a href="#">
-        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Introducing The Newest Addition To Trichy Network With The Opening Of A Branch Office In Your Area!</h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-
-
-    </div> */}
+              
               </div>
 
 
@@ -238,13 +232,7 @@ const Services = () => {
                 <a href="#">
                   <img class="rounded-t-lg w-[490px] h-[400px] " src={Upcoming2} alt="" />
                 </a>
-                {/* <div className=" p-[10px]">
-      <a href="#">
-        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Blockchain Awareness Meeting, Fueling Knowledge And Inspiring Adoption Of Blockchain.</h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-
-    </div> */}
+              
               </div>
 
 
@@ -252,27 +240,17 @@ const Services = () => {
                 <a href="#">
                   <img class="rounded-t-lg w-[490px] h-[400px]" src={Upcoming3} alt="" />
                 </a>
-                {/* <div className=" p-[10px]">
-      <a href="#">
-        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Solingur Crypto Exchange Awareness Meeting, Spreading Knowledge In Cryptocurrency!</h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-
-    </div> */}
+              
 
               </div>
 
             </div>
-            {/* <div className=' flex justify-center mt-[40px] mb-[20px]'>  <a href="/contest" class="  btn btn-border-4  font-bold text-lg px-2 py-1  border-black  hover:shadow-2xl  hover:bg-gradient-to-r from-blue-800 to-pink-500   transition duration-500 ease-in-out">
-  View more
- 
-</a>
-</div> */}
+    
           </div>
 
 
         </div>
-      </div>
+      </div> */}
 
 
 
@@ -386,9 +364,9 @@ const Services = () => {
             </a>
             <div className=" p-[10px]">
               <a href="#">
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Introducing The Newest Addition To Trichy Network With The Opening Of A Branch Office In Your Area!</h5>
+                {/* <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Introducing The Newest Addition To Trichy Network With The Opening Of A Branch Office In Your Area!</h5> */}
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+              {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
 
 
             </div>
@@ -401,9 +379,9 @@ const Services = () => {
             </a>
             <div className=" p-[10px]">
               <a href="#">
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Blockchain Awareness Meeting, Fueling Knowledge And Inspiring Adoption Of Blockchain.</h5>
+                {/* <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Blockchain Awareness Meeting, Fueling Knowledge And Inspiring Adoption Of Blockchain.</h5> */}
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+              {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
 
             </div>
           </div>
@@ -415,9 +393,9 @@ const Services = () => {
             </a>
             <div className=" p-[10px]">
               <a href="#">
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Solingur Crypto Exchange Awareness Meeting, Spreading Knowledge In Cryptocurrency!</h5>
+                {/* <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Solingur Crypto Exchange Awareness Meeting, Spreading Knowledge In Cryptocurrency!</h5> */}
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+              {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
 
             </div>
 

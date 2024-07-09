@@ -246,7 +246,7 @@ const Club = () => {
     <div>
       <img className="w-[100%]" src={Banner} alt="" />
       <h1 ref={ClubRef} className="flex justify-center text-xl font-bold mt-9 mb-9">Club</h1>
-      <div className=" md:flex md:justify-center">
+      <div className=" md:flex md:justify-center container">
         {" "}
         <div className="md:flex px-0 md:px-28 gap-6 justify-center text-center">
           {data.data.map((link, index) => (
