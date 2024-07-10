@@ -38,7 +38,7 @@ const Club = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://admin.kaitworld.org/admin/club/api.php"
+          "https://admin.kaitworld.org/club/api.php"
         );
         setData(response.data);
         setLoading(false);

@@ -362,7 +362,7 @@ const Services = () => {
               <img class="rounded-t-lg w-[100%] h-[400px]" src={Image1} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
 
             </a>
-            <div className=" p-[10px]">
+            <div className=" ">
               <a href="#">
                 {/* <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Introducing The Newest Addition To Trichy Network With The Opening Of A Branch Office In Your Area!</h5> */}
               </a>
@@ -377,7 +377,7 @@ const Services = () => {
             <a href="#">
               <img class="rounded-t-lg w-[490px] h-[400px] " src={Image2} alt="" />
             </a>
-            <div className=" p-[10px]">
+            <div className=" ">
               <a href="#">
                 {/* <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Blockchain Awareness Meeting, Fueling Knowledge And Inspiring Adoption Of Blockchain.</h5> */}
               </a>
@@ -391,7 +391,7 @@ const Services = () => {
             <a href="#">
               <img class="rounded-t-lg w-[490px] h-[400px]" src={Image3} alt="" />
             </a>
-            <div className=" p-[10px]">
+            <div className=" ">
               <a href="#">
                 {/* <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">Solingur Crypto Exchange Awareness Meeting, Spreading Knowledge In Cryptocurrency!</h5> */}
               </a>
