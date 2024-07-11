@@ -230,7 +230,7 @@ const Events = () => {
           {achiversData.data[0].members.map((img, i) => {
             return (
               // <div className=' grid-cols-3'>
-              <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px] lg:mb-[250px] md:mb-[100px] sm:mb-[300px]'>
+              <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px] mb-[200px] lg:mt-[0px]  lg:mb-[250px] md:mb-[100px] sm:mt-[300px] sm:mb-[300px]'>
                 <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
                   <img src={img.event_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
                   <div className=''>  <p className='relative bg-white text-center font-extrabold  ' dangerouslySetInnerHTML={{ __html: img.place }}></p>

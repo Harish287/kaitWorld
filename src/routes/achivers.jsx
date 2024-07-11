@@ -416,7 +416,7 @@ const Achivers = () => {
         <div className="container flex-col  md:flex  lg:flex-row  flex justify-around  box-border lg:rounded-[125px]  md:rounded-[0px] items-center sm:flex-col gap-9">
 
           {/* leftcontent */}
-          <div className=" lg:pl-[50px] sm:pl-[0px] sm:p-[30px] max-w-screen-sm lg:mr-20px">
+          <div className=" lg:pl-[50px] sm:pl-[0px] sm:p-[100px] max-w-screen-sm lg:mr-20px relative z-[11] ">
             <motion.div
               initial={{ opacity: 0, y: -70 }}
               whileInView={{ opacity: 100, y: 0, transition: { delay: 0.8, duration: 0.8 } }}
@@ -589,7 +589,7 @@ const Achivers = () => {
         {/* righrimages */}
 
         <div className=" box-border relative    lg: w-auto h-auto flex float-left pt-[10px] pb-[10px]   md:flex-row  pt-[10px] pb-[10px] box-border ml-0  sm:pt-[10px] pb-[10px] ml-0">
-          <div className=" lg:pt-[50px] md:pt-[30px] md:pb-[0px] sm:pt-[30px] sm:pb-[0px]  lg:pb-[50px]" >
+          <div className=" lg:pt-[50px] md:pt-[30px] md:pb-[0px] sm:pt-[30px] sm:pb-[0px]  lg:pb-[50px] " >
             <img className="flex  z-10  bg-white w-[150px] h-[150px] md:w-[300px] md:h-[500px] lg:w-[600px] lg:h-[360px] sm:w-[200px] sm:h-[200px] box-border rounded-[40px]" src={Imageshape} alt="" />
 
             {/* <img className="flex  z-10 absolute bg-white mix-blend-screen w-[600px] h-[500px]" src={Shape} alt="" /> */}
@@ -684,9 +684,9 @@ const Achivers = () => {
  <div className="grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px]  ">
           {
             bronzeClubData && bronzeClubData?.data[4]?.members.slice(0, 3).map((e, i) => (
-              <div className='flex justify-center box-border rounded-[30px]  md:mb-[50px] '>
-                <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
-                  <img src={e.bronze_club_achivers_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
+              <div className='flex justify-center box-border rounded-[30px]  '>
+                <div className="   transition-all duration-300 hover:scale-110  box-border rounded-[30px]" key={i}>
+                  <img src={e.bronze_club_achivers_image} alt="#" className='w-[440px] h-[250px] box-border rounded-[30px] object-cover' />
                   <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.title }}></p>
              </div>
                 </div>
@@ -719,12 +719,12 @@ const Achivers = () => {
         <h1 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Silver Club Achivers meet</h1>
         {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{silvercountdown}</h6> */}
        
-        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
+        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px]  ">
           {
             bronzeClubData && bronzeClubData?.data[2]?.members.slice(0, 3).map((e, i) => (
-              <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px] md:mb-[50px] '>
-                <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
-                  <img src={e.silver_club_achivers_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
+              <div className='flex justify-center box-border rounded-[30px]  '>
+                <div className="   transition-all duration-300 hover:scale-110 box-border rounded-[30px]" key={i}>
+                  <img src={e.silver_club_achivers_image} alt="#" className='w-[440px] h-[250px] box-border rounded-[30px] object-cover' />
                   <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.title }}></p>
              </div>
                 </div>
@@ -759,12 +759,12 @@ const Achivers = () => {
         {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{goldcountdown}</h6> */}
 
 
-        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
+        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] ">
           {
             bronzeClubData && bronzeClubData?.data[0]?.members.slice(0, 3).map((e, i) => (
-              <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px]  md:mb-[50px] '>
-                <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
-                  <img src={e.gold_club_achivers_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
+              <div className='flex justify-center box-border rounded-[30px]  '>
+                <div className="   transition-all duration-300 hover:scale-110 box-border rounded-[30px]" key={i}>
+                  <img src={e.gold_club_achivers_image} alt="#" className='w-[440px] h-[250px] box-border rounded-[30px] object-cover' />
                   <div className=''>  <p className='relative bg-white text-center  ' dangerouslySetInnerHTML={{ __html: e.title }}></p>
              </div>
                 </div>
@@ -797,7 +797,7 @@ const Achivers = () => {
         {/* <h6 className='text-center lg:text-7xl   lg:text-[56px] lg:leading-[80px] font-extrabold relative' style={{fontFamily:"Nunito,sans-serif"}} id="conferenceTimingClock">{goldcountdown}</h6> */}
 
 
-        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
+        <div className=" container grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px]">
           {
             bronzeClubData && bronzeClubData?.data[6]?.members.slice(0, 3).map((e, i) => (
               <div className='flex justify-center  box-border rounded-[30px]  md:mb-[50px] '>
