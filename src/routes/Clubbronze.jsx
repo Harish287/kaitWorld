@@ -56,11 +56,9 @@ const Clubbronze = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPage
   const [itemsPerPage] = useState(52); // Number of items to display per page
 
   // Calculate the index of the first and last item to display on the current page
-  const indexOfFirstItem = currentPage * itemsPerPage;
-  const indexOfLastItem = indexOfFirstItem - itemsPerPage;
-  const currentMembers = e.members.slice(indexOfLastItem ,indexOfFirstItem );
-
-
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
 
   // Change page
   const paginate = (event, pageNumber) => setCurrentPage(pageNumber);
@@ -97,9 +95,9 @@ const Clubsilver = ({ e, goTosilverPrevPage, silvercurrentPage, goTosilverNextPa
   // const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(12);
 
-  const indexOfFirstItem = silvercurrentPage * itemsPerPage;
-  const indexOfLastItem = indexOfFirstItem - itemsPerPage;
-  const currentMembers = e.members.slice(indexOfLastItem, indexOfFirstItem);
+  const indexOfLastItem = silvercurrentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
 
   const paginate = pageNumber => setsilverCurrentPage(pageNumber);
 
@@ -123,7 +121,7 @@ const Clubsilver = ({ e, goTosilverPrevPage, silvercurrentPage, goTosilverNextPa
         {currentMembers.map(member => (
 
           <div key={member.user_id} className={` test-silver flex-row justify-center items-center  `}>
-            <div className="mt-[33px] ml-[41px]  lg:mt-[34px] lg:ml-[42px]  md:mt-[108px] sm:mt-[160px] relative   ">
+            <div className="mt-[160px] ml-[-151px]  lg:mt-[34px] lg:ml-[42px]  md:mt-[108px] sm:mt-[160px] relative   ">
               <img
                 className="h-[195px] w-[195px] object-cover  box-border rounded-[300px]  "
                 src={member.user_image}
@@ -180,12 +178,9 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
   // const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(12);
 
-  const indexOfFirstItem = goldcurrentPage * itemsPerPage;
-  const indexOfLastItem = indexOfFirstItem - itemsPerPage;
-  const currentMembers = e.members.slice(indexOfLastItem,indexOfFirstItem );
-
-
-
+  const indexOfLastItem = goldcurrentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
 
   const paginate = pageNumber => setgoldCurrentPage(pageNumber);
 
@@ -268,9 +263,9 @@ const Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatin
   // const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(2);
 
-  const indexOfFirstItem = platinumcurrentPage * itemsPerPage;
-  const indexOfLastItem = indexOfFirstItem - itemsPerPage;
-  const currentMembers = e.members.slice(indexOfLastItem,indexOfFirstItem);
+  const indexOfLastItem = platinumcurrentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
 
   const paginate = pageNumber => setplatinumCurrentPage(pageNumber);
 
@@ -351,9 +346,9 @@ const Clubdiamond = ({ e, goTodiamondPrevPage, diamondcurrentPage, goTodiamondNe
   // const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(1);
 
-  const indexOfFirstItem = diamondcurrentPage * itemsPerPage;
-  const indexOfLastItem = indexOfFirstItem - itemsPerPage;
-  const currentMembers = e.members.slice(indexOfLastItem,indexOfFirstItem);
+  const indexOfLastItem = diamondcurrentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentMembers = e.members.slice(indexOfFirstItem, indexOfLastItem);
 
   const paginate = pageNumber => setdiamondCurrentPage(pageNumber);
 
