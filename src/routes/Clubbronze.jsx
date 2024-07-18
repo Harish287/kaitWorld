@@ -121,7 +121,7 @@ const Clubsilver = ({ e, goTosilverPrevPage, silvercurrentPage, goTosilverNextPa
         {currentMembers.map(member => (
 
           <div key={member.user_id} className={` test-silver flex-row justify-center items-center  `}>
-            <div className="mt-[160px] ml-[-151px]  lg:mt-[34px] lg:ml-[42px]  md:mt-[108px] sm:mt-[160px] relative   ">
+            <div className="mt-[38px] ml-[45px]  lg:mt-[34px] lg:ml-[42px]  md:mt-[108px] sm:mt-[160px] relative   ">
               <img
                 className="h-[195px] w-[195px] object-cover  box-border rounded-[300px]  "
                 src={member.user_image}

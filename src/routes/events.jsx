@@ -202,7 +202,7 @@ const Events = () => {
         <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Our Events</h2>
       </div> */}
 
-    {/* <div>   <Upcoming/></div> */}
+      {/* <div>   <Upcoming/></div> */}
 
       <div className="events">
 
@@ -222,15 +222,15 @@ const Events = () => {
 
 
         <div>
-        <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Our Events</h2>
-      </div>
+          <h2 className=' text-center text-[50px] mb-9 font-bold' style={{ fontFamily: "Nunito,sans-serif" }}>Our Events</h2>
+        </div>
 
         <div className="grid  center w-[90%] m-auto grid-cols-1 gap-4 lg:grid lg:grid-cols-3  md:grid md:grid-col-2  sm:grid sm:grid-cols-2  mt-[30px] lg:pb-[60px] ">
 
           {achiversData.data[0].members.map((img, i) => {
             return (
               // <div className=' grid-cols-3'>
-              <div className='flex justify-center w-[400px] h-[400px] box-border rounded-[30px] mb-[200px] lg:mt-[0px]  lg:mb-[250px] md:mb-[100px] sm:mt-[300px] sm:mb-[300px]'>
+              <div className='flex justify-center lg:w-[400px] h-[400px] sm:w-[350px] box-border rounded-[30px] mb-[200px] lg:mt-[0px]  lg:mb-[250px] md:mb-[100px] sm:mt-[300px] sm:mb-[300px]'>
                 <div className="   transition-all duration-300 hover:scale-110 w-[400px] h-[400px] box-border rounded-[30px]" key={i}>
                   <img src={img.event_image} alt="#" className='w-[400px] h-[400px] box-border rounded-[30px] object-cover' />
                   <div className=''>  <p className='relative bg-white text-center font-extrabold  ' dangerouslySetInnerHTML={{ __html: img.place }}></p>
