@@ -204,7 +204,7 @@ const Events = () => {
 
       {/* <div>   <Upcoming/></div> */}
 
-      <div className="events">
+      <div className="events mb-[50px]" >
 
 
 
