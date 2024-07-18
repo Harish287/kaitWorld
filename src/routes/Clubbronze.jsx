@@ -202,34 +202,36 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
 
 
   return (
-    <div>
-      <div
-        // key={e.id}
-        className={`grid lg:grid-cols-4 md:grid-cols-2  items-center gap-6  container  p-6 `}
-      >
-        {currentMembers.map((member) => (
-          <div className=" flex justify-center gap-6 m-auto  flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8  md:h-[300px]  mt-12 lg:mt-0  goldclubvback  ">
-            <div className="mt-[160px]  lg:mt-[107px] mr-[-116px] md:mt-[108px] sm:mt-[160px]  ">
-              <div className="">
-                <img
-                  className="h-[140px] w-[140px] m-auto object-cover flex justify-center  mt-16"
-                  src={member.user_image}
-                  alt=""
-                />
-              </div>  </div>
-            <div className="relative">
-              <div
-                className="text-center"
-                dangerouslySetInnerHTML={{ __html: member.user_name }}
-              ></div>
 
-              <div className="text-center">{member.user_id}</div>
-            </div>
+    <div>
+    <div  className={`grid lg:grid-cols-4 md:grid-cols-2  items-center gap-28 lg:gap-8 sm:gap-28  container  p-6 `}>
+      {currentMembers.map(member => (
+
+        <div key={member.user_id} className={"flex justify-center gap-6 m-auto  flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8  md:h-[300px]  mt-12 lg:mt-0  goldclubvback "}>
+          <div className="mt-[160px]  lg:mt-[123px] mr-[-116px] md:mt-[108px] sm:mt-[160px]  ">
+            <img
+              className="h-[140px] w-[140px] m-auto object-cover flex justify-center  mt-16"
+              src={member.user_image}
+              alt=""
+            /></div>
+
+          <div className=" mt-4">
+            <div
+              className="text-center"
+              dangerouslySetInnerHTML={{ __html: member.user_name }}
+            ></div>
+
+            <div className="text-center">{member.user_id}</div>
           </div>
 
 
-        ))}
-      </div>
+        </div>
+      ))}
+    </div>
+
+
+
+  
       <div className="flex justify-center mt-8">
         <button
           onClick={goTogoldPrevPage}
