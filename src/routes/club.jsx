@@ -9,7 +9,8 @@ import {
   Clubdiamond,
   Clubdoublediamond,
   Clubtriplediamond,
-  Clubkaitking} from "./Clubbronze";
+  Clubkaitking
+} from "./Clubbronze";
 
 
 import axios from "axios";

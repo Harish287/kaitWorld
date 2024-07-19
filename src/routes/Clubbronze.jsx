@@ -263,7 +263,7 @@ const Clubgold = ({ e, goTogoldPrevPage, goldcurrentPage, goTogoldNextPage, setg
 
 const Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatinumNextPage, setplatinumCurrentPage }) => {
   // const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(2);
+  const [itemsPerPage] = useState(6);
 
   const indexOfLastItem = platinumcurrentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -291,7 +291,7 @@ const Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatin
     <div>
       <div
         key={e.id}
-        className={`grid md:grid-cols-2 items-center gap-6 container   p-6 `}
+        className={`grid md:grid-cols-2 lg:grid-cols-3 items-center gap-6 container   p-6 `}
       >
         {e.members.map((e) => (
           <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8     ">
