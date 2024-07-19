@@ -68,7 +68,7 @@ const Clubbronze = ({ e, goToPrevPage, currentPage, goToNextPage, setCurrentPage
       <div className="grid md:grid-cols-4 items-center container gap-6 p-6">
         {currentMembers.map((member, index) => (
           <div key={index} className={`bg-gradient-to-r ${index % 2 === 0 ? "bg-gradient-to-r from-purple-700 via-purple-500 to-blue-700" : "bg-gradient-to-r from-purple-700 via-purple-500 to-blue-700"} gap-6 p-8 flex box-border rounded-[90px] text-white`}>
-            <div className="lg:w-96 md:w-[10px]">{member.user_name}</div>
+            <div className="lg:w-96 md:w-[10px]"dangerouslySetInnerHTML={{ __html: member.user_name }}></div>
             <div>{member.user_id}</div>
           </div>
         ))}
