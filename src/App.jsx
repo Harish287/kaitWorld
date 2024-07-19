@@ -438,15 +438,15 @@ const App = () => {
 
 
         <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
-          <a href="#">
+          
             <img class="rounded-t-lg w-[490px] h-[400px] object-cover " src={Imageevents2} alt="" />
-          </a>
+     
           <div class="p-8">
             <h1 className=' font-bold'>Kairaa Exchange Launch</h1>
-            <a href="#">
+        
 
               <h5 class="mb-2  font-roboto font-normal lg:text-base md:text-[15px] lg:leading-7 md:leading-none text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">The grand launch of the Kairaa Crypto Exchange took place at the prestigious Ramada Plaza in Chennai on December 11, 2022. This event marked a significant milestone for both our company and the crypto community.</h5>
-            </a>
+           
             {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
             {/* <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
               View more
@@ -465,15 +465,14 @@ const App = () => {
 
 
         <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
-          <a href="#">
+     
             <img class="rounded-t-lg w-[490px] h-[400px] object-cover" src={Imageevents1} alt="" href="https://youtu.be/2PIagAiL_a8?si=nVwb2-ztp5mtOSs-" />
 
-          </a>
           <div class="p-8">
             <h1 className=' font-bold'>KAIT COIN staking app launching</h1>
-            <a href="#">
+          
               <h5 class="mb-2  font-roboto font-normal lg:text-base md:text-[15px] lg:leading-7 md:leading-none text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">KAIRAA successfully launched the KAIT Staking App at THE WESTIN located in the vibrant city of Chennai on the remarkable date of June 18, 2023. The KAIT Staking App is poised to revolutionize how individuals interact with cryptocurrencies and blockchain technology.</h5>
-            </a>
+        
             {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
             {/* <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
               View more
@@ -489,14 +488,14 @@ const App = () => {
 
 
         <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all duration-300 hover:scale-110">
-          <a href="#">
+        
             <img class="rounded-t-lg w-[490px] h-[400px] object-cover" src={Imageevents3} alt="" />
-          </a>
+       
           <div class="p-8">
             <h1 className=' font-bold'>Second Year Anniversary</h1>
-            <a href="#">
+   
               <h5 class="mb-2  font-roboto font-normal lg:text-base md:text-[15px] lg:leading-7 md:leading-none text-gray-700 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">The celebration of Kairaa's 2nd-year Anniversary and Achievers Party held at Blue Lagoon in Chennai on Dec 23, 2023.The event was a grand success, with laughter and cheer filling the air as Kairaa team members and their families. As speeches of appreciation and recognition echoed through the venue, it was evident that Kairaa's journey of growth and achievement was truly something to be celebrated.</h5>
-            </a>
+         
             {/* <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
             {/* <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
               View more

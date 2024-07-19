@@ -204,6 +204,7 @@ background: linear-gradient(90deg, rgba(157,73,160,1) 0%, rgba(66,81,154,1) 50%)
     background-color: transparent;
     cursor: pointer;
     position: relative;
+    margin-right: 10px;
   }
 
   .mobile-nav .menus {
