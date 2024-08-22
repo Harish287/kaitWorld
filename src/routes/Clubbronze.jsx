@@ -297,7 +297,7 @@ const Clubplatinum = ({ e, goToplatinumPrevPage, platinumcurrentPage, goToplatin
           <div className=" flex justify-center gap-6 flex-col p-8 md:flex md:justify-center md:flex-col md:gap-5  md:p-8     ">
 
             <img
-              className=" text-center m-auto md:h-[330px]  md:w-[400px] h-[100px]w-[100px] object-cover box-border rounded-[30px]"
+              className=" text-center m-auto md:h-[auto]  md:w-[400px] h-[100px]w-[100px] object-cover box-border rounded-[30px]"
               src={e.user_image}
               alt=""
             />
