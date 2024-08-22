@@ -514,7 +514,8 @@ const Achivers = () => {
                   <img className="w-[50px] h-[50px] box-border rounded-[500px]" src={anime5} alt="" />      </div>
                 <div>
                   <img className="w-[50px] h-[50px] box-border rounded-[500px]" src={anime6} alt="" />      </div>
-              </Slider></div>
+              </Slider>
+              </div>
             </div>
 
           </div>
